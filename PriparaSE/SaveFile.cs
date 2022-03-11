@@ -352,5 +352,220 @@ namespace PriparaSE
             TextSpeed = getByteValue.ExtractByteToInt(str, offsetPositions, 4); offsetPositions = offsetPositions + 4;
             JoystickScheme = getByteValue.ExtractByteToInt(str, offsetPositions, 4); offsetPositions = offsetPositions + 4;
         }
+
+        public MemoryStream injectSaveFile()
+        {
+            MemoryStream memoryStream = new MemoryStream();
+            SetByteValue setByteValue = new SetByteValue();
+            int offsetPositions = 0;
+            int arrayLenght = 0;
+            int[] valueArray;
+            int incrementValue = 0;
+
+            // UNKNOWN VALUES 1 2 //--------------------------------------------------------------
+
+            //Unknown_value_1 = getByteValue.ExtractByteToInt(str, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            memoryStream = setByteValue.InjectByteFromInt(memoryStream, Unknown_value_1, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            //Unknown_value_2 = getByteValue.ExtractByteToInt(str, offsetPositions, 2); offsetPositions = offsetPositions + 2;
+            memoryStream = setByteValue.InjectByteFromInt(memoryStream, Unknown_value_2, offsetPositions, 2); offsetPositions = offsetPositions + 2;
+
+            // IINE & IDOL RANK //----------------------------------------------------------------
+
+            //Misc.Iine = getByteValue.ExtractByteToInt(str, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            memoryStream = setByteValue.InjectByteFromInt(memoryStream, Misc.Iine, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            //Misc.IdolRank = getByteValue.ExtractByteToInt(str, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            memoryStream = setByteValue.InjectByteFromInt(memoryStream, Misc.IdolRank, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+
+            // SONG DATA //-----------------------------------------------------------------------
+
+            setByteValue.InjectByteFromInt(memoryStream, UnlockedSongDatas.Count, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+
+            for (int i = 0; i < UnlockedSongDatas.Count; i++)
+            {
+                setByteValue.InjectByteFromInt(memoryStream, UnlockedSongDatas[i].id, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+                setByteValue.InjectByteFromInt(memoryStream, UnlockedSongDatas[i].timesExecuted, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            }
+
+            // UNLOCKED STORIES //----------------------------------------------------------------
+
+            setByteValue.InjectByteFromInt(memoryStream, UnlockedStories.Count, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+
+            for (int i = 0; i < UnlockedStories.Count; i++)
+            {
+                setByteValue.InjectByteFromInt(memoryStream, UnlockedStories[i].id, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            }
+
+            // MISSION CONDITIONS //--------------------------------------------------------------
+
+            setByteValue.InjectByteFromInt(memoryStream, MissionConditions.Count, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+
+            for (int i = 0; i < MissionConditions.Count; i++)
+            {
+                setByteValue.InjectByteFromInt(memoryStream, MissionConditions[i].value, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            }
+
+            // UNKNOWN VALUE 3 //------------------------------------------------------------------
+
+            setByteValue.InjectByteFromInt(memoryStream, Unknown_value_3, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+
+            // STORY SECTIONS //-------------------------------------------------------------------
+
+            setByteValue.InjectByteFromInt(memoryStream, StorySections.Count, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+
+            for (int i = 0; i < StorySections.Count; i++)
+            {
+                setByteValue.InjectByteFromInt(memoryStream, StorySections[0].id, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+                setByteValue.InjectByteFromInt(memoryStream, StorySections[0].mission, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            }
+
+            // MONEY //----------------------------------------------------------------------------
+
+            setByteValue.InjectByteFromInt(memoryStream, Misc.Money, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+
+            // UNKNOWN VALUE 4 //------------------------------------------------------------------
+
+            setByteValue.InjectByteFromInt(memoryStream, Unknown_value_4, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+
+            // AVATARS //--------------------------------------------------------------------------
+
+            for (int i = 0; i < 6; i++)
+            {
+                setByteValue.InjectByteFromInt(memoryStream, Encoding.UTF8.GetBytes(Avatars[i].Name).Length, offsetPositions, 1); offsetPositions = offsetPositions + 1;
+                setByteValue.InjectByteFromString(memoryStream, Avatars[i].Name, offsetPositions, Encoding.UTF8.GetBytes(Avatars[i].Name).Length); offsetPositions = offsetPositions + Encoding.UTF8.GetBytes(Avatars[i].Name).Length;
+                setByteValue.InjectByteFromInt(memoryStream, Avatars[i].EyeType, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+                setByteValue.InjectByteFromInt(memoryStream, Avatars[i].SkinColor, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+                setByteValue.InjectByteFromInt(memoryStream, Avatars[i].HairStyle, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+                setByteValue.InjectByteFromInt(memoryStream, Avatars[i].HairColor, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+                setByteValue.InjectByteFromInt(memoryStream, Avatars[i].EyeColor, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+                setByteValue.InjectByteFromInt(memoryStream, Avatars[i].Glass, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+                setByteValue.InjectByteFromInt(memoryStream, Avatars[i].MakeUp, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+                setByteValue.InjectByteFromInt(memoryStream, Avatars[i].Top, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+                setByteValue.InjectByteFromInt(memoryStream, Avatars[i].Bottom, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+                setByteValue.InjectByteFromInt(memoryStream, Avatars[i].Shoot, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+                setByteValue.InjectByteFromInt(memoryStream, Avatars[i].Head, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            }
+
+            // CLOTH COLLECTION //------------------------------------------------------------------
+
+            setByteValue.InjectByteFromInt(memoryStream, ClothCollections.Count, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+
+            for (int i = 0; i < ClothCollections.Count; i++)
+            {
+                setByteValue.InjectByteFromInt(memoryStream, ClothCollections[i].id, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            }
+
+            // UNLOCKED SONGS //-------------------------------------------------------------------
+
+            setByteValue.InjectByteFromInt(memoryStream, UnlockedSongs.Count, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+
+            for (int i = 0; i < UnlockedSongs.Count; i++)
+            {
+                setByteValue.InjectByteFromInt(memoryStream, UnlockedSongs[i].id, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            }
+
+            // UNLOCKED CHARACTERS //--------------------------------------------------------------
+
+            setByteValue.InjectByteFromInt(memoryStream, UnlockedCharacters.Count, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+
+            for (int i = 0; i < UnlockedCharacters.Count; i++)
+            {
+                setByteValue.InjectByteFromInt(memoryStream, UnlockedCharacters[i].id, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            }
+
+            // UNLOCKED TOMOTICKETS //-------------------------------------------------------------
+
+            setByteValue.InjectByteFromInt(memoryStream, Tomotickets.Count, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+
+            for (int i = 0; i < Tomotickets.Count; i++)
+            {
+                setByteValue.InjectByteFromInt(memoryStream, Tomotickets[i].id, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            }
+
+            // EYE TYPES //--------------------------------------------------------------
+
+            setByteValue.InjectByteFromInt(memoryStream, EyeTypes.Count, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+
+            for (int i = 0; i < EyeTypes.Count; i++)
+            {
+                setByteValue.InjectByteFromInt(memoryStream, EyeTypes[i].id, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            }
+
+            // SKIN COLORS //------------------------------------------------------------
+
+            setByteValue.InjectByteFromInt(memoryStream, SkinColors.Count, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+
+            for (int i = 0; i < SkinColors.Count; i++)
+            {
+                setByteValue.InjectByteFromInt(memoryStream, SkinColors[i].id, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            }
+
+            // HAIR TYPES //-------------------------------------------------------------
+
+            setByteValue.InjectByteFromInt(memoryStream, HairTypes.Count, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+
+            for (int i = 0; i < HairTypes.Count; i++)
+            {
+                setByteValue.InjectByteFromInt(memoryStream, HairTypes[i].id, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            }
+
+            // HAIR COLORS //------------------------------------------------------------
+
+            setByteValue.InjectByteFromInt(memoryStream, HairColors.Count, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+
+            for (int i = 0; i < HairColors.Count; i++)
+            {
+                setByteValue.InjectByteFromInt(memoryStream, HairColors[i].id, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            }
+
+            // EYE COLORS //-------------------------------------------------------------
+
+            setByteValue.InjectByteFromInt(memoryStream, EyeColors.Count, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+
+            for (int i = 0; i < EyeColors.Count; i++)
+            {
+                setByteValue.InjectByteFromInt(memoryStream, EyeColors[i].id, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            }
+
+            // GLASSES //-------------------------------------------------------------
+
+            setByteValue.InjectByteFromInt(memoryStream, Glasses.Count, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+
+            for (int i = 0; i < Glasses.Count; i++)
+            {
+                setByteValue.InjectByteFromInt(memoryStream, Glasses[i].id, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            }
+
+            // MAKE UPS //--------------------------------------------------------------------
+
+            setByteValue.InjectByteFromInt(memoryStream, MakeUps.Count, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+
+            for (int i = 0; i < MakeUps.Count; i++)
+            {
+                setByteValue.InjectByteFromInt(memoryStream, MakeUps[i].id, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            }
+
+            // UNKNOWN VALUE 5 //-------------------------------------------------------------
+
+            setByteValue.InjectByteFromInt(memoryStream, Unknown_value_5, offsetPositions, 2); offsetPositions = offsetPositions + 2;
+
+            // SETTINGS //-------------------------------------------------------------
+
+            //MusicVol = getByteValue.ExtractByteToInt(str, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            setByteValue.InjectByteFromInt(memoryStream, MusicVol, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            //SFXVol = getByteValue.ExtractByteToInt(str, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            setByteValue.InjectByteFromInt(memoryStream, SFXVol, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            //VoiceVol = getByteValue.ExtractByteToInt(str, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            setByteValue.InjectByteFromInt(memoryStream, VoiceVol, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            //VoiceSetting = getByteValue.ExtractByteToInt(str, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            setByteValue.InjectByteFromInt(memoryStream, VoiceSetting, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            //TextSpeed = getByteValue.ExtractByteToInt(str, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            setByteValue.InjectByteFromInt(memoryStream, TextSpeed, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            //JoystickScheme = getByteValue.ExtractByteToInt(str, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+            setByteValue.InjectByteFromInt(memoryStream, JoystickScheme, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+
+            memoryStream.SetLength(16355);
+
+            return memoryStream;
+        }
     }
 }

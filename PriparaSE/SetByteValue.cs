@@ -41,29 +41,12 @@ namespace PriparaSE
 
         public MemoryStream InjectByteFromString(MemoryStream str, string value, int initialOffset, int count)
         {
-            switch (count)
-            {
-                case 1:
-                    byte1 = Encoding.UTF8.GetBytes(value);
-                    Array.Reverse(byte1);
-                    str.Seek(initialOffset, SeekOrigin.Begin);
-                    str.Write(byte1, 0, 1);
-                    return str;
-                case 2:
-                    byte2 = Encoding.UTF8.GetBytes(value);
-                    Array.Reverse(byte2);
-                    str.Seek(initialOffset, SeekOrigin.Begin);
-                    str.Write(byte2, 0, 2);
-                    return str;
-                case 4:
-                    byte4 = Encoding.UTF8.GetBytes(value);
-                    Array.Reverse(byte4);
-                    str.Seek(initialOffset, SeekOrigin.Begin);
-                    str.Write(byte4, 0, 4);
-                    return str;
-                default:
-                    return str;
-            }
+            byte[] byteString = new byte[count];
+            byteString = Encoding.UTF8.GetBytes(value);
+            //Array.Reverse(byte1);
+            str.Seek(initialOffset, SeekOrigin.Begin);
+            str.Write(byteString, 0, count);
+            return str;
         }
 
         public byte[] ExtractByteArray(Stream str, int initialOffset, int count)
