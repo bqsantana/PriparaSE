@@ -44,12 +44,14 @@ namespace PriparaSE
 
                         listBox1.SelectedIndex = 0;
                         mainTabs.Enabled = true;
+                        saveAsToolStripMenuItem.Enabled = true;
                     }
                 }
 
-                catch 
+                catch (SecurityException ex)
                 {
-
+                    MessageBox.Show($"Security error.\n\nError message: {ex.Message}\n\n" +
+                    $"Details:\n\n{ex.StackTrace}");
                 }
             }
         }
@@ -225,6 +227,11 @@ namespace PriparaSE
             {
                 listViewCloset.Items.Add(new ListViewItem() { Text = completeItemList[i].ToString() });
             }
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
