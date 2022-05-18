@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 namespace PriparaSE
 {
@@ -14,14 +9,14 @@ namespace PriparaSE
         byte[] byte4 = new byte[4];
         int[] intArray;
         int[,] intArrayMatrix;
-        public int ExtractByteToInt(Stream str, int initialOffset, int count) 
+        public int ExtractByteToInt(Stream str, int initialOffset, int count)
         {
             switch (count)
             {
                 case 1:
                     str.Seek(initialOffset, SeekOrigin.Begin);
                     str.Read(byte1, 0, 1);
-                    return Convert.ToInt32(BitConverter.ToString(byte1, 0),16);
+                    return Convert.ToInt32(BitConverter.ToString(byte1, 0), 16);
                 case 2:
                     str.Seek(initialOffset, SeekOrigin.Begin);
                     str.Read(byte2, 0, 2);

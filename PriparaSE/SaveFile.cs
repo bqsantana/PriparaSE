@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 namespace PriparaSE
 {
@@ -64,7 +60,7 @@ namespace PriparaSE
 
             UnlockedSongDatas = new List<UnlockedSongData>();
 
-            for (int i = 0; i < (arrayLenght/2); i++)
+            for (int i = 0; i < (arrayLenght / 2); i++)
             {
                 UnlockedSongDatas.Add(new UnlockedSongData()
                 {

@@ -37,6 +37,8 @@
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.infoSheetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainTabs = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -95,15 +97,76 @@
             this.bodyPartsTab = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.eyeTypeIdNbox = new System.Windows.Forms.NumericUpDown();
+            this.label22 = new System.Windows.Forms.Label();
+            this.listViewEyeTypes = new System.Windows.Forms.ListView();
+            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.removeSkinColorBtn = new System.Windows.Forms.Button();
+            this.addSkinColorBtn = new System.Windows.Forms.Button();
+            this.skinColorIdNbox = new System.Windows.Forms.NumericUpDown();
+            this.label23 = new System.Windows.Forms.Label();
+            this.listViewSkinColor = new System.Windows.Forms.ListView();
+            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.hairStyleIdNbox = new System.Windows.Forms.NumericUpDown();
+            this.label24 = new System.Windows.Forms.Label();
+            this.listViewHairStyle = new System.Windows.Forms.ListView();
+            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
             this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.listViewHairColor = new System.Windows.Forms.ListView();
+            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
+            this.removeHairColor = new System.Windows.Forms.Button();
+            this.addHairColorBtn = new System.Windows.Forms.Button();
+            this.hairColorIdNbox = new System.Windows.Forms.NumericUpDown();
+            this.label25 = new System.Windows.Forms.Label();
             this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.listViewEyeColor = new System.Windows.Forms.ListView();
+            this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
+            this.removeEyeColorBtn = new System.Windows.Forms.Button();
+            this.addEyeColorBtn = new System.Windows.Forms.Button();
+            this.eyeColorIdNbox = new System.Windows.Forms.NumericUpDown();
+            this.label26 = new System.Windows.Forms.Label();
             this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.listViewGlasses = new System.Windows.Forms.ListView();
+            this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
+            this.removeGlassesBtn = new System.Windows.Forms.Button();
+            this.addGlassesBtn = new System.Windows.Forms.Button();
+            this.glassesIdNbox = new System.Windows.Forms.NumericUpDown();
+            this.label27 = new System.Windows.Forms.Label();
             this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.listViewMakeUp = new System.Windows.Forms.ListView();
+            this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
+            this.removeMakeUpBtn = new System.Windows.Forms.Button();
+            this.addMakeUpBtn = new System.Windows.Forms.Button();
+            this.makeUpIdNbox = new System.Windows.Forms.NumericUpDown();
+            this.label28 = new System.Windows.Forms.Label();
             this.songsTab = new System.Windows.Forms.TabPage();
+            this.listViewSongs = new System.Windows.Forms.ListView();
+            this.columnHeader8 = new System.Windows.Forms.ColumnHeader();
+            this.removeSongsBtn = new System.Windows.Forms.Button();
+            this.addSongBtn = new System.Windows.Forms.Button();
+            this.songsIdNbox = new System.Windows.Forms.NumericUpDown();
+            this.label29 = new System.Windows.Forms.Label();
             this.charactersTab = new System.Windows.Forms.TabPage();
+            this.listViewCharacters = new System.Windows.Forms.ListView();
+            this.columnHeader9 = new System.Windows.Forms.ColumnHeader();
+            this.removeCharacterBtn = new System.Windows.Forms.Button();
+            this.addCharacterBtn = new System.Windows.Forms.Button();
+            this.characterIdNbox = new System.Windows.Forms.NumericUpDown();
+            this.label30 = new System.Windows.Forms.Label();
             this.tomoticketsTab = new System.Windows.Forms.TabPage();
+            this.listViewTomotickets = new System.Windows.Forms.ListView();
+            this.columnHeader10 = new System.Windows.Forms.ColumnHeader();
+            this.removeTomoticketsBtn = new System.Windows.Forms.Button();
+            this.addTomoticketsBtn = new System.Windows.Forms.Button();
+            this.tomoticketsIdNbox = new System.Windows.Forms.NumericUpDown();
+            this.label31 = new System.Windows.Forms.Label();
+            this.donateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.mainTabs.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -131,6 +194,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.itemIdNbox)).BeginInit();
             this.bodyPartsTab.SuspendLayout();
             this.tabControl2.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.eyeTypeIdNbox)).BeginInit();
+            this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.skinColorIdNbox)).BeginInit();
+            this.tabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hairStyleIdNbox)).BeginInit();
+            this.tabPage9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hairColorIdNbox)).BeginInit();
+            this.tabPage10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.eyeColorIdNbox)).BeginInit();
+            this.tabPage11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.glassesIdNbox)).BeginInit();
+            this.tabPage12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.makeUpIdNbox)).BeginInit();
+            this.songsTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.songsIdNbox)).BeginInit();
+            this.charactersTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.characterIdNbox)).BeginInit();
+            this.tomoticketsTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tomoticketsIdNbox)).BeginInit();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -140,7 +223,9 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.helpToolStripMenuItem,
+            this.donateToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(379, 24);
@@ -184,6 +269,21 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.infoSheetToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // infoSheetToolStripMenuItem
+            // 
+            this.infoSheetToolStripMenuItem.Name = "infoSheetToolStripMenuItem";
+            this.infoSheetToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.infoSheetToolStripMenuItem.Text = "Pripara Info Sheet";
+            this.infoSheetToolStripMenuItem.Click += new System.EventHandler(this.infoSheetToolStripMenuItem_Click);
             // 
             // mainTabs
             // 
@@ -856,6 +956,11 @@
             // 
             // tabPage6
             // 
+            this.tabPage6.Controls.Add(this.button5);
+            this.tabPage6.Controls.Add(this.button4);
+            this.tabPage6.Controls.Add(this.eyeTypeIdNbox);
+            this.tabPage6.Controls.Add(this.label22);
+            this.tabPage6.Controls.Add(this.listViewEyeTypes);
             this.tabPage6.Location = new System.Drawing.Point(4, 24);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
@@ -864,8 +969,72 @@
             this.tabPage6.Text = "Eye Type";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(189, 29);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(119, 23);
+            this.button5.TabIndex = 3;
+            this.button5.Text = "Remove Selected";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(108, 29);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(62, 23);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Add";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // eyeTypeIdNbox
+            // 
+            this.eyeTypeIdNbox.Location = new System.Drawing.Point(33, 27);
+            this.eyeTypeIdNbox.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.eyeTypeIdNbox.Name = "eyeTypeIdNbox";
+            this.eyeTypeIdNbox.Size = new System.Drawing.Size(59, 23);
+            this.eyeTypeIdNbox.TabIndex = 2;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(6, 29);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(21, 15);
+            this.label22.TabIndex = 1;
+            this.label22.Text = "ID:";
+            // 
+            // listViewEyeTypes
+            // 
+            this.listViewEyeTypes.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1});
+            this.listViewEyeTypes.FullRowSelect = true;
+            this.listViewEyeTypes.GridLines = true;
+            this.listViewEyeTypes.Location = new System.Drawing.Point(6, 74);
+            this.listViewEyeTypes.Name = "listViewEyeTypes";
+            this.listViewEyeTypes.Size = new System.Drawing.Size(313, 241);
+            this.listViewEyeTypes.TabIndex = 0;
+            this.listViewEyeTypes.UseCompatibleStateImageBehavior = false;
+            this.listViewEyeTypes.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "ID:";
+            this.columnHeader1.Width = 100;
+            // 
             // tabPage7
             // 
+            this.tabPage7.Controls.Add(this.removeSkinColorBtn);
+            this.tabPage7.Controls.Add(this.addSkinColorBtn);
+            this.tabPage7.Controls.Add(this.skinColorIdNbox);
+            this.tabPage7.Controls.Add(this.label23);
+            this.tabPage7.Controls.Add(this.listViewSkinColor);
             this.tabPage7.Location = new System.Drawing.Point(4, 24);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
@@ -874,8 +1043,72 @@
             this.tabPage7.Text = "Skin Color";
             this.tabPage7.UseVisualStyleBackColor = true;
             // 
+            // removeSkinColorBtn
+            // 
+            this.removeSkinColorBtn.Location = new System.Drawing.Point(189, 37);
+            this.removeSkinColorBtn.Name = "removeSkinColorBtn";
+            this.removeSkinColorBtn.Size = new System.Drawing.Size(119, 23);
+            this.removeSkinColorBtn.TabIndex = 7;
+            this.removeSkinColorBtn.Text = "Remove Selected";
+            this.removeSkinColorBtn.UseVisualStyleBackColor = true;
+            this.removeSkinColorBtn.Click += new System.EventHandler(this.removeSkinColorBtn_Click);
+            // 
+            // addSkinColorBtn
+            // 
+            this.addSkinColorBtn.Location = new System.Drawing.Point(108, 37);
+            this.addSkinColorBtn.Name = "addSkinColorBtn";
+            this.addSkinColorBtn.Size = new System.Drawing.Size(62, 23);
+            this.addSkinColorBtn.TabIndex = 8;
+            this.addSkinColorBtn.Text = "Add";
+            this.addSkinColorBtn.UseVisualStyleBackColor = true;
+            this.addSkinColorBtn.Click += new System.EventHandler(this.addSkinColorBtn_Click);
+            // 
+            // skinColorIdNbox
+            // 
+            this.skinColorIdNbox.Location = new System.Drawing.Point(33, 35);
+            this.skinColorIdNbox.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.skinColorIdNbox.Name = "skinColorIdNbox";
+            this.skinColorIdNbox.Size = new System.Drawing.Size(59, 23);
+            this.skinColorIdNbox.TabIndex = 6;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(6, 37);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(21, 15);
+            this.label23.TabIndex = 5;
+            this.label23.Text = "ID:";
+            // 
+            // listViewSkinColor
+            // 
+            this.listViewSkinColor.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader2});
+            this.listViewSkinColor.FullRowSelect = true;
+            this.listViewSkinColor.GridLines = true;
+            this.listViewSkinColor.Location = new System.Drawing.Point(6, 82);
+            this.listViewSkinColor.Name = "listViewSkinColor";
+            this.listViewSkinColor.Size = new System.Drawing.Size(313, 241);
+            this.listViewSkinColor.TabIndex = 4;
+            this.listViewSkinColor.UseCompatibleStateImageBehavior = false;
+            this.listViewSkinColor.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "ID:";
+            this.columnHeader2.Width = 100;
+            // 
             // tabPage8
             // 
+            this.tabPage8.Controls.Add(this.button8);
+            this.tabPage8.Controls.Add(this.button9);
+            this.tabPage8.Controls.Add(this.hairStyleIdNbox);
+            this.tabPage8.Controls.Add(this.label24);
+            this.tabPage8.Controls.Add(this.listViewHairStyle);
             this.tabPage8.Location = new System.Drawing.Point(4, 24);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
@@ -884,8 +1117,72 @@
             this.tabPage8.Text = "Hair Style";
             this.tabPage8.UseVisualStyleBackColor = true;
             // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(189, 37);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(119, 23);
+            this.button8.TabIndex = 7;
+            this.button8.Text = "Remove Selected";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(108, 37);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(62, 23);
+            this.button9.TabIndex = 8;
+            this.button9.Text = "Add";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // hairStyleIdNbox
+            // 
+            this.hairStyleIdNbox.Location = new System.Drawing.Point(33, 35);
+            this.hairStyleIdNbox.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.hairStyleIdNbox.Name = "hairStyleIdNbox";
+            this.hairStyleIdNbox.Size = new System.Drawing.Size(59, 23);
+            this.hairStyleIdNbox.TabIndex = 6;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(6, 37);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(21, 15);
+            this.label24.TabIndex = 5;
+            this.label24.Text = "ID:";
+            // 
+            // listViewHairStyle
+            // 
+            this.listViewHairStyle.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader3});
+            this.listViewHairStyle.FullRowSelect = true;
+            this.listViewHairStyle.GridLines = true;
+            this.listViewHairStyle.Location = new System.Drawing.Point(6, 82);
+            this.listViewHairStyle.Name = "listViewHairStyle";
+            this.listViewHairStyle.Size = new System.Drawing.Size(313, 241);
+            this.listViewHairStyle.TabIndex = 4;
+            this.listViewHairStyle.UseCompatibleStateImageBehavior = false;
+            this.listViewHairStyle.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "ID:";
+            this.columnHeader3.Width = 100;
+            // 
             // tabPage9
             // 
+            this.tabPage9.Controls.Add(this.listViewHairColor);
+            this.tabPage9.Controls.Add(this.removeHairColor);
+            this.tabPage9.Controls.Add(this.addHairColorBtn);
+            this.tabPage9.Controls.Add(this.hairColorIdNbox);
+            this.tabPage9.Controls.Add(this.label25);
             this.tabPage9.Location = new System.Drawing.Point(4, 24);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
@@ -894,8 +1191,67 @@
             this.tabPage9.Text = "Hair Color";
             this.tabPage9.UseVisualStyleBackColor = true;
             // 
+            // listViewHairColor
+            // 
+            this.listViewHairColor.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader4});
+            this.listViewHairColor.FullRowSelect = true;
+            this.listViewHairColor.GridLines = true;
+            this.listViewHairColor.Location = new System.Drawing.Point(6, 82);
+            this.listViewHairColor.Name = "listViewHairColor";
+            this.listViewHairColor.Size = new System.Drawing.Size(313, 241);
+            this.listViewHairColor.TabIndex = 9;
+            this.listViewHairColor.UseCompatibleStateImageBehavior = false;
+            this.listViewHairColor.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "ID:";
+            this.columnHeader4.Width = 100;
+            // 
+            // removeHairColor
+            // 
+            this.removeHairColor.Location = new System.Drawing.Point(189, 37);
+            this.removeHairColor.Name = "removeHairColor";
+            this.removeHairColor.Size = new System.Drawing.Size(119, 23);
+            this.removeHairColor.TabIndex = 7;
+            this.removeHairColor.Text = "Remove Selected";
+            this.removeHairColor.UseVisualStyleBackColor = true;
+            this.removeHairColor.Click += new System.EventHandler(this.removeHairColor_Click);
+            // 
+            // addHairColorBtn
+            // 
+            this.addHairColorBtn.Location = new System.Drawing.Point(108, 37);
+            this.addHairColorBtn.Name = "addHairColorBtn";
+            this.addHairColorBtn.Size = new System.Drawing.Size(62, 23);
+            this.addHairColorBtn.TabIndex = 8;
+            this.addHairColorBtn.Text = "Add";
+            this.addHairColorBtn.UseVisualStyleBackColor = true;
+            this.addHairColorBtn.Click += new System.EventHandler(this.addHairColorBtn_Click);
+            // 
+            // hairColorIdNbox
+            // 
+            this.hairColorIdNbox.Location = new System.Drawing.Point(33, 35);
+            this.hairColorIdNbox.Name = "hairColorIdNbox";
+            this.hairColorIdNbox.Size = new System.Drawing.Size(59, 23);
+            this.hairColorIdNbox.TabIndex = 6;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(6, 37);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(21, 15);
+            this.label25.TabIndex = 5;
+            this.label25.Text = "ID:";
+            // 
             // tabPage10
             // 
+            this.tabPage10.Controls.Add(this.listViewEyeColor);
+            this.tabPage10.Controls.Add(this.removeEyeColorBtn);
+            this.tabPage10.Controls.Add(this.addEyeColorBtn);
+            this.tabPage10.Controls.Add(this.eyeColorIdNbox);
+            this.tabPage10.Controls.Add(this.label26);
             this.tabPage10.Location = new System.Drawing.Point(4, 24);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
@@ -904,8 +1260,67 @@
             this.tabPage10.Text = "Eye Color";
             this.tabPage10.UseVisualStyleBackColor = true;
             // 
+            // listViewEyeColor
+            // 
+            this.listViewEyeColor.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader5});
+            this.listViewEyeColor.FullRowSelect = true;
+            this.listViewEyeColor.GridLines = true;
+            this.listViewEyeColor.Location = new System.Drawing.Point(6, 82);
+            this.listViewEyeColor.Name = "listViewEyeColor";
+            this.listViewEyeColor.Size = new System.Drawing.Size(313, 241);
+            this.listViewEyeColor.TabIndex = 10;
+            this.listViewEyeColor.UseCompatibleStateImageBehavior = false;
+            this.listViewEyeColor.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "ID:";
+            this.columnHeader5.Width = 100;
+            // 
+            // removeEyeColorBtn
+            // 
+            this.removeEyeColorBtn.Location = new System.Drawing.Point(189, 37);
+            this.removeEyeColorBtn.Name = "removeEyeColorBtn";
+            this.removeEyeColorBtn.Size = new System.Drawing.Size(119, 23);
+            this.removeEyeColorBtn.TabIndex = 7;
+            this.removeEyeColorBtn.Text = "Remove Selected";
+            this.removeEyeColorBtn.UseVisualStyleBackColor = true;
+            this.removeEyeColorBtn.Click += new System.EventHandler(this.removeEyeColorBtn_Click);
+            // 
+            // addEyeColorBtn
+            // 
+            this.addEyeColorBtn.Location = new System.Drawing.Point(108, 37);
+            this.addEyeColorBtn.Name = "addEyeColorBtn";
+            this.addEyeColorBtn.Size = new System.Drawing.Size(62, 23);
+            this.addEyeColorBtn.TabIndex = 8;
+            this.addEyeColorBtn.Text = "Add";
+            this.addEyeColorBtn.UseVisualStyleBackColor = true;
+            this.addEyeColorBtn.Click += new System.EventHandler(this.addEyeColorBtn_Click);
+            // 
+            // eyeColorIdNbox
+            // 
+            this.eyeColorIdNbox.Location = new System.Drawing.Point(33, 35);
+            this.eyeColorIdNbox.Name = "eyeColorIdNbox";
+            this.eyeColorIdNbox.Size = new System.Drawing.Size(59, 23);
+            this.eyeColorIdNbox.TabIndex = 6;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(6, 37);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(21, 15);
+            this.label26.TabIndex = 5;
+            this.label26.Text = "ID:";
+            // 
             // tabPage11
             // 
+            this.tabPage11.Controls.Add(this.listViewGlasses);
+            this.tabPage11.Controls.Add(this.removeGlassesBtn);
+            this.tabPage11.Controls.Add(this.addGlassesBtn);
+            this.tabPage11.Controls.Add(this.glassesIdNbox);
+            this.tabPage11.Controls.Add(this.label27);
             this.tabPage11.Location = new System.Drawing.Point(4, 24);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
@@ -914,8 +1329,67 @@
             this.tabPage11.Text = "Glasses";
             this.tabPage11.UseVisualStyleBackColor = true;
             // 
+            // listViewGlasses
+            // 
+            this.listViewGlasses.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader6});
+            this.listViewGlasses.FullRowSelect = true;
+            this.listViewGlasses.GridLines = true;
+            this.listViewGlasses.Location = new System.Drawing.Point(6, 82);
+            this.listViewGlasses.Name = "listViewGlasses";
+            this.listViewGlasses.Size = new System.Drawing.Size(313, 241);
+            this.listViewGlasses.TabIndex = 11;
+            this.listViewGlasses.UseCompatibleStateImageBehavior = false;
+            this.listViewGlasses.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "ID:";
+            this.columnHeader6.Width = 100;
+            // 
+            // removeGlassesBtn
+            // 
+            this.removeGlassesBtn.Location = new System.Drawing.Point(189, 37);
+            this.removeGlassesBtn.Name = "removeGlassesBtn";
+            this.removeGlassesBtn.Size = new System.Drawing.Size(119, 23);
+            this.removeGlassesBtn.TabIndex = 7;
+            this.removeGlassesBtn.Text = "Remove Selected";
+            this.removeGlassesBtn.UseVisualStyleBackColor = true;
+            this.removeGlassesBtn.Click += new System.EventHandler(this.removeGlassesBtn_Click);
+            // 
+            // addGlassesBtn
+            // 
+            this.addGlassesBtn.Location = new System.Drawing.Point(108, 37);
+            this.addGlassesBtn.Name = "addGlassesBtn";
+            this.addGlassesBtn.Size = new System.Drawing.Size(62, 23);
+            this.addGlassesBtn.TabIndex = 8;
+            this.addGlassesBtn.Text = "Add";
+            this.addGlassesBtn.UseVisualStyleBackColor = true;
+            this.addGlassesBtn.Click += new System.EventHandler(this.addGlassesBtn_Click);
+            // 
+            // glassesIdNbox
+            // 
+            this.glassesIdNbox.Location = new System.Drawing.Point(33, 35);
+            this.glassesIdNbox.Name = "glassesIdNbox";
+            this.glassesIdNbox.Size = new System.Drawing.Size(59, 23);
+            this.glassesIdNbox.TabIndex = 6;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(6, 37);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(21, 15);
+            this.label27.TabIndex = 5;
+            this.label27.Text = "ID:";
+            // 
             // tabPage12
             // 
+            this.tabPage12.Controls.Add(this.listViewMakeUp);
+            this.tabPage12.Controls.Add(this.removeMakeUpBtn);
+            this.tabPage12.Controls.Add(this.addMakeUpBtn);
+            this.tabPage12.Controls.Add(this.makeUpIdNbox);
+            this.tabPage12.Controls.Add(this.label28);
             this.tabPage12.Location = new System.Drawing.Point(4, 24);
             this.tabPage12.Name = "tabPage12";
             this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
@@ -924,8 +1398,67 @@
             this.tabPage12.Text = "Make Up";
             this.tabPage12.UseVisualStyleBackColor = true;
             // 
+            // listViewMakeUp
+            // 
+            this.listViewMakeUp.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader7});
+            this.listViewMakeUp.FullRowSelect = true;
+            this.listViewMakeUp.GridLines = true;
+            this.listViewMakeUp.Location = new System.Drawing.Point(6, 84);
+            this.listViewMakeUp.Name = "listViewMakeUp";
+            this.listViewMakeUp.Size = new System.Drawing.Size(313, 241);
+            this.listViewMakeUp.TabIndex = 12;
+            this.listViewMakeUp.UseCompatibleStateImageBehavior = false;
+            this.listViewMakeUp.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "ID:";
+            this.columnHeader7.Width = 100;
+            // 
+            // removeMakeUpBtn
+            // 
+            this.removeMakeUpBtn.Location = new System.Drawing.Point(189, 37);
+            this.removeMakeUpBtn.Name = "removeMakeUpBtn";
+            this.removeMakeUpBtn.Size = new System.Drawing.Size(119, 23);
+            this.removeMakeUpBtn.TabIndex = 7;
+            this.removeMakeUpBtn.Text = "Remove Selected";
+            this.removeMakeUpBtn.UseVisualStyleBackColor = true;
+            this.removeMakeUpBtn.Click += new System.EventHandler(this.removeMakeUpBtn_Click);
+            // 
+            // addMakeUpBtn
+            // 
+            this.addMakeUpBtn.Location = new System.Drawing.Point(108, 37);
+            this.addMakeUpBtn.Name = "addMakeUpBtn";
+            this.addMakeUpBtn.Size = new System.Drawing.Size(62, 23);
+            this.addMakeUpBtn.TabIndex = 8;
+            this.addMakeUpBtn.Text = "Add";
+            this.addMakeUpBtn.UseVisualStyleBackColor = true;
+            this.addMakeUpBtn.Click += new System.EventHandler(this.addMakeUpBtn_Click);
+            // 
+            // makeUpIdNbox
+            // 
+            this.makeUpIdNbox.Location = new System.Drawing.Point(33, 35);
+            this.makeUpIdNbox.Name = "makeUpIdNbox";
+            this.makeUpIdNbox.Size = new System.Drawing.Size(59, 23);
+            this.makeUpIdNbox.TabIndex = 6;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(6, 37);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(21, 15);
+            this.label28.TabIndex = 5;
+            this.label28.Text = "ID:";
+            // 
             // songsTab
             // 
+            this.songsTab.Controls.Add(this.listViewSongs);
+            this.songsTab.Controls.Add(this.removeSongsBtn);
+            this.songsTab.Controls.Add(this.addSongBtn);
+            this.songsTab.Controls.Add(this.songsIdNbox);
+            this.songsTab.Controls.Add(this.label29);
             this.songsTab.Location = new System.Drawing.Point(4, 24);
             this.songsTab.Name = "songsTab";
             this.songsTab.Padding = new System.Windows.Forms.Padding(3);
@@ -934,8 +1467,67 @@
             this.songsTab.Text = "Songs";
             this.songsTab.UseVisualStyleBackColor = true;
             // 
+            // listViewSongs
+            // 
+            this.listViewSongs.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader8});
+            this.listViewSongs.FullRowSelect = true;
+            this.listViewSongs.GridLines = true;
+            this.listViewSongs.Location = new System.Drawing.Point(16, 103);
+            this.listViewSongs.Name = "listViewSongs";
+            this.listViewSongs.Size = new System.Drawing.Size(313, 241);
+            this.listViewSongs.TabIndex = 17;
+            this.listViewSongs.UseCompatibleStateImageBehavior = false;
+            this.listViewSongs.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "ID:";
+            this.columnHeader8.Width = 100;
+            // 
+            // removeSongsBtn
+            // 
+            this.removeSongsBtn.Location = new System.Drawing.Point(199, 56);
+            this.removeSongsBtn.Name = "removeSongsBtn";
+            this.removeSongsBtn.Size = new System.Drawing.Size(119, 23);
+            this.removeSongsBtn.TabIndex = 15;
+            this.removeSongsBtn.Text = "Remove Selected";
+            this.removeSongsBtn.UseVisualStyleBackColor = true;
+            this.removeSongsBtn.Click += new System.EventHandler(this.removeSongsBtn_Click);
+            // 
+            // addSongBtn
+            // 
+            this.addSongBtn.Location = new System.Drawing.Point(118, 56);
+            this.addSongBtn.Name = "addSongBtn";
+            this.addSongBtn.Size = new System.Drawing.Size(62, 23);
+            this.addSongBtn.TabIndex = 16;
+            this.addSongBtn.Text = "Add";
+            this.addSongBtn.UseVisualStyleBackColor = true;
+            this.addSongBtn.Click += new System.EventHandler(this.addSongBtn_Click);
+            // 
+            // songsIdNbox
+            // 
+            this.songsIdNbox.Location = new System.Drawing.Point(43, 54);
+            this.songsIdNbox.Name = "songsIdNbox";
+            this.songsIdNbox.Size = new System.Drawing.Size(59, 23);
+            this.songsIdNbox.TabIndex = 14;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(16, 56);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(21, 15);
+            this.label29.TabIndex = 13;
+            this.label29.Text = "ID:";
+            // 
             // charactersTab
             // 
+            this.charactersTab.Controls.Add(this.listViewCharacters);
+            this.charactersTab.Controls.Add(this.removeCharacterBtn);
+            this.charactersTab.Controls.Add(this.addCharacterBtn);
+            this.charactersTab.Controls.Add(this.characterIdNbox);
+            this.charactersTab.Controls.Add(this.label30);
             this.charactersTab.Location = new System.Drawing.Point(4, 24);
             this.charactersTab.Name = "charactersTab";
             this.charactersTab.Padding = new System.Windows.Forms.Padding(3);
@@ -944,8 +1536,67 @@
             this.charactersTab.Text = "Characters";
             this.charactersTab.UseVisualStyleBackColor = true;
             // 
+            // listViewCharacters
+            // 
+            this.listViewCharacters.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader9});
+            this.listViewCharacters.FullRowSelect = true;
+            this.listViewCharacters.GridLines = true;
+            this.listViewCharacters.Location = new System.Drawing.Point(16, 103);
+            this.listViewCharacters.Name = "listViewCharacters";
+            this.listViewCharacters.Size = new System.Drawing.Size(313, 241);
+            this.listViewCharacters.TabIndex = 22;
+            this.listViewCharacters.UseCompatibleStateImageBehavior = false;
+            this.listViewCharacters.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "ID:";
+            this.columnHeader9.Width = 100;
+            // 
+            // removeCharacterBtn
+            // 
+            this.removeCharacterBtn.Location = new System.Drawing.Point(199, 56);
+            this.removeCharacterBtn.Name = "removeCharacterBtn";
+            this.removeCharacterBtn.Size = new System.Drawing.Size(119, 23);
+            this.removeCharacterBtn.TabIndex = 20;
+            this.removeCharacterBtn.Text = "Remove Selected";
+            this.removeCharacterBtn.UseVisualStyleBackColor = true;
+            this.removeCharacterBtn.Click += new System.EventHandler(this.removeCharacterBtn_Click);
+            // 
+            // addCharacterBtn
+            // 
+            this.addCharacterBtn.Location = new System.Drawing.Point(118, 56);
+            this.addCharacterBtn.Name = "addCharacterBtn";
+            this.addCharacterBtn.Size = new System.Drawing.Size(62, 23);
+            this.addCharacterBtn.TabIndex = 21;
+            this.addCharacterBtn.Text = "Add";
+            this.addCharacterBtn.UseVisualStyleBackColor = true;
+            this.addCharacterBtn.Click += new System.EventHandler(this.addCharacterBtn_Click);
+            // 
+            // characterIdNbox
+            // 
+            this.characterIdNbox.Location = new System.Drawing.Point(43, 54);
+            this.characterIdNbox.Name = "characterIdNbox";
+            this.characterIdNbox.Size = new System.Drawing.Size(59, 23);
+            this.characterIdNbox.TabIndex = 19;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(16, 56);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(21, 15);
+            this.label30.TabIndex = 18;
+            this.label30.Text = "ID:";
+            // 
             // tomoticketsTab
             // 
+            this.tomoticketsTab.Controls.Add(this.listViewTomotickets);
+            this.tomoticketsTab.Controls.Add(this.removeTomoticketsBtn);
+            this.tomoticketsTab.Controls.Add(this.addTomoticketsBtn);
+            this.tomoticketsTab.Controls.Add(this.tomoticketsIdNbox);
+            this.tomoticketsTab.Controls.Add(this.label31);
             this.tomoticketsTab.Location = new System.Drawing.Point(4, 24);
             this.tomoticketsTab.Name = "tomoticketsTab";
             this.tomoticketsTab.Padding = new System.Windows.Forms.Padding(3);
@@ -953,6 +1604,67 @@
             this.tomoticketsTab.TabIndex = 6;
             this.tomoticketsTab.Text = "Tomotickets";
             this.tomoticketsTab.UseVisualStyleBackColor = true;
+            // 
+            // listViewTomotickets
+            // 
+            this.listViewTomotickets.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader10});
+            this.listViewTomotickets.FullRowSelect = true;
+            this.listViewTomotickets.GridLines = true;
+            this.listViewTomotickets.Location = new System.Drawing.Point(16, 103);
+            this.listViewTomotickets.Name = "listViewTomotickets";
+            this.listViewTomotickets.Size = new System.Drawing.Size(313, 241);
+            this.listViewTomotickets.TabIndex = 27;
+            this.listViewTomotickets.UseCompatibleStateImageBehavior = false;
+            this.listViewTomotickets.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "ID:";
+            this.columnHeader10.Width = 100;
+            // 
+            // removeTomoticketsBtn
+            // 
+            this.removeTomoticketsBtn.Location = new System.Drawing.Point(199, 56);
+            this.removeTomoticketsBtn.Name = "removeTomoticketsBtn";
+            this.removeTomoticketsBtn.Size = new System.Drawing.Size(119, 23);
+            this.removeTomoticketsBtn.TabIndex = 25;
+            this.removeTomoticketsBtn.Text = "Remove Selected";
+            this.removeTomoticketsBtn.UseVisualStyleBackColor = true;
+            this.removeTomoticketsBtn.Click += new System.EventHandler(this.removeTomoticketsBtn_Click);
+            // 
+            // addTomoticketsBtn
+            // 
+            this.addTomoticketsBtn.Location = new System.Drawing.Point(118, 56);
+            this.addTomoticketsBtn.Name = "addTomoticketsBtn";
+            this.addTomoticketsBtn.Size = new System.Drawing.Size(62, 23);
+            this.addTomoticketsBtn.TabIndex = 26;
+            this.addTomoticketsBtn.Text = "Add";
+            this.addTomoticketsBtn.UseVisualStyleBackColor = true;
+            this.addTomoticketsBtn.Click += new System.EventHandler(this.addTomoticketsBtn_Click);
+            // 
+            // tomoticketsIdNbox
+            // 
+            this.tomoticketsIdNbox.Location = new System.Drawing.Point(43, 54);
+            this.tomoticketsIdNbox.Name = "tomoticketsIdNbox";
+            this.tomoticketsIdNbox.Size = new System.Drawing.Size(59, 23);
+            this.tomoticketsIdNbox.TabIndex = 24;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(16, 56);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(21, 15);
+            this.label31.TabIndex = 23;
+            this.label31.Text = "ID:";
+            // 
+            // donateToolStripMenuItem
+            // 
+            this.donateToolStripMenuItem.Name = "donateToolStripMenuItem";
+            this.donateToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.donateToolStripMenuItem.Text = "Donate";
+            this.donateToolStripMenuItem.Click += new System.EventHandler(this.donateToolStripMenuItem_Click_1);
             // 
             // Form1
             // 
@@ -999,6 +1711,36 @@
             ((System.ComponentModel.ISupportInitialize)(this.itemIdNbox)).EndInit();
             this.bodyPartsTab.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.eyeTypeIdNbox)).EndInit();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.skinColorIdNbox)).EndInit();
+            this.tabPage8.ResumeLayout(false);
+            this.tabPage8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hairStyleIdNbox)).EndInit();
+            this.tabPage9.ResumeLayout(false);
+            this.tabPage9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hairColorIdNbox)).EndInit();
+            this.tabPage10.ResumeLayout(false);
+            this.tabPage10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.eyeColorIdNbox)).EndInit();
+            this.tabPage11.ResumeLayout(false);
+            this.tabPage11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.glassesIdNbox)).EndInit();
+            this.tabPage12.ResumeLayout(false);
+            this.tabPage12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.makeUpIdNbox)).EndInit();
+            this.songsTab.ResumeLayout(false);
+            this.songsTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.songsIdNbox)).EndInit();
+            this.charactersTab.ResumeLayout(false);
+            this.charactersTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.characterIdNbox)).EndInit();
+            this.tomoticketsTab.ResumeLayout(false);
+            this.tomoticketsTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tomoticketsIdNbox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1081,5 +1823,69 @@
         private TabPage charactersTab;
         private TabPage tomoticketsTab;
         private Button button3;
+        private Button button5;
+        private Button button4;
+        private NumericUpDown eyeTypeIdNbox;
+        private Label label22;
+        private ListView listViewEyeTypes;
+        private ColumnHeader columnHeader1;
+        private Button button8;
+        private Button button9;
+        private NumericUpDown hairStyleIdNbox;
+        private Label label24;
+        private ListView listViewHairStyle;
+        private ColumnHeader columnHeader3;
+        private Button removeHairColor;
+        private Button addHairColorBtn;
+        private NumericUpDown hairColorIdNbox;
+        private Label label25;
+        private Button removeEyeColorBtn;
+        private Button addEyeColorBtn;
+        private NumericUpDown eyeColorIdNbox;
+        private Label label26;
+        private Button removeGlassesBtn;
+        private Button addGlassesBtn;
+        private NumericUpDown glassesIdNbox;
+        private Label label27;
+        private Button removeMakeUpBtn;
+        private Button addMakeUpBtn;
+        private NumericUpDown makeUpIdNbox;
+        private Label label28;
+        private ListView listView7;
+        private ColumnHeader columnHeader7;
+        private Button removeSkinColorBtn;
+        private Button addSkinColorBtn;
+        private NumericUpDown skinColorIdNbox;
+        private Label label23;
+        private ListView listViewSkinColor;
+        private ColumnHeader columnHeader2;
+        private ListView listViewHairColor;
+        private ColumnHeader columnHeader4;
+        private ListView listViewEyeColor;
+        private ColumnHeader columnHeader5;
+        private ListView listViewGlasses;
+        private ColumnHeader columnHeader6;
+        private ListView listViewMakeUp;
+        private ListView listViewSongs;
+        private ColumnHeader columnHeader8;
+        private Button removeSongsBtn;
+        private Button addSongBtn;
+        private NumericUpDown songsIdNbox;
+        private Label label29;
+        private ListView listViewCharacters;
+        private ColumnHeader columnHeader9;
+        private Button removeCharacterBtn;
+        private Button addCharacterBtn;
+        private NumericUpDown characterIdNbox;
+        private Label label30;
+        private ListView listViewTomotickets;
+        private ColumnHeader columnHeader10;
+        private Button removeTomoticketsBtn;
+        private Button addTomoticketsBtn;
+        private NumericUpDown tomoticketsIdNbox;
+        private Label label31;
+        private ToolStripMenuItem helpToolStripMenuItem;
+        private ToolStripMenuItem infoSheetToolStripMenuItem;
+        private ToolStripMenuItem donateToolStripMenuItem;
     }
 }
