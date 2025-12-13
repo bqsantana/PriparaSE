@@ -14,6 +14,19 @@ namespace PriparaSE
         public Form1()
         {
             InitializeComponent();
+
+            decimal max = new decimal(int.MaxValue);
+            tomoticketsIdNbox.Maximum = max;
+            songsIdNbox.Maximum = max;
+            characterIdNbox.Maximum = max;
+            itemIdNbox.Maximum = max;
+            eyeTypeIdNbox.Maximum = max;
+            hairStyleIdNbox.Maximum = max;
+            skinColorIdNbox.Maximum = max;
+            hairColorIdNbox.Maximum = max;
+            eyeColorIdNbox.Maximum = max;
+            glassesIdNbox.Maximum = max;
+            makeUpIdNbox.Maximum = max;
         }
 
          private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -31,6 +44,7 @@ namespace PriparaSE
                         listViewHairStyle.Items.Clear();
                         listViewEyeColor.Items.Clear();
                         listViewGlasses.Items.Clear();
+                        listViewMakeUp.Items.Clear();
                         listViewSongs.Items.Clear();
                         listViewCharacters.Items.Clear();
                         listViewTomotickets.Items.Clear();
