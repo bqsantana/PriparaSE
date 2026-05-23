@@ -498,6 +498,15 @@ namespace PriparaSE
             }
         }
 
+        private void insertTomoticketsAllBtn_Click(object sender, EventArgs e)
+        {
+            listViewTomotickets.Items.Clear();
+            for (int i = 1; i <= 160; i++)
+            {
+                listViewTomotickets.Items.Add(new ListViewItem() { Text = i.ToString() });
+            }
+        }
+
         private void infoSheetToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Process.Start(new ProcessStartInfo("https://docs.google.com/spreadsheets/d/1awtHVhl3M2Xf26nWuxNJnmrwOw1oJkXzoRBE6wUjFo4") { UseShellExecute = true });

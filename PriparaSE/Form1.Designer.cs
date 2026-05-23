@@ -166,6 +166,7 @@
             this.addTomoticketsBtn = new System.Windows.Forms.Button();
             this.tomoticketsIdNbox = new System.Windows.Forms.NumericUpDown();
             this.label31 = new System.Windows.Forms.Label();
+            this.insertTomoticketsAllBtn = new System.Windows.Forms.Button();
             this.donateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.mainTabs.SuspendLayout();
@@ -1595,6 +1596,7 @@
             this.tomoticketsTab.Controls.Add(this.listViewTomotickets);
             this.tomoticketsTab.Controls.Add(this.removeTomoticketsBtn);
             this.tomoticketsTab.Controls.Add(this.addTomoticketsBtn);
+            this.tomoticketsTab.Controls.Add(this.insertTomoticketsAllBtn);
             this.tomoticketsTab.Controls.Add(this.tomoticketsIdNbox);
             this.tomoticketsTab.Controls.Add(this.label31);
             this.tomoticketsTab.Location = new System.Drawing.Point(4, 24);
@@ -1642,6 +1644,16 @@
             this.addTomoticketsBtn.Text = "Add";
             this.addTomoticketsBtn.UseVisualStyleBackColor = true;
             this.addTomoticketsBtn.Click += new System.EventHandler(this.addTomoticketsBtn_Click);
+            // 
+            // insertTomoticketsAllBtn
+            // 
+            this.insertTomoticketsAllBtn.Location = new System.Drawing.Point(97, 370);
+            this.insertTomoticketsAllBtn.Name = "insertTomoticketsAllBtn";
+            this.insertTomoticketsAllBtn.Size = new System.Drawing.Size(137, 23);
+            this.insertTomoticketsAllBtn.TabIndex = 28;
+            this.insertTomoticketsAllBtn.Text = "Insert All";
+            this.insertTomoticketsAllBtn.UseVisualStyleBackColor = true;
+            this.insertTomoticketsAllBtn.Click += new System.EventHandler(this.insertTomoticketsAllBtn_Click);
             // 
             // tomoticketsIdNbox
             // 
@@ -1882,6 +1894,7 @@
         private ColumnHeader columnHeader10;
         private Button removeTomoticketsBtn;
         private Button addTomoticketsBtn;
+        private Button insertTomoticketsAllBtn;
         private NumericUpDown tomoticketsIdNbox;
         private Label label31;
         private ToolStripMenuItem helpToolStripMenuItem;
