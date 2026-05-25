@@ -476,7 +476,6 @@ namespace PriparaSE
         private void insertSongsListBtn_Click(object sender, EventArgs e)
         {
             int[] ids = new int[] { 1,2,3,4,5,7,9,10,12,17,18,25,30,31,34,41,55,56,63,71,76,79,80,84,93,93,98,102,109,111,113,123,123,130,139,141,1000,1002 };
-            // remove duplicates while preserving order
             var seen = new HashSet<int>();
             listViewSongs.Items.Clear();
             foreach (int id in ids)
