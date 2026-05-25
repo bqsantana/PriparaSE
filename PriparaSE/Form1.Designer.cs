@@ -122,6 +122,7 @@
             this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
             this.removeHairColor = new System.Windows.Forms.Button();
             this.addHairColorBtn = new System.Windows.Forms.Button();
+            this.insertHairColorAllBtn = new System.Windows.Forms.Button();
             this.hairColorIdNbox = new System.Windows.Forms.NumericUpDown();
             this.label25 = new System.Windows.Forms.Label();
             this.tabPage10 = new System.Windows.Forms.TabPage();
@@ -152,11 +153,13 @@
             this.addSongBtn = new System.Windows.Forms.Button();
             this.songsIdNbox = new System.Windows.Forms.NumericUpDown();
             this.label29 = new System.Windows.Forms.Label();
+            this.insertSongsListBtn = new System.Windows.Forms.Button();
             this.charactersTab = new System.Windows.Forms.TabPage();
             this.listViewCharacters = new System.Windows.Forms.ListView();
             this.columnHeader9 = new System.Windows.Forms.ColumnHeader();
             this.removeCharacterBtn = new System.Windows.Forms.Button();
             this.addCharacterBtn = new System.Windows.Forms.Button();
+            this.insertCharactersAllBtn = new System.Windows.Forms.Button();
             this.characterIdNbox = new System.Windows.Forms.NumericUpDown();
             this.label30 = new System.Windows.Forms.Label();
             this.tomoticketsTab = new System.Windows.Forms.TabPage();
@@ -1182,6 +1185,7 @@
             this.tabPage9.Controls.Add(this.listViewHairColor);
             this.tabPage9.Controls.Add(this.removeHairColor);
             this.tabPage9.Controls.Add(this.addHairColorBtn);
+            this.tabPage9.Controls.Add(this.insertHairColorAllBtn);
             this.tabPage9.Controls.Add(this.hairColorIdNbox);
             this.tabPage9.Controls.Add(this.label25);
             this.tabPage9.Location = new System.Drawing.Point(4, 24);
@@ -1229,6 +1233,16 @@
             this.addHairColorBtn.Text = "Add";
             this.addHairColorBtn.UseVisualStyleBackColor = true;
             this.addHairColorBtn.Click += new System.EventHandler(this.addHairColorBtn_Click);
+            // 
+            // insertHairColorAllBtn
+            // 
+            this.insertHairColorAllBtn.Location = new System.Drawing.Point(97, 326);
+            this.insertHairColorAllBtn.Name = "insertHairColorAllBtn";
+            this.insertHairColorAllBtn.Size = new System.Drawing.Size(137, 23);
+            this.insertHairColorAllBtn.TabIndex = 10;
+            this.insertHairColorAllBtn.Text = "Insert All";
+            this.insertHairColorAllBtn.UseVisualStyleBackColor = true;
+            this.insertHairColorAllBtn.Click += new System.EventHandler(this.insertHairColorAllBtn_Click);
             // 
             // hairColorIdNbox
             // 
@@ -1458,6 +1472,7 @@
             this.songsTab.Controls.Add(this.listViewSongs);
             this.songsTab.Controls.Add(this.removeSongsBtn);
             this.songsTab.Controls.Add(this.addSongBtn);
+            this.songsTab.Controls.Add(this.insertSongsListBtn);
             this.songsTab.Controls.Add(this.songsIdNbox);
             this.songsTab.Controls.Add(this.label29);
             this.songsTab.Location = new System.Drawing.Point(4, 24);
@@ -1506,6 +1521,16 @@
             this.addSongBtn.UseVisualStyleBackColor = true;
             this.addSongBtn.Click += new System.EventHandler(this.addSongBtn_Click);
             // 
+            // insertSongsListBtn
+            // 
+            this.insertSongsListBtn.Location = new System.Drawing.Point(97, 370);
+            this.insertSongsListBtn.Name = "insertSongsListBtn";
+            this.insertSongsListBtn.Size = new System.Drawing.Size(137, 23);
+            this.insertSongsListBtn.TabIndex = 18;
+            this.insertSongsListBtn.Text = "Insert All";
+            this.insertSongsListBtn.UseVisualStyleBackColor = true;
+            this.insertSongsListBtn.Click += new System.EventHandler(this.insertSongsListBtn_Click);
+            // 
             // songsIdNbox
             // 
             this.songsIdNbox.Location = new System.Drawing.Point(43, 54);
@@ -1527,6 +1552,7 @@
             this.charactersTab.Controls.Add(this.listViewCharacters);
             this.charactersTab.Controls.Add(this.removeCharacterBtn);
             this.charactersTab.Controls.Add(this.addCharacterBtn);
+            this.charactersTab.Controls.Add(this.insertCharactersAllBtn);
             this.charactersTab.Controls.Add(this.characterIdNbox);
             this.charactersTab.Controls.Add(this.label30);
             this.charactersTab.Location = new System.Drawing.Point(4, 24);
@@ -1574,6 +1600,16 @@
             this.addCharacterBtn.Text = "Add";
             this.addCharacterBtn.UseVisualStyleBackColor = true;
             this.addCharacterBtn.Click += new System.EventHandler(this.addCharacterBtn_Click);
+            // 
+            // insertCharactersAllBtn
+            // 
+            this.insertCharactersAllBtn.Location = new System.Drawing.Point(97, 370);
+            this.insertCharactersAllBtn.Name = "insertCharactersAllBtn";
+            this.insertCharactersAllBtn.Size = new System.Drawing.Size(137, 23);
+            this.insertCharactersAllBtn.TabIndex = 22;
+            this.insertCharactersAllBtn.Text = "Insert All";
+            this.insertCharactersAllBtn.UseVisualStyleBackColor = true;
+            this.insertCharactersAllBtn.Click += new System.EventHandler(this.insertCharactersAllBtn_Click);
             // 
             // characterIdNbox
             // 
@@ -1851,6 +1887,7 @@
         private Button addHairColorBtn;
         private NumericUpDown hairColorIdNbox;
         private Label label25;
+        private Button insertHairColorAllBtn;
         private Button removeEyeColorBtn;
         private Button addEyeColorBtn;
         private NumericUpDown eyeColorIdNbox;
@@ -1882,12 +1919,14 @@
         private ColumnHeader columnHeader8;
         private Button removeSongsBtn;
         private Button addSongBtn;
+        private Button insertSongsListBtn;
         private NumericUpDown songsIdNbox;
         private Label label29;
         private ListView listViewCharacters;
         private ColumnHeader columnHeader9;
         private Button removeCharacterBtn;
         private Button addCharacterBtn;
+        private Button insertCharactersAllBtn;
         private NumericUpDown characterIdNbox;
         private Label label30;
         private ListView listViewTomotickets;
