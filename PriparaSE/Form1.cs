@@ -6,10 +6,10 @@ namespace PriparaSE
 {
     public partial class Form1 : Form
     {
-        Stream openedFile;
-        MemoryStream workFile;
+        Stream openedFile = null!;
+        MemoryStream workFile = null!;
         SaveFile saveFile = new SaveFile();
-        ListViewItem closetItem;
+        ListViewItem closetItem = null!;
         WebBrowser webBrowser = new WebBrowser();
         public Form1()
         {
@@ -412,6 +412,15 @@ namespace PriparaSE
             listViewHairColor.Items.Add(new ListViewItem() { Text = hairColorIdNbox.Value.ToString()});
         }
 
+        private void insertHairColorAllBtn_Click(object sender, EventArgs e)
+        {
+            listViewHairColor.Items.Clear();
+            for (int i = 1; i <= 90; i++)
+            {
+                listViewHairColor.Items.Add(new ListViewItem() { Text = i.ToString() });
+            }
+        }
+
         private void removeHairColor_Click(object sender, EventArgs e)
         {
             foreach (ListViewItem item in listViewHairColor.SelectedItems)
@@ -464,6 +473,21 @@ namespace PriparaSE
             listViewSongs.Items.Add(new ListViewItem() { Text = songsIdNbox.Value.ToString() });
         }
 
+        private void insertSongsListBtn_Click(object sender, EventArgs e)
+        {
+            int[] ids = new int[] { 1,2,3,4,5,7,9,10,12,17,18,25,30,31,34,41,55,56,63,71,76,79,80,84,93,93,98,102,109,111,113,123,123,130,139,141,1000,1002 };
+            var seen = new HashSet<int>();
+            listViewSongs.Items.Clear();
+            foreach (int id in ids)
+            {
+                if (!seen.Contains(id))
+                {
+                    seen.Add(id);
+                    listViewSongs.Items.Add(new ListViewItem() { Text = id.ToString() });
+                }
+            }
+        }
+
         private void removeSongsBtn_Click(object sender, EventArgs e)
         {
             foreach (ListViewItem item in listViewSongs.SelectedItems)
@@ -475,6 +499,15 @@ namespace PriparaSE
         private void addCharacterBtn_Click(object sender, EventArgs e)
         {
             listViewCharacters.Items.Add(new ListViewItem() { Text = characterIdNbox.Value.ToString() });
+        }
+
+        private void insertCharactersAllBtn_Click(object sender, EventArgs e)
+        {
+            listViewCharacters.Items.Clear();
+            for (int i = 0; i <= 38; i++)
+            {
+                listViewCharacters.Items.Add(new ListViewItem() { Text = i.ToString() });
+            }
         }
 
         private void removeCharacterBtn_Click(object sender, EventArgs e)
@@ -495,6 +528,15 @@ namespace PriparaSE
             foreach (ListViewItem item in listViewTomotickets.SelectedItems)
             {
                 listViewTomotickets.Items.Remove(item);
+            }
+        }
+
+        private void insertTomoticketsAllBtn_Click(object sender, EventArgs e)
+        {
+            listViewTomotickets.Items.Clear();
+            for (int i = 1; i <= 160; i++)
+            {
+                listViewTomotickets.Items.Add(new ListViewItem() { Text = i.ToString() });
             }
         }
 
