@@ -2,7 +2,7 @@
 {
     internal class Avatar
     {
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
         public int EyeType { get; set; }
         public int SkinColor { get; set; }
         public int HairStyle { get; set; }
