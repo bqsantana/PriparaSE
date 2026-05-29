@@ -123,6 +123,8 @@
             this.removeHairColor = new System.Windows.Forms.Button();
             this.addHairColorBtn = new System.Windows.Forms.Button();
             this.insertHairColorAllBtn = new System.Windows.Forms.Button();
+            this.insertSkinColorAllBtn = new System.Windows.Forms.Button();
+            this.insertHairStyleAllBtn = new System.Windows.Forms.Button();
             this.hairColorIdNbox = new System.Windows.Forms.NumericUpDown();
             this.label25 = new System.Windows.Forms.Label();
             this.tabPage10 = new System.Windows.Forms.TabPage();
@@ -130,6 +132,7 @@
             this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
             this.removeEyeColorBtn = new System.Windows.Forms.Button();
             this.addEyeColorBtn = new System.Windows.Forms.Button();
+            this.insertEyeColorAllBtn = new System.Windows.Forms.Button();
             this.eyeColorIdNbox = new System.Windows.Forms.NumericUpDown();
             this.label26 = new System.Windows.Forms.Label();
             this.tabPage11 = new System.Windows.Forms.TabPage();
@@ -137,6 +140,7 @@
             this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
             this.removeGlassesBtn = new System.Windows.Forms.Button();
             this.addGlassesBtn = new System.Windows.Forms.Button();
+            this.insertGlassesAllBtn = new System.Windows.Forms.Button();
             this.glassesIdNbox = new System.Windows.Forms.NumericUpDown();
             this.label27 = new System.Windows.Forms.Label();
             this.tabPage12 = new System.Windows.Forms.TabPage();
@@ -144,6 +148,7 @@
             this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
             this.removeMakeUpBtn = new System.Windows.Forms.Button();
             this.addMakeUpBtn = new System.Windows.Forms.Button();
+            this.insertMakeUpAllBtn = new System.Windows.Forms.Button();
             this.makeUpIdNbox = new System.Windows.Forms.NumericUpDown();
             this.label28 = new System.Windows.Forms.Label();
             this.songsTab = new System.Windows.Forms.TabPage();
@@ -170,6 +175,30 @@
             this.tomoticketsIdNbox = new System.Windows.Forms.NumericUpDown();
             this.label31 = new System.Windows.Forms.Label();
             this.insertTomoticketsAllBtn = new System.Windows.Forms.Button();
+            this.storiesTab = new System.Windows.Forms.TabPage();
+            this.storiesLayout = new System.Windows.Forms.TableLayoutPanel();
+            this.storyBlock1Group = new System.Windows.Forms.GroupBox();
+            this.storyBlock1Layout = new System.Windows.Forms.TableLayoutPanel();
+            this.storyBlock1InputPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.story01IdNbox = new System.Windows.Forms.NumericUpDown();
+            this.addStory01Btn = new System.Windows.Forms.Button();
+            this.removeStory01Btn = new System.Windows.Forms.Button();
+            this.listViewStory01 = new System.Windows.Forms.ListView();
+            this.story01ColumnHeader = new System.Windows.Forms.ColumnHeader();
+            this.storyBlock1ActionPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.insertKnownStory01Btn = new System.Windows.Forms.Button();
+            this.clearStory01Btn = new System.Windows.Forms.Button();
+            this.storyBlock2Group = new System.Windows.Forms.GroupBox();
+            this.storyBlock2Layout = new System.Windows.Forms.TableLayoutPanel();
+            this.storyBlock2InputPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.story03IdNbox = new System.Windows.Forms.NumericUpDown();
+            this.addStory03Btn = new System.Windows.Forms.Button();
+            this.removeStory03Btn = new System.Windows.Forms.Button();
+            this.listViewStory03 = new System.Windows.Forms.ListView();
+            this.story03ColumnHeader = new System.Windows.Forms.ColumnHeader();
+            this.storyBlock2ActionPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.insertKnownStory03Btn = new System.Windows.Forms.Button();
+            this.clearStory03Btn = new System.Windows.Forms.Button();
             this.donateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.mainTabs.SuspendLayout();
@@ -218,6 +247,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.characterIdNbox)).BeginInit();
             this.tomoticketsTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tomoticketsIdNbox)).BeginInit();
+            this.storiesTab.SuspendLayout();
+            this.storiesLayout.SuspendLayout();
+            this.storyBlock1Group.SuspendLayout();
+            this.storyBlock1Layout.SuspendLayout();
+            this.storyBlock1InputPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.story01IdNbox)).BeginInit();
+            this.storyBlock1ActionPanel.SuspendLayout();
+            this.storyBlock2Group.SuspendLayout();
+            this.storyBlock2Layout.SuspendLayout();
+            this.storyBlock2InputPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.story03IdNbox)).BeginInit();
+            this.storyBlock2ActionPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -298,6 +339,7 @@
             this.mainTabs.Controls.Add(this.songsTab);
             this.mainTabs.Controls.Add(this.charactersTab);
             this.mainTabs.Controls.Add(this.tomoticketsTab);
+            this.mainTabs.Controls.Add(this.storiesTab);
             this.mainTabs.Enabled = false;
             this.mainTabs.Location = new System.Drawing.Point(12, 27);
             this.mainTabs.Name = "mainTabs";
@@ -1035,6 +1077,7 @@
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.removeSkinColorBtn);
+            this.tabPage7.Controls.Add(this.insertSkinColorAllBtn);
             this.tabPage7.Controls.Add(this.addSkinColorBtn);
             this.tabPage7.Controls.Add(this.skinColorIdNbox);
             this.tabPage7.Controls.Add(this.label23);
@@ -1056,6 +1099,16 @@
             this.removeSkinColorBtn.Text = "Remove Selected";
             this.removeSkinColorBtn.UseVisualStyleBackColor = true;
             this.removeSkinColorBtn.Click += new System.EventHandler(this.removeSkinColorBtn_Click);
+            // 
+            // insertSkinColorAllBtn
+            // 
+            this.insertSkinColorAllBtn.Location = new System.Drawing.Point(97, 326);
+            this.insertSkinColorAllBtn.Name = "insertSkinColorAllBtn";
+            this.insertSkinColorAllBtn.Size = new System.Drawing.Size(137, 23);
+            this.insertSkinColorAllBtn.TabIndex = 9;
+            this.insertSkinColorAllBtn.Text = "Insert All";
+            this.insertSkinColorAllBtn.UseVisualStyleBackColor = true;
+            this.insertSkinColorAllBtn.Click += new System.EventHandler(this.insertSkinColorAllBtn_Click);
             // 
             // addSkinColorBtn
             // 
@@ -1112,6 +1165,7 @@
             this.tabPage8.Controls.Add(this.button9);
             this.tabPage8.Controls.Add(this.hairStyleIdNbox);
             this.tabPage8.Controls.Add(this.label24);
+            this.tabPage8.Controls.Add(this.insertHairStyleAllBtn);
             this.tabPage8.Controls.Add(this.listViewHairStyle);
             this.tabPage8.Location = new System.Drawing.Point(4, 24);
             this.tabPage8.Name = "tabPage8";
@@ -1244,6 +1298,16 @@
             this.insertHairColorAllBtn.UseVisualStyleBackColor = true;
             this.insertHairColorAllBtn.Click += new System.EventHandler(this.insertHairColorAllBtn_Click);
             // 
+            // insertHairStyleAllBtn
+            // 
+            this.insertHairStyleAllBtn.Location = new System.Drawing.Point(97, 326);
+            this.insertHairStyleAllBtn.Name = "insertHairStyleAllBtn";
+            this.insertHairStyleAllBtn.Size = new System.Drawing.Size(137, 23);
+            this.insertHairStyleAllBtn.TabIndex = 11;
+            this.insertHairStyleAllBtn.Text = "Insert All";
+            this.insertHairStyleAllBtn.UseVisualStyleBackColor = true;
+            this.insertHairStyleAllBtn.Click += new System.EventHandler(this.insertHairStyleAllBtn_Click);
+            // 
             // hairColorIdNbox
             // 
             this.hairColorIdNbox.Location = new System.Drawing.Point(33, 35);
@@ -1265,6 +1329,7 @@
             this.tabPage10.Controls.Add(this.listViewEyeColor);
             this.tabPage10.Controls.Add(this.removeEyeColorBtn);
             this.tabPage10.Controls.Add(this.addEyeColorBtn);
+            this.tabPage10.Controls.Add(this.insertEyeColorAllBtn);
             this.tabPage10.Controls.Add(this.eyeColorIdNbox);
             this.tabPage10.Controls.Add(this.label26);
             this.tabPage10.Location = new System.Drawing.Point(4, 24);
@@ -1313,6 +1378,16 @@
             this.addEyeColorBtn.UseVisualStyleBackColor = true;
             this.addEyeColorBtn.Click += new System.EventHandler(this.addEyeColorBtn_Click);
             // 
+            // insertEyeColorAllBtn
+            // 
+            this.insertEyeColorAllBtn.Location = new System.Drawing.Point(97, 326);
+            this.insertEyeColorAllBtn.Name = "insertEyeColorAllBtn";
+            this.insertEyeColorAllBtn.Size = new System.Drawing.Size(137, 23);
+            this.insertEyeColorAllBtn.TabIndex = 11;
+            this.insertEyeColorAllBtn.Text = "Insert All";
+            this.insertEyeColorAllBtn.UseVisualStyleBackColor = true;
+            this.insertEyeColorAllBtn.Click += new System.EventHandler(this.insertEyeColorAllBtn_Click);
+            // 
             // eyeColorIdNbox
             // 
             this.eyeColorIdNbox.Location = new System.Drawing.Point(33, 35);
@@ -1334,6 +1409,7 @@
             this.tabPage11.Controls.Add(this.listViewGlasses);
             this.tabPage11.Controls.Add(this.removeGlassesBtn);
             this.tabPage11.Controls.Add(this.addGlassesBtn);
+            this.tabPage11.Controls.Add(this.insertGlassesAllBtn);
             this.tabPage11.Controls.Add(this.glassesIdNbox);
             this.tabPage11.Controls.Add(this.label27);
             this.tabPage11.Location = new System.Drawing.Point(4, 24);
@@ -1382,6 +1458,16 @@
             this.addGlassesBtn.UseVisualStyleBackColor = true;
             this.addGlassesBtn.Click += new System.EventHandler(this.addGlassesBtn_Click);
             // 
+            // insertGlassesAllBtn
+            // 
+            this.insertGlassesAllBtn.Location = new System.Drawing.Point(97, 326);
+            this.insertGlassesAllBtn.Name = "insertGlassesAllBtn";
+            this.insertGlassesAllBtn.Size = new System.Drawing.Size(137, 23);
+            this.insertGlassesAllBtn.TabIndex = 9;
+            this.insertGlassesAllBtn.Text = "Insert All";
+            this.insertGlassesAllBtn.UseVisualStyleBackColor = true;
+            this.insertGlassesAllBtn.Click += new System.EventHandler(this.insertGlassesAllBtn_Click);
+            // 
             // glassesIdNbox
             // 
             this.glassesIdNbox.Location = new System.Drawing.Point(33, 35);
@@ -1403,6 +1489,7 @@
             this.tabPage12.Controls.Add(this.listViewMakeUp);
             this.tabPage12.Controls.Add(this.removeMakeUpBtn);
             this.tabPage12.Controls.Add(this.addMakeUpBtn);
+            this.tabPage12.Controls.Add(this.insertMakeUpAllBtn);
             this.tabPage12.Controls.Add(this.makeUpIdNbox);
             this.tabPage12.Controls.Add(this.label28);
             this.tabPage12.Location = new System.Drawing.Point(4, 24);
@@ -1450,6 +1537,16 @@
             this.addMakeUpBtn.Text = "Add";
             this.addMakeUpBtn.UseVisualStyleBackColor = true;
             this.addMakeUpBtn.Click += new System.EventHandler(this.addMakeUpBtn_Click);
+            // 
+            // insertMakeUpAllBtn
+            // 
+            this.insertMakeUpAllBtn.Location = new System.Drawing.Point(97, 326);
+            this.insertMakeUpAllBtn.Name = "insertMakeUpAllBtn";
+            this.insertMakeUpAllBtn.Size = new System.Drawing.Size(137, 23);
+            this.insertMakeUpAllBtn.TabIndex = 9;
+            this.insertMakeUpAllBtn.Text = "Insert All";
+            this.insertMakeUpAllBtn.UseVisualStyleBackColor = true;
+            this.insertMakeUpAllBtn.Click += new System.EventHandler(this.insertMakeUpAllBtn_Click);
             // 
             // makeUpIdNbox
             // 
@@ -1707,6 +1804,289 @@
             this.label31.TabIndex = 23;
             this.label31.Text = "ID:";
             // 
+            // storiesTab
+            // 
+            this.storiesTab.Controls.Add(this.storiesLayout);
+            this.storiesTab.Location = new System.Drawing.Point(4, 24);
+            this.storiesTab.Name = "storiesTab";
+            this.storiesTab.Padding = new System.Windows.Forms.Padding(3);
+            this.storiesTab.Size = new System.Drawing.Size(345, 399);
+            this.storiesTab.TabIndex = 7;
+            this.storiesTab.Text = "Stories";
+            this.storiesTab.UseVisualStyleBackColor = true;
+            // 
+            // storiesLayout
+            // 
+            this.storiesLayout.ColumnCount = 1;
+            this.storiesLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.storiesLayout.Controls.Add(this.storyBlock1Group, 0, 0);
+            this.storiesLayout.Controls.Add(this.storyBlock2Group, 0, 1);
+            this.storiesLayout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.storiesLayout.Location = new System.Drawing.Point(3, 3);
+            this.storiesLayout.Name = "storiesLayout";
+            this.storiesLayout.Padding = new System.Windows.Forms.Padding(8);
+            this.storiesLayout.RowCount = 2;
+            this.storiesLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.storiesLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.storiesLayout.Size = new System.Drawing.Size(339, 393);
+            this.storiesLayout.TabIndex = 0;
+            // 
+            // storyBlock1Group
+            // 
+            this.storyBlock1Group.Controls.Add(this.storyBlock1Layout);
+            this.storyBlock1Group.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.storyBlock1Group.Location = new System.Drawing.Point(11, 11);
+            this.storyBlock1Group.Name = "storyBlock1Group";
+            this.storyBlock1Group.Size = new System.Drawing.Size(317, 182);
+            this.storyBlock1Group.TabIndex = 0;
+            this.storyBlock1Group.TabStop = false;
+            this.storyBlock1Group.Text = "Story Block 1";
+            // 
+            // storyBlock1Layout
+            // 
+            this.storyBlock1Layout.ColumnCount = 1;
+            this.storyBlock1Layout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.storyBlock1Layout.Controls.Add(this.storyBlock1InputPanel, 0, 0);
+            this.storyBlock1Layout.Controls.Add(this.listViewStory01, 0, 1);
+            this.storyBlock1Layout.Controls.Add(this.storyBlock1ActionPanel, 0, 2);
+            this.storyBlock1Layout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.storyBlock1Layout.Location = new System.Drawing.Point(3, 19);
+            this.storyBlock1Layout.Name = "storyBlock1Layout";
+            this.storyBlock1Layout.Padding = new System.Windows.Forms.Padding(8, 12, 8, 8);
+            this.storyBlock1Layout.RowCount = 3;
+            this.storyBlock1Layout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.storyBlock1Layout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.storyBlock1Layout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.storyBlock1Layout.Size = new System.Drawing.Size(311, 160);
+            this.storyBlock1Layout.TabIndex = 0;
+            // 
+            // storyBlock1InputPanel
+            // 
+            this.storyBlock1InputPanel.AutoSize = true;
+            this.storyBlock1InputPanel.Controls.Add(this.story01IdNbox);
+            this.storyBlock1InputPanel.Controls.Add(this.addStory01Btn);
+            this.storyBlock1InputPanel.Controls.Add(this.removeStory01Btn);
+            this.storyBlock1InputPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.storyBlock1InputPanel.Location = new System.Drawing.Point(8, 12);
+            this.storyBlock1InputPanel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.storyBlock1InputPanel.Name = "storyBlock1InputPanel";
+            this.storyBlock1InputPanel.Size = new System.Drawing.Size(295, 29);
+            this.storyBlock1InputPanel.TabIndex = 0;
+            this.storyBlock1InputPanel.WrapContents = false;
+            // 
+            // story01IdNbox
+            // 
+            this.story01IdNbox.Location = new System.Drawing.Point(0, 0);
+            this.story01IdNbox.Margin = new System.Windows.Forms.Padding(0, 0, 8, 0);
+            this.story01IdNbox.Name = "story01IdNbox";
+            this.story01IdNbox.Size = new System.Drawing.Size(92, 23);
+            this.story01IdNbox.TabIndex = 0;
+            // 
+            // addStory01Btn
+            // 
+            this.addStory01Btn.Location = new System.Drawing.Point(100, 0);
+            this.addStory01Btn.Margin = new System.Windows.Forms.Padding(0, 0, 8, 0);
+            this.addStory01Btn.Name = "addStory01Btn";
+            this.addStory01Btn.Size = new System.Drawing.Size(66, 28);
+            this.addStory01Btn.TabIndex = 1;
+            this.addStory01Btn.Text = "Add";
+            this.addStory01Btn.UseVisualStyleBackColor = true;
+            this.addStory01Btn.Click += new System.EventHandler(this.addStory01Btn_Click);
+            // 
+            // removeStory01Btn
+            // 
+            this.removeStory01Btn.Location = new System.Drawing.Point(174, 0);
+            this.removeStory01Btn.Margin = new System.Windows.Forms.Padding(0);
+            this.removeStory01Btn.Name = "removeStory01Btn";
+            this.removeStory01Btn.Size = new System.Drawing.Size(86, 28);
+            this.removeStory01Btn.TabIndex = 2;
+            this.removeStory01Btn.Text = "Remove";
+            this.removeStory01Btn.UseVisualStyleBackColor = true;
+            this.removeStory01Btn.Click += new System.EventHandler(this.removeStory01Btn_Click);
+            // 
+            // listViewStory01
+            // 
+            this.listViewStory01.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.story01ColumnHeader});
+            this.listViewStory01.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listViewStory01.FullRowSelect = true;
+            this.listViewStory01.GridLines = true;
+            this.listViewStory01.Location = new System.Drawing.Point(8, 49);
+            this.listViewStory01.Margin = new System.Windows.Forms.Padding(0);
+            this.listViewStory01.Name = "listViewStory01";
+            this.listViewStory01.Size = new System.Drawing.Size(295, 66);
+            this.listViewStory01.TabIndex = 3;
+            this.listViewStory01.UseCompatibleStateImageBehavior = false;
+            this.listViewStory01.View = System.Windows.Forms.View.Details;
+            // 
+            // story01ColumnHeader
+            // 
+            this.story01ColumnHeader.Text = "Story ID";
+            this.story01ColumnHeader.Width = 270;
+            // 
+            // storyBlock1ActionPanel
+            // 
+            this.storyBlock1ActionPanel.AutoSize = true;
+            this.storyBlock1ActionPanel.Controls.Add(this.insertKnownStory01Btn);
+            this.storyBlock1ActionPanel.Controls.Add(this.clearStory01Btn);
+            this.storyBlock1ActionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.storyBlock1ActionPanel.Location = new System.Drawing.Point(8, 123);
+            this.storyBlock1ActionPanel.Margin = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.storyBlock1ActionPanel.Name = "storyBlock1ActionPanel";
+            this.storyBlock1ActionPanel.Size = new System.Drawing.Size(295, 29);
+            this.storyBlock1ActionPanel.TabIndex = 4;
+            this.storyBlock1ActionPanel.WrapContents = false;
+            // 
+            // insertKnownStory01Btn
+            // 
+            this.insertKnownStory01Btn.Location = new System.Drawing.Point(0, 0);
+            this.insertKnownStory01Btn.Margin = new System.Windows.Forms.Padding(0, 0, 8, 0);
+            this.insertKnownStory01Btn.Name = "insertKnownStory01Btn";
+            this.insertKnownStory01Btn.Size = new System.Drawing.Size(132, 28);
+            this.insertKnownStory01Btn.TabIndex = 0;
+            this.insertKnownStory01Btn.Text = "Insert Known";
+            this.insertKnownStory01Btn.UseVisualStyleBackColor = true;
+            this.insertKnownStory01Btn.Click += new System.EventHandler(this.insertKnownStory01Btn_Click);
+            // 
+            // clearStory01Btn
+            // 
+            this.clearStory01Btn.Location = new System.Drawing.Point(140, 0);
+            this.clearStory01Btn.Margin = new System.Windows.Forms.Padding(0);
+            this.clearStory01Btn.Name = "clearStory01Btn";
+            this.clearStory01Btn.Size = new System.Drawing.Size(80, 28);
+            this.clearStory01Btn.TabIndex = 1;
+            this.clearStory01Btn.Text = "Clear";
+            this.clearStory01Btn.UseVisualStyleBackColor = true;
+            this.clearStory01Btn.Click += new System.EventHandler(this.clearStory01Btn_Click);
+            // 
+            // storyBlock2Group
+            // 
+            this.storyBlock2Group.Controls.Add(this.storyBlock2Layout);
+            this.storyBlock2Group.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.storyBlock2Group.Location = new System.Drawing.Point(11, 199);
+            this.storyBlock2Group.Name = "storyBlock2Group";
+            this.storyBlock2Group.Size = new System.Drawing.Size(317, 183);
+            this.storyBlock2Group.TabIndex = 1;
+            this.storyBlock2Group.TabStop = false;
+            this.storyBlock2Group.Text = "Story Block 2";
+            // 
+            // storyBlock2Layout
+            // 
+            this.storyBlock2Layout.ColumnCount = 1;
+            this.storyBlock2Layout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.storyBlock2Layout.Controls.Add(this.storyBlock2InputPanel, 0, 0);
+            this.storyBlock2Layout.Controls.Add(this.listViewStory03, 0, 1);
+            this.storyBlock2Layout.Controls.Add(this.storyBlock2ActionPanel, 0, 2);
+            this.storyBlock2Layout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.storyBlock2Layout.Location = new System.Drawing.Point(3, 19);
+            this.storyBlock2Layout.Name = "storyBlock2Layout";
+            this.storyBlock2Layout.Padding = new System.Windows.Forms.Padding(8, 12, 8, 8);
+            this.storyBlock2Layout.RowCount = 3;
+            this.storyBlock2Layout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.storyBlock2Layout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.storyBlock2Layout.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.storyBlock2Layout.Size = new System.Drawing.Size(311, 161);
+            this.storyBlock2Layout.TabIndex = 0;
+            // 
+            // storyBlock2InputPanel
+            // 
+            this.storyBlock2InputPanel.AutoSize = true;
+            this.storyBlock2InputPanel.Controls.Add(this.story03IdNbox);
+            this.storyBlock2InputPanel.Controls.Add(this.addStory03Btn);
+            this.storyBlock2InputPanel.Controls.Add(this.removeStory03Btn);
+            this.storyBlock2InputPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.storyBlock2InputPanel.Location = new System.Drawing.Point(8, 12);
+            this.storyBlock2InputPanel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.storyBlock2InputPanel.Name = "storyBlock2InputPanel";
+            this.storyBlock2InputPanel.Size = new System.Drawing.Size(295, 29);
+            this.storyBlock2InputPanel.TabIndex = 0;
+            this.storyBlock2InputPanel.WrapContents = false;
+            // 
+            // story03IdNbox
+            // 
+            this.story03IdNbox.Location = new System.Drawing.Point(0, 0);
+            this.story03IdNbox.Margin = new System.Windows.Forms.Padding(0, 0, 8, 0);
+            this.story03IdNbox.Name = "story03IdNbox";
+            this.story03IdNbox.Size = new System.Drawing.Size(92, 23);
+            this.story03IdNbox.TabIndex = 0;
+            // 
+            // addStory03Btn
+            // 
+            this.addStory03Btn.Location = new System.Drawing.Point(100, 0);
+            this.addStory03Btn.Margin = new System.Windows.Forms.Padding(0, 0, 8, 0);
+            this.addStory03Btn.Name = "addStory03Btn";
+            this.addStory03Btn.Size = new System.Drawing.Size(66, 28);
+            this.addStory03Btn.TabIndex = 1;
+            this.addStory03Btn.Text = "Add";
+            this.addStory03Btn.UseVisualStyleBackColor = true;
+            this.addStory03Btn.Click += new System.EventHandler(this.addStory03Btn_Click);
+            // 
+            // removeStory03Btn
+            // 
+            this.removeStory03Btn.Location = new System.Drawing.Point(174, 0);
+            this.removeStory03Btn.Margin = new System.Windows.Forms.Padding(0);
+            this.removeStory03Btn.Name = "removeStory03Btn";
+            this.removeStory03Btn.Size = new System.Drawing.Size(86, 28);
+            this.removeStory03Btn.TabIndex = 2;
+            this.removeStory03Btn.Text = "Remove";
+            this.removeStory03Btn.UseVisualStyleBackColor = true;
+            this.removeStory03Btn.Click += new System.EventHandler(this.removeStory03Btn_Click);
+            // 
+            // listViewStory03
+            // 
+            this.listViewStory03.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.story03ColumnHeader});
+            this.listViewStory03.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listViewStory03.FullRowSelect = true;
+            this.listViewStory03.GridLines = true;
+            this.listViewStory03.Location = new System.Drawing.Point(8, 49);
+            this.listViewStory03.Margin = new System.Windows.Forms.Padding(0);
+            this.listViewStory03.Name = "listViewStory03";
+            this.listViewStory03.Size = new System.Drawing.Size(295, 67);
+            this.listViewStory03.TabIndex = 3;
+            this.listViewStory03.UseCompatibleStateImageBehavior = false;
+            this.listViewStory03.View = System.Windows.Forms.View.Details;
+            // 
+            // story03ColumnHeader
+            // 
+            this.story03ColumnHeader.Text = "Story ID";
+            this.story03ColumnHeader.Width = 270;
+            // 
+            // storyBlock2ActionPanel
+            // 
+            this.storyBlock2ActionPanel.AutoSize = true;
+            this.storyBlock2ActionPanel.Controls.Add(this.insertKnownStory03Btn);
+            this.storyBlock2ActionPanel.Controls.Add(this.clearStory03Btn);
+            this.storyBlock2ActionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.storyBlock2ActionPanel.Location = new System.Drawing.Point(8, 124);
+            this.storyBlock2ActionPanel.Margin = new System.Windows.Forms.Padding(0, 8, 0, 0);
+            this.storyBlock2ActionPanel.Name = "storyBlock2ActionPanel";
+            this.storyBlock2ActionPanel.Size = new System.Drawing.Size(295, 29);
+            this.storyBlock2ActionPanel.TabIndex = 4;
+            this.storyBlock2ActionPanel.WrapContents = false;
+            // 
+            // insertKnownStory03Btn
+            // 
+            this.insertKnownStory03Btn.Location = new System.Drawing.Point(0, 0);
+            this.insertKnownStory03Btn.Margin = new System.Windows.Forms.Padding(0, 0, 8, 0);
+            this.insertKnownStory03Btn.Name = "insertKnownStory03Btn";
+            this.insertKnownStory03Btn.Size = new System.Drawing.Size(132, 28);
+            this.insertKnownStory03Btn.TabIndex = 0;
+            this.insertKnownStory03Btn.Text = "Insert Known";
+            this.insertKnownStory03Btn.UseVisualStyleBackColor = true;
+            this.insertKnownStory03Btn.Click += new System.EventHandler(this.insertKnownStory03Btn_Click);
+            // 
+            // clearStory03Btn
+            // 
+            this.clearStory03Btn.Location = new System.Drawing.Point(140, 0);
+            this.clearStory03Btn.Margin = new System.Windows.Forms.Padding(0);
+            this.clearStory03Btn.Name = "clearStory03Btn";
+            this.clearStory03Btn.Size = new System.Drawing.Size(80, 28);
+            this.clearStory03Btn.TabIndex = 1;
+            this.clearStory03Btn.Text = "Clear";
+            this.clearStory03Btn.UseVisualStyleBackColor = true;
+            this.clearStory03Btn.Click += new System.EventHandler(this.clearStory03Btn_Click);
+            // 
             // donateToolStripMenuItem
             // 
             this.donateToolStripMenuItem.Name = "donateToolStripMenuItem";
@@ -1789,6 +2169,20 @@
             this.tomoticketsTab.ResumeLayout(false);
             this.tomoticketsTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tomoticketsIdNbox)).EndInit();
+            this.storiesTab.ResumeLayout(false);
+            this.storiesLayout.ResumeLayout(false);
+            this.storyBlock1Group.ResumeLayout(false);
+            this.storyBlock1Layout.ResumeLayout(false);
+            this.storyBlock1Layout.PerformLayout();
+            this.storyBlock1InputPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.story01IdNbox)).EndInit();
+            this.storyBlock1ActionPanel.ResumeLayout(false);
+            this.storyBlock2Group.ResumeLayout(false);
+            this.storyBlock2Layout.ResumeLayout(false);
+            this.storyBlock2Layout.PerformLayout();
+            this.storyBlock2InputPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.story03IdNbox)).EndInit();
+            this.storyBlock2ActionPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1888,19 +2282,23 @@
         private NumericUpDown hairColorIdNbox;
         private Label label25;
         private Button insertHairColorAllBtn;
+        private Button insertSkinColorAllBtn;
+        private Button insertHairStyleAllBtn;
         private Button removeEyeColorBtn;
         private Button addEyeColorBtn;
+        private Button insertEyeColorAllBtn;
         private NumericUpDown eyeColorIdNbox;
         private Label label26;
         private Button removeGlassesBtn;
         private Button addGlassesBtn;
+        private Button insertGlassesAllBtn;
         private NumericUpDown glassesIdNbox;
         private Label label27;
         private Button removeMakeUpBtn;
         private Button addMakeUpBtn;
+        private Button insertMakeUpAllBtn;
         private NumericUpDown makeUpIdNbox;
         private Label label28;
-        private ListView listView7;
         private ColumnHeader columnHeader7;
         private Button removeSkinColorBtn;
         private Button addSkinColorBtn;
@@ -1939,5 +2337,29 @@
         private ToolStripMenuItem helpToolStripMenuItem;
         private ToolStripMenuItem infoSheetToolStripMenuItem;
         private ToolStripMenuItem donateToolStripMenuItem;
+        private TabPage storiesTab;
+        private TableLayoutPanel storiesLayout;
+        private GroupBox storyBlock1Group;
+        private TableLayoutPanel storyBlock1Layout;
+        private FlowLayoutPanel storyBlock1InputPanel;
+        private NumericUpDown story01IdNbox;
+        private Button addStory01Btn;
+        private Button removeStory01Btn;
+        private ListView listViewStory01;
+        private ColumnHeader story01ColumnHeader;
+        private FlowLayoutPanel storyBlock1ActionPanel;
+        private Button insertKnownStory01Btn;
+        private Button clearStory01Btn;
+        private GroupBox storyBlock2Group;
+        private TableLayoutPanel storyBlock2Layout;
+        private FlowLayoutPanel storyBlock2InputPanel;
+        private NumericUpDown story03IdNbox;
+        private Button addStory03Btn;
+        private Button removeStory03Btn;
+        private ListView listViewStory03;
+        private ColumnHeader story03ColumnHeader;
+        private FlowLayoutPanel storyBlock2ActionPanel;
+        private Button insertKnownStory03Btn;
+        private Button clearStory03Btn;
     }
 }

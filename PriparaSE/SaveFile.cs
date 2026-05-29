@@ -6,25 +6,25 @@ namespace PriparaSE
     {
         public int Unknown_value_1 { get; set; }
         public int Unknown_value_2 { get; set; }
-        public Misc Misc { get; set; }
-        public List<UnlockedSongData> UnlockedSongDatas { get; set; }
-        public List<UnlockedStory> UnlockedStories { get; set; }
+        public Misc Misc { get; set; } = new Misc();
+        public List<UnlockedSongData> UnlockedSongDatas { get; set; } = new List<UnlockedSongData>();
+        public List<UnlockedStory> UnlockedStories { get; set; } = new List<UnlockedStory>();
         public int Unknown_value_3 { get; set; }
-        public List<MissionCondition> MissionConditions { get; set; }
-        public List<StorySection> StorySections { get; set; }
+        public List<MissionCondition> MissionConditions { get; set; } = new List<MissionCondition>();
+        public List<StorySection> StorySections { get; set; } = new List<StorySection>();
         public int Unknown_value_4 { get; set; }
-        public List<Avatar> Avatars { get; set; }
-        public List<ClothCollection> ClothCollections { get; set; }
-        public List<UnlockedSong> UnlockedSongs { get; set; }
-        public List<UnlockedCharacter> UnlockedCharacters { get; set; }
-        public List<Tomoticket> Tomotickets { get; set; }
-        public List<EyeType> EyeTypes { get; set; }
-        public List<SkinColor> SkinColors { get; set; }
-        public List<HairType> HairTypes { get; set; }
-        public List<HairColor> HairColors { get; set; }
-        public List<EyeColor> EyeColors { get; set; }
-        public List<Glasses> Glasses { get; set; }
-        public List<MakeUp> MakeUps { get; set; }
+        public List<Avatar> Avatars { get; set; } = new List<Avatar>();
+        public List<ClothCollection> ClothCollections { get; set; } = new List<ClothCollection>();
+        public List<UnlockedSong> UnlockedSongs { get; set; } = new List<UnlockedSong>();
+        public List<UnlockedCharacter> UnlockedCharacters { get; set; } = new List<UnlockedCharacter>();
+        public List<Tomoticket> Tomotickets { get; set; } = new List<Tomoticket>();
+        public List<EyeType> EyeTypes { get; set; } = new List<EyeType>();
+        public List<SkinColor> SkinColors { get; set; } = new List<SkinColor>();
+        public List<HairType> HairTypes { get; set; } = new List<HairType>();
+        public List<HairColor> HairColors { get; set; } = new List<HairColor>();
+        public List<EyeColor> EyeColors { get; set; } = new List<EyeColor>();
+        public List<Glasses> Glasses { get; set; } = new List<Glasses>();
+        public List<MakeUp> MakeUps { get; set; } = new List<MakeUp>();
         public int Unknown_value_5 { get; set; }
         public int MusicVol { get; set; }
         public int SFXVol { get; set; }
@@ -32,6 +32,7 @@ namespace PriparaSE
         public int VoiceSetting { get; set; }
         public int TextSpeed { get; set; }
         public int JoystickScheme { get; set; }
+        public byte[] RemainingBytes { get; set; } = Array.Empty<byte>();
 
         public void mapSaveFile(Stream str)
         {
@@ -40,7 +41,6 @@ namespace PriparaSE
             int arrayLenght = 0;
             int[] valueArray;
             int incrementValue = 0;
-
             // UNKNOWN VALUES 1 2 //--------------------------------------------------------------
 
             Unknown_value_1 = getByteValue.ExtractByteToInt(str, offsetPositions, 4); offsetPositions = offsetPositions + 4;
@@ -347,6 +347,10 @@ namespace PriparaSE
             VoiceSetting = getByteValue.ExtractByteToInt(str, offsetPositions, 4); offsetPositions = offsetPositions + 4;
             TextSpeed = getByteValue.ExtractByteToInt(str, offsetPositions, 4); offsetPositions = offsetPositions + 4;
             JoystickScheme = getByteValue.ExtractByteToInt(str, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+
+            RemainingBytes = new byte[Math.Max(0, str.Length - offsetPositions)];
+            str.Seek(offsetPositions, SeekOrigin.Begin);
+            str.Read(RemainingBytes, 0, RemainingBytes.Length);
         }
 
         public MemoryStream injectSaveFile()
@@ -354,9 +358,6 @@ namespace PriparaSE
             MemoryStream memoryStream = new MemoryStream();
             SetByteValue setByteValue = new SetByteValue();
             int offsetPositions = 0;
-            int arrayLenght = 0;
-            int[] valueArray;
-            int incrementValue = 0;
 
             // UNKNOWN VALUES 1 2 //--------------------------------------------------------------
 
@@ -410,8 +411,8 @@ namespace PriparaSE
 
             for (int i = 0; i < StorySections.Count; i++)
             {
-                setByteValue.InjectByteFromInt(memoryStream, StorySections[0].id, offsetPositions, 4); offsetPositions = offsetPositions + 4;
-                setByteValue.InjectByteFromInt(memoryStream, StorySections[0].mission, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+                setByteValue.InjectByteFromInt(memoryStream, StorySections[i].id, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+                setByteValue.InjectByteFromInt(memoryStream, StorySections[i].mission, offsetPositions, 4); offsetPositions = offsetPositions + 4;
             }
 
             // MONEY //----------------------------------------------------------------------------
@@ -558,6 +559,9 @@ namespace PriparaSE
             setByteValue.InjectByteFromInt(memoryStream, TextSpeed, offsetPositions, 4); offsetPositions = offsetPositions + 4;
             //JoystickScheme = getByteValue.ExtractByteToInt(str, offsetPositions, 4); offsetPositions = offsetPositions + 4;
             setByteValue.InjectByteFromInt(memoryStream, JoystickScheme, offsetPositions, 4); offsetPositions = offsetPositions + 4;
+
+            memoryStream.Seek(offsetPositions, SeekOrigin.Begin);
+            memoryStream.Write(RemainingBytes, 0, RemainingBytes.Length);
 
             memoryStream.SetLength(16355);
 

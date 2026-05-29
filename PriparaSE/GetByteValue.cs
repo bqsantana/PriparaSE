@@ -7,8 +7,7 @@ namespace PriparaSE
         byte[] byte1 = new byte[1];
         byte[] byte2 = new byte[2];
         byte[] byte4 = new byte[4];
-        int[] intArray;
-        int[,] intArrayMatrix;
+        int[] intArray = Array.Empty<int>();
         public int ExtractByteToInt(Stream str, int initialOffset, int count)
         {
             switch (count)
