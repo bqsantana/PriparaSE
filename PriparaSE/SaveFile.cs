@@ -563,6 +563,8 @@ namespace PriparaSE
             memoryStream.Seek(offsetPositions, SeekOrigin.Begin);
             memoryStream.Write(RemainingBytes, 0, RemainingBytes.Length);
 
+            memoryStream.SetLength(16355);
+
             return memoryStream;
         }
     }
