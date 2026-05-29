@@ -123,6 +123,8 @@
             this.removeHairColor = new System.Windows.Forms.Button();
             this.addHairColorBtn = new System.Windows.Forms.Button();
             this.insertHairColorAllBtn = new System.Windows.Forms.Button();
+            this.insertSkinColorAllBtn = new System.Windows.Forms.Button();
+            this.insertHairStyleAllBtn = new System.Windows.Forms.Button();
             this.hairColorIdNbox = new System.Windows.Forms.NumericUpDown();
             this.label25 = new System.Windows.Forms.Label();
             this.tabPage10 = new System.Windows.Forms.TabPage();
@@ -130,6 +132,7 @@
             this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
             this.removeEyeColorBtn = new System.Windows.Forms.Button();
             this.addEyeColorBtn = new System.Windows.Forms.Button();
+            this.insertEyeColorAllBtn = new System.Windows.Forms.Button();
             this.eyeColorIdNbox = new System.Windows.Forms.NumericUpDown();
             this.label26 = new System.Windows.Forms.Label();
             this.tabPage11 = new System.Windows.Forms.TabPage();
@@ -137,6 +140,7 @@
             this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
             this.removeGlassesBtn = new System.Windows.Forms.Button();
             this.addGlassesBtn = new System.Windows.Forms.Button();
+            this.insertGlassesAllBtn = new System.Windows.Forms.Button();
             this.glassesIdNbox = new System.Windows.Forms.NumericUpDown();
             this.label27 = new System.Windows.Forms.Label();
             this.tabPage12 = new System.Windows.Forms.TabPage();
@@ -144,6 +148,7 @@
             this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
             this.removeMakeUpBtn = new System.Windows.Forms.Button();
             this.addMakeUpBtn = new System.Windows.Forms.Button();
+            this.insertMakeUpAllBtn = new System.Windows.Forms.Button();
             this.makeUpIdNbox = new System.Windows.Forms.NumericUpDown();
             this.label28 = new System.Windows.Forms.Label();
             this.songsTab = new System.Windows.Forms.TabPage();
@@ -1072,6 +1077,7 @@
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.removeSkinColorBtn);
+            this.tabPage7.Controls.Add(this.insertSkinColorAllBtn);
             this.tabPage7.Controls.Add(this.addSkinColorBtn);
             this.tabPage7.Controls.Add(this.skinColorIdNbox);
             this.tabPage7.Controls.Add(this.label23);
@@ -1093,6 +1099,16 @@
             this.removeSkinColorBtn.Text = "Remove Selected";
             this.removeSkinColorBtn.UseVisualStyleBackColor = true;
             this.removeSkinColorBtn.Click += new System.EventHandler(this.removeSkinColorBtn_Click);
+            // 
+            // insertSkinColorAllBtn
+            // 
+            this.insertSkinColorAllBtn.Location = new System.Drawing.Point(97, 326);
+            this.insertSkinColorAllBtn.Name = "insertSkinColorAllBtn";
+            this.insertSkinColorAllBtn.Size = new System.Drawing.Size(137, 23);
+            this.insertSkinColorAllBtn.TabIndex = 9;
+            this.insertSkinColorAllBtn.Text = "Insert All";
+            this.insertSkinColorAllBtn.UseVisualStyleBackColor = true;
+            this.insertSkinColorAllBtn.Click += new System.EventHandler(this.insertSkinColorAllBtn_Click);
             // 
             // addSkinColorBtn
             // 
@@ -1149,6 +1165,7 @@
             this.tabPage8.Controls.Add(this.button9);
             this.tabPage8.Controls.Add(this.hairStyleIdNbox);
             this.tabPage8.Controls.Add(this.label24);
+            this.tabPage8.Controls.Add(this.insertHairStyleAllBtn);
             this.tabPage8.Controls.Add(this.listViewHairStyle);
             this.tabPage8.Location = new System.Drawing.Point(4, 24);
             this.tabPage8.Name = "tabPage8";
@@ -1281,6 +1298,16 @@
             this.insertHairColorAllBtn.UseVisualStyleBackColor = true;
             this.insertHairColorAllBtn.Click += new System.EventHandler(this.insertHairColorAllBtn_Click);
             // 
+            // insertHairStyleAllBtn
+            // 
+            this.insertHairStyleAllBtn.Location = new System.Drawing.Point(97, 326);
+            this.insertHairStyleAllBtn.Name = "insertHairStyleAllBtn";
+            this.insertHairStyleAllBtn.Size = new System.Drawing.Size(137, 23);
+            this.insertHairStyleAllBtn.TabIndex = 11;
+            this.insertHairStyleAllBtn.Text = "Insert All";
+            this.insertHairStyleAllBtn.UseVisualStyleBackColor = true;
+            this.insertHairStyleAllBtn.Click += new System.EventHandler(this.insertHairStyleAllBtn_Click);
+            // 
             // hairColorIdNbox
             // 
             this.hairColorIdNbox.Location = new System.Drawing.Point(33, 35);
@@ -1302,6 +1329,7 @@
             this.tabPage10.Controls.Add(this.listViewEyeColor);
             this.tabPage10.Controls.Add(this.removeEyeColorBtn);
             this.tabPage10.Controls.Add(this.addEyeColorBtn);
+            this.tabPage10.Controls.Add(this.insertEyeColorAllBtn);
             this.tabPage10.Controls.Add(this.eyeColorIdNbox);
             this.tabPage10.Controls.Add(this.label26);
             this.tabPage10.Location = new System.Drawing.Point(4, 24);
@@ -1350,6 +1378,16 @@
             this.addEyeColorBtn.UseVisualStyleBackColor = true;
             this.addEyeColorBtn.Click += new System.EventHandler(this.addEyeColorBtn_Click);
             // 
+            // insertEyeColorAllBtn
+            // 
+            this.insertEyeColorAllBtn.Location = new System.Drawing.Point(97, 326);
+            this.insertEyeColorAllBtn.Name = "insertEyeColorAllBtn";
+            this.insertEyeColorAllBtn.Size = new System.Drawing.Size(137, 23);
+            this.insertEyeColorAllBtn.TabIndex = 11;
+            this.insertEyeColorAllBtn.Text = "Insert All";
+            this.insertEyeColorAllBtn.UseVisualStyleBackColor = true;
+            this.insertEyeColorAllBtn.Click += new System.EventHandler(this.insertEyeColorAllBtn_Click);
+            // 
             // eyeColorIdNbox
             // 
             this.eyeColorIdNbox.Location = new System.Drawing.Point(33, 35);
@@ -1371,6 +1409,7 @@
             this.tabPage11.Controls.Add(this.listViewGlasses);
             this.tabPage11.Controls.Add(this.removeGlassesBtn);
             this.tabPage11.Controls.Add(this.addGlassesBtn);
+            this.tabPage11.Controls.Add(this.insertGlassesAllBtn);
             this.tabPage11.Controls.Add(this.glassesIdNbox);
             this.tabPage11.Controls.Add(this.label27);
             this.tabPage11.Location = new System.Drawing.Point(4, 24);
@@ -1419,6 +1458,16 @@
             this.addGlassesBtn.UseVisualStyleBackColor = true;
             this.addGlassesBtn.Click += new System.EventHandler(this.addGlassesBtn_Click);
             // 
+            // insertGlassesAllBtn
+            // 
+            this.insertGlassesAllBtn.Location = new System.Drawing.Point(97, 326);
+            this.insertGlassesAllBtn.Name = "insertGlassesAllBtn";
+            this.insertGlassesAllBtn.Size = new System.Drawing.Size(137, 23);
+            this.insertGlassesAllBtn.TabIndex = 9;
+            this.insertGlassesAllBtn.Text = "Insert All";
+            this.insertGlassesAllBtn.UseVisualStyleBackColor = true;
+            this.insertGlassesAllBtn.Click += new System.EventHandler(this.insertGlassesAllBtn_Click);
+            // 
             // glassesIdNbox
             // 
             this.glassesIdNbox.Location = new System.Drawing.Point(33, 35);
@@ -1440,6 +1489,7 @@
             this.tabPage12.Controls.Add(this.listViewMakeUp);
             this.tabPage12.Controls.Add(this.removeMakeUpBtn);
             this.tabPage12.Controls.Add(this.addMakeUpBtn);
+            this.tabPage12.Controls.Add(this.insertMakeUpAllBtn);
             this.tabPage12.Controls.Add(this.makeUpIdNbox);
             this.tabPage12.Controls.Add(this.label28);
             this.tabPage12.Location = new System.Drawing.Point(4, 24);
@@ -1487,6 +1537,16 @@
             this.addMakeUpBtn.Text = "Add";
             this.addMakeUpBtn.UseVisualStyleBackColor = true;
             this.addMakeUpBtn.Click += new System.EventHandler(this.addMakeUpBtn_Click);
+            // 
+            // insertMakeUpAllBtn
+            // 
+            this.insertMakeUpAllBtn.Location = new System.Drawing.Point(97, 326);
+            this.insertMakeUpAllBtn.Name = "insertMakeUpAllBtn";
+            this.insertMakeUpAllBtn.Size = new System.Drawing.Size(137, 23);
+            this.insertMakeUpAllBtn.TabIndex = 9;
+            this.insertMakeUpAllBtn.Text = "Insert All";
+            this.insertMakeUpAllBtn.UseVisualStyleBackColor = true;
+            this.insertMakeUpAllBtn.Click += new System.EventHandler(this.insertMakeUpAllBtn_Click);
             // 
             // makeUpIdNbox
             // 
@@ -2222,16 +2282,21 @@
         private NumericUpDown hairColorIdNbox;
         private Label label25;
         private Button insertHairColorAllBtn;
+        private Button insertSkinColorAllBtn;
+        private Button insertHairStyleAllBtn;
         private Button removeEyeColorBtn;
         private Button addEyeColorBtn;
+        private Button insertEyeColorAllBtn;
         private NumericUpDown eyeColorIdNbox;
         private Label label26;
         private Button removeGlassesBtn;
         private Button addGlassesBtn;
+        private Button insertGlassesAllBtn;
         private NumericUpDown glassesIdNbox;
         private Label label27;
         private Button removeMakeUpBtn;
         private Button addMakeUpBtn;
+        private Button insertMakeUpAllBtn;
         private NumericUpDown makeUpIdNbox;
         private Label label28;
         private ColumnHeader columnHeader7;

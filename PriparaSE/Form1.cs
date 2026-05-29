@@ -520,9 +520,23 @@ namespace PriparaSE
             }
         }
 
+        private void insertHairStyleAllBtn_Click(object sender, EventArgs e)
+        {
+            int[] ids = new int[] { 1,2,4,6,7,18,20,27,28,30,31,32,51,67,68,71,74,75,77,78,82,84,85,86,90,92,93,104,106,108,109,110,111 };
+            listViewHairStyle.Items.Clear();
+            foreach (int id in ids) listViewHairStyle.Items.Add(new ListViewItem() { Text = id.ToString() });
+        }
+
         private void addSkinColorBtn_Click(object sender, EventArgs e)
         {
             listViewSkinColor.Items.Add(new ListViewItem() { Text = skinColorIdNbox.Value.ToString() });
+        }
+
+        private void insertSkinColorAllBtn_Click(object sender, EventArgs e)
+        {
+            int[] ids = new int[] { 0,1,2,3 };
+            listViewSkinColor.Items.Clear();
+            foreach (int id in ids) listViewSkinColor.Items.Add(new ListViewItem() { Text = id.ToString() });
         }
 
         private void removeSkinColorBtn_Click(object sender, EventArgs e)
@@ -568,9 +582,23 @@ namespace PriparaSE
             }
         }
 
+        private void insertEyeColorAllBtn_Click(object sender, EventArgs e)
+        {
+            int[] ids = new int[] { 1,2,3,4,6,8,9,10,11,12,13,14,15,19,20,21,23,24,29,31,32,34,35,40,41,42,44,45,47,51,52,53,54,58,61,65 };
+            listViewEyeColor.Items.Clear();
+            foreach (int id in ids) listViewEyeColor.Items.Add(new ListViewItem() { Text = id.ToString() });
+        }
+
         private void addGlassesBtn_Click(object sender, EventArgs e)
         {
             listViewGlasses.Items.Add(new ListViewItem() { Text = glassesIdNbox.Value.ToString() });
+        }
+
+        private void insertGlassesAllBtn_Click(object sender, EventArgs e)
+        {
+            int[] ids = new int[] { 0,11,12,13,14,15,16,17,18,19,20,22,23,24,25,26,27 };
+            listViewGlasses.Items.Clear();
+            foreach (int id in ids) listViewGlasses.Items.Add(new ListViewItem() { Text = id.ToString() });
         }
 
         private void removeGlassesBtn_Click(object sender, EventArgs e)
@@ -584,6 +612,13 @@ namespace PriparaSE
         private void addMakeUpBtn_Click(object sender, EventArgs e)
         {
             listViewMakeUp.Items.Add(new ListViewItem() { Text = makeUpIdNbox.Value.ToString() });
+        }
+
+        private void insertMakeUpAllBtn_Click(object sender, EventArgs e)
+        {
+            int[] ids = new int[] { 0,1,2,3,4,7,8,9,10,11,12 };
+            listViewMakeUp.Items.Clear();
+            foreach (int id in ids) listViewMakeUp.Items.Add(new ListViewItem() { Text = id.ToString() });
         }
 
         private void removeMakeUpBtn_Click(object sender, EventArgs e)
