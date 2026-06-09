@@ -56,7 +56,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.iineNbox = new System.Windows.Forms.NumericUpDown();
+            this.idolRankNbox = new System.Windows.Forms.NumericUpDown();
             this.moneyNbox = new System.Windows.Forms.NumericUpDown();
+            this.label32 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -199,6 +201,16 @@
             this.storyBlock2ActionPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.insertKnownStory03Btn = new System.Windows.Forms.Button();
             this.clearStory03Btn = new System.Windows.Forms.Button();
+            this.songDataTab = new System.Windows.Forms.TabPage();
+            this.listViewSongData = new System.Windows.Forms.ListView();
+            this.songDataIdColumnHeader = new System.Windows.Forms.ColumnHeader();
+            this.songDataTimesColumnHeader = new System.Windows.Forms.ColumnHeader();
+            this.removeSongDataBtn = new System.Windows.Forms.Button();
+            this.addSongDataBtn = new System.Windows.Forms.Button();
+            this.songDataTimesNbox = new System.Windows.Forms.NumericUpDown();
+            this.songDataIdNbox = new System.Windows.Forms.NumericUpDown();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
             this.donateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.mainTabs.SuspendLayout();
@@ -209,6 +221,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.musicVolNbox)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iineNbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.idolRankNbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.moneyNbox)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -259,6 +272,9 @@
             this.storyBlock2InputPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.story03IdNbox)).BeginInit();
             this.storyBlock2ActionPanel.SuspendLayout();
+            this.songDataTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.songDataTimesNbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.songDataIdNbox)).BeginInit();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -336,6 +352,7 @@
             this.mainTabs.Controls.Add(this.tabPage2);
             this.mainTabs.Controls.Add(this.tabPage3);
             this.mainTabs.Controls.Add(this.bodyPartsTab);
+            this.mainTabs.Controls.Add(this.songDataTab);
             this.mainTabs.Controls.Add(this.songsTab);
             this.mainTabs.Controls.Add(this.charactersTab);
             this.mainTabs.Controls.Add(this.tomoticketsTab);
@@ -373,7 +390,7 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(6, 71);
+            this.groupBox2.Location = new System.Drawing.Point(6, 100);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(333, 225);
             this.groupBox2.TabIndex = 3;
@@ -513,19 +530,21 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.iineNbox);
+            this.groupBox1.Controls.Add(this.idolRankNbox);
             this.groupBox1.Controls.Add(this.moneyNbox);
+            this.groupBox1.Controls.Add(this.label32);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(6, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(333, 59);
+            this.groupBox1.Size = new System.Drawing.Size(333, 88);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Capital";
             // 
             // iineNbox
             // 
-            this.iineNbox.Location = new System.Drawing.Point(213, 22);
+            this.iineNbox.Location = new System.Drawing.Point(67, 52);
             this.iineNbox.Maximum = new decimal(new int[] {
             2147483647,
             0,
@@ -535,6 +554,19 @@
             this.iineNbox.Size = new System.Drawing.Size(92, 23);
             this.iineNbox.TabIndex = 2;
             this.iineNbox.ValueChanged += new System.EventHandler(this.iineNbox_ValueChanged);
+            // 
+            // idolRankNbox
+            // 
+            this.idolRankNbox.Location = new System.Drawing.Point(213, 22);
+            this.idolRankNbox.Maximum = new decimal(new int[] {
+            2147483647,
+            0,
+            0,
+            0});
+            this.idolRankNbox.Name = "idolRankNbox";
+            this.idolRankNbox.Size = new System.Drawing.Size(92, 23);
+            this.idolRankNbox.TabIndex = 3;
+            this.idolRankNbox.ValueChanged += new System.EventHandler(this.idolRankNbox_ValueChanged);
             // 
             // moneyNbox
             // 
@@ -552,11 +584,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(178, 25);
+            this.label2.Location = new System.Drawing.Point(14, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 15);
             this.label2.TabIndex = 1;
             this.label2.Text = "iine:";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(178, 25);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(36, 15);
+            this.label32.TabIndex = 1;
+            this.label32.Text = "Rank:";
             // 
             // label1
             // 
@@ -1840,7 +1881,7 @@
             this.storyBlock1Group.Size = new System.Drawing.Size(317, 182);
             this.storyBlock1Group.TabIndex = 0;
             this.storyBlock1Group.TabStop = false;
-            this.storyBlock1Group.Text = "Story Block 1";
+            this.storyBlock1Group.Text = "Unlocked Stories";
             // 
             // storyBlock1Layout
             // 
@@ -1968,7 +2009,7 @@
             this.storyBlock2Group.Size = new System.Drawing.Size(317, 183);
             this.storyBlock2Group.TabIndex = 1;
             this.storyBlock2Group.TabStop = false;
-            this.storyBlock2Group.Text = "Story Block 2";
+            this.storyBlock2Group.Text = "Mission Conditions";
             // 
             // storyBlock2Layout
             // 
@@ -2087,6 +2128,99 @@
             this.clearStory03Btn.UseVisualStyleBackColor = true;
             this.clearStory03Btn.Click += new System.EventHandler(this.clearStory03Btn_Click);
             // 
+            // songDataTab
+            // 
+            this.songDataTab.Controls.Add(this.listViewSongData);
+            this.songDataTab.Controls.Add(this.removeSongDataBtn);
+            this.songDataTab.Controls.Add(this.addSongDataBtn);
+            this.songDataTab.Controls.Add(this.songDataTimesNbox);
+            this.songDataTab.Controls.Add(this.songDataIdNbox);
+            this.songDataTab.Controls.Add(this.label34);
+            this.songDataTab.Controls.Add(this.label33);
+            this.songDataTab.Location = new System.Drawing.Point(4, 24);
+            this.songDataTab.Name = "songDataTab";
+            this.songDataTab.Padding = new System.Windows.Forms.Padding(3);
+            this.songDataTab.Size = new System.Drawing.Size(345, 399);
+            this.songDataTab.TabIndex = 8;
+            this.songDataTab.Text = "Song Data";
+            this.songDataTab.UseVisualStyleBackColor = true;
+            // 
+            // listViewSongData
+            // 
+            this.listViewSongData.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.songDataIdColumnHeader,
+            this.songDataTimesColumnHeader});
+            this.listViewSongData.FullRowSelect = true;
+            this.listViewSongData.GridLines = true;
+            this.listViewSongData.Location = new System.Drawing.Point(16, 103);
+            this.listViewSongData.Name = "listViewSongData";
+            this.listViewSongData.Size = new System.Drawing.Size(313, 241);
+            this.listViewSongData.TabIndex = 6;
+            this.listViewSongData.UseCompatibleStateImageBehavior = false;
+            this.listViewSongData.View = System.Windows.Forms.View.Details;
+            // 
+            // songDataIdColumnHeader
+            // 
+            this.songDataIdColumnHeader.Text = "Song ID";
+            this.songDataIdColumnHeader.Width = 120;
+            // 
+            // songDataTimesColumnHeader
+            // 
+            this.songDataTimesColumnHeader.Text = "Times";
+            this.songDataTimesColumnHeader.Width = 120;
+            // 
+            // removeSongDataBtn
+            // 
+            this.removeSongDataBtn.Location = new System.Drawing.Point(199, 56);
+            this.removeSongDataBtn.Name = "removeSongDataBtn";
+            this.removeSongDataBtn.Size = new System.Drawing.Size(119, 23);
+            this.removeSongDataBtn.TabIndex = 5;
+            this.removeSongDataBtn.Text = "Remove Selected";
+            this.removeSongDataBtn.UseVisualStyleBackColor = true;
+            this.removeSongDataBtn.Click += new System.EventHandler(this.removeSongDataBtn_Click);
+            // 
+            // addSongDataBtn
+            // 
+            this.addSongDataBtn.Location = new System.Drawing.Point(118, 56);
+            this.addSongDataBtn.Name = "addSongDataBtn";
+            this.addSongDataBtn.Size = new System.Drawing.Size(62, 23);
+            this.addSongDataBtn.TabIndex = 4;
+            this.addSongDataBtn.Text = "Add";
+            this.addSongDataBtn.UseVisualStyleBackColor = true;
+            this.addSongDataBtn.Click += new System.EventHandler(this.addSongDataBtn_Click);
+            // 
+            // songDataTimesNbox
+            // 
+            this.songDataTimesNbox.Location = new System.Drawing.Point(244, 22);
+            this.songDataTimesNbox.Name = "songDataTimesNbox";
+            this.songDataTimesNbox.Size = new System.Drawing.Size(74, 23);
+            this.songDataTimesNbox.TabIndex = 3;
+            // 
+            // songDataIdNbox
+            // 
+            this.songDataIdNbox.Location = new System.Drawing.Point(67, 22);
+            this.songDataIdNbox.Name = "songDataIdNbox";
+            this.songDataIdNbox.Size = new System.Drawing.Size(74, 23);
+            this.songDataIdNbox.TabIndex = 1;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(168, 24);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(70, 15);
+            this.label34.TabIndex = 2;
+            this.label34.Text = "Times Done:";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(16, 24);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(52, 15);
+            this.label33.TabIndex = 0;
+            this.label33.Text = "Song ID:";
+            // 
             // donateToolStripMenuItem
             // 
             this.donateToolStripMenuItem.Name = "donateToolStripMenuItem";
@@ -2119,6 +2253,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iineNbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.idolRankNbox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.moneyNbox)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
@@ -2183,6 +2318,10 @@
             this.storyBlock2InputPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.story03IdNbox)).EndInit();
             this.storyBlock2ActionPanel.ResumeLayout(false);
+            this.songDataTab.ResumeLayout(false);
+            this.songDataTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.songDataTimesNbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.songDataIdNbox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2207,7 +2346,9 @@
         private TabPage tabPage3;
         private TabPage bodyPartsTab;
         private NumericUpDown iineNbox;
+        private NumericUpDown idolRankNbox;
         private NumericUpDown moneyNbox;
+        private Label label32;
         private GroupBox groupBox2;
         private ComboBox joystickScmCbox;
         private ComboBox textSpdCbox;
@@ -2361,5 +2502,15 @@
         private FlowLayoutPanel storyBlock2ActionPanel;
         private Button insertKnownStory03Btn;
         private Button clearStory03Btn;
+        private TabPage songDataTab;
+        private ListView listViewSongData;
+        private ColumnHeader songDataIdColumnHeader;
+        private ColumnHeader songDataTimesColumnHeader;
+        private Button removeSongDataBtn;
+        private Button addSongDataBtn;
+        private NumericUpDown songDataTimesNbox;
+        private NumericUpDown songDataIdNbox;
+        private Label label34;
+        private Label label33;
     }
 }

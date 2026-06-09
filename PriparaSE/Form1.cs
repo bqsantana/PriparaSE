@@ -41,6 +41,9 @@ namespace PriparaSE
             makeUpIdNbox.Maximum = max;
             story01IdNbox.Maximum = max;
             story03IdNbox.Maximum = max;
+            idolRankNbox.Maximum = max;
+            songDataIdNbox.Maximum = max;
+            songDataTimesNbox.Maximum = max;
         }
 
         private void AddListItem(ListView listView, NumericUpDown numericUpDown)
@@ -135,6 +138,20 @@ namespace PriparaSE
             listViewStory03.Items.Clear();
         }
 
+        private void addSongDataBtn_Click(object sender, EventArgs e)
+        {
+            listViewSongData.Items.Add(new ListViewItem(new string[]
+            {
+                songDataIdNbox.Value.ToString(),
+                songDataTimesNbox.Value.ToString()
+            }));
+        }
+
+        private void removeSongDataBtn_Click(object sender, EventArgs e)
+        {
+            RemoveSelectedItems(listViewSongData);
+        }
+
          private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -156,6 +173,7 @@ namespace PriparaSE
                         listViewTomotickets.Items.Clear();
                         listViewStory01.Items.Clear();
                         listViewStory03.Items.Clear();
+                        listViewSongData.Items.Clear();
 
                         workFile = new MemoryStream();
                         openedFile.Seek(0, SeekOrigin.Begin);
@@ -227,9 +245,14 @@ namespace PriparaSE
                         {
                             listViewStory03.Items.Add(new ListViewItem() { Text = missionCondition.value.ToString() });
                         }
+                        foreach (UnlockedSongData unlockedSongData in saveFile.UnlockedSongDatas)
+                        {
+                            listViewSongData.Items.Add(new ListViewItem(new string[] { unlockedSongData.id.ToString(), unlockedSongData.timesExecuted.ToString() }));
+                        }
 
                         moneyNbox.Value = saveFile.Misc.Money;
                         iineNbox.Value = saveFile.Misc.Iine;
+                        idolRankNbox.Value = saveFile.Misc.IdolRank;
                         musicVolNbox.Value = saveFile.MusicVol;
                         sfxVolNbox.Value = saveFile.SFXVol;
                         voiceVolNbox.Value = saveFile.VoiceVol;
@@ -276,6 +299,7 @@ namespace PriparaSE
             avatarName.Text = saveFile.Avatars[index].Name;
             eyeTypeNbox.Value = saveFile.Avatars[index].EyeType;
             skinColorNbox.Value = saveFile.Avatars[index].SkinColor;
+            hairStyleNbox.Value = saveFile.Avatars[index].HairStyle;
             hairColorNbox.Value = saveFile.Avatars[index].HairColor;
             eyeColor.Value = saveFile.Avatars[index].EyeColor;
             glassesNbox.Value = saveFile.Avatars[index].Glass;
@@ -306,6 +330,7 @@ namespace PriparaSE
                     saveFile.Tomotickets = new List<Tomoticket>();
                     saveFile.UnlockedStories = new List<UnlockedStory>();
                     saveFile.MissionConditions = new List<MissionCondition>();
+                    saveFile.UnlockedSongDatas = new List<UnlockedSongData>();
 
                     foreach (ListViewItem item in listViewCloset.Items)
                     {
@@ -359,6 +384,14 @@ namespace PriparaSE
                     {
                         saveFile.MissionConditions.Add(new MissionCondition() { value = Convert.ToInt32(item.Text) });
                     }
+                    foreach (ListViewItem item in listViewSongData.Items)
+                    {
+                        saveFile.UnlockedSongDatas.Add(new UnlockedSongData()
+                        {
+                            id = Convert.ToInt32(item.SubItems[0].Text),
+                            timesExecuted = Convert.ToInt32(item.SubItems[1].Text)
+                        });
+                    }
 
                     workFile = saveFile.injectSaveFile();
                     File.WriteAllBytes(saveFileDialog1.FileName, workFile.ToArray());
@@ -374,6 +407,11 @@ namespace PriparaSE
         private void iineNbox_ValueChanged(object sender, EventArgs e)
         {
             saveFile.Misc.Iine = Convert.ToInt32(iineNbox.Value);
+        }
+
+        private void idolRankNbox_ValueChanged(object sender, EventArgs e)
+        {
+            saveFile.Misc.IdolRank = Convert.ToInt32(idolRankNbox.Value);
         }
 
         private void musicVolNbox_ValueChanged(object sender, EventArgs e)
