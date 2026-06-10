@@ -9,8 +9,20 @@ namespace PriparaSE
         Stream openedFile = null!;
         MemoryStream workFile = null!;
         SaveFile saveFile = new SaveFile();
-        ListViewItem closetItem = null!;
         WebBrowser webBrowser = new WebBrowser();
+
+        private readonly int[] defaultStoryBases = new int[]
+        {
+            11, 12, 13, 14, 15, 16, 21, 22, 23, 24, 25,
+            31, 32, 33, 34, 35, 36, 41, 42, 43, 44,
+            91, 92, 93, 94, 95, 96, 97, 98
+        };
+
+        private readonly int[] knownExtraStoryBlock2Suffixes = new int[]
+        {
+            4, 5, 6
+        };
+
         public Form1()
         {
             InitializeComponent();
@@ -27,6 +39,117 @@ namespace PriparaSE
             eyeColorIdNbox.Maximum = max;
             glassesIdNbox.Maximum = max;
             makeUpIdNbox.Maximum = max;
+            story01IdNbox.Maximum = max;
+            story03IdNbox.Maximum = max;
+            idolRankNbox.Maximum = max;
+            songDataIdNbox.Maximum = max;
+            songDataTimesNbox.Maximum = max;
+        }
+
+        private void AddListItem(ListView listView, NumericUpDown numericUpDown)
+        {
+            int id = Convert.ToInt32(numericUpDown.Value);
+            if (!ListViewContains(listView, id))
+            {
+                listView.Items.Add(new ListViewItem() { Text = id.ToString() });
+            }
+        }
+
+        private void RemoveSelectedItems(ListView listView)
+        {
+            foreach (ListViewItem item in listView.SelectedItems)
+            {
+                listView.Items.Remove(item);
+            }
+        }
+
+        private bool ListViewContains(ListView listView, int id)
+        {
+            foreach (ListViewItem item in listView.Items)
+            {
+                if (Convert.ToInt32(item.Text) == id)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        private void InsertKnownStories(ListView listView, int suffix, int[] extraSuffixes)
+        {
+            listView.Items.Clear();
+            foreach (int baseId in defaultStoryBases)
+            {
+                listView.Items.Add(new ListViewItem() { Text = ((baseId * 100) + suffix).ToString() });
+            }
+
+            foreach (int extraSuffix in extraSuffixes)
+            {
+                foreach (int baseId in defaultStoryBases)
+                {
+                    int extraId = (baseId * 100) + extraSuffix;
+                    if (!ListViewContains(listView, extraId))
+                    {
+                        listView.Items.Add(new ListViewItem() { Text = extraId.ToString() });
+                    }
+                }
+            }
+
+        }
+
+        private void addStory01Btn_Click(object sender, EventArgs e)
+        {
+            AddListItem(listViewStory01, story01IdNbox);
+        }
+
+        private void removeStory01Btn_Click(object sender, EventArgs e)
+        {
+            RemoveSelectedItems(listViewStory01);
+        }
+
+        private void insertKnownStory01Btn_Click(object sender, EventArgs e)
+        {
+            InsertKnownStories(listViewStory01, 1, Array.Empty<int>());
+        }
+
+        private void clearStory01Btn_Click(object sender, EventArgs e)
+        {
+            listViewStory01.Items.Clear();
+        }
+
+        private void addStory03Btn_Click(object sender, EventArgs e)
+        {
+            AddListItem(listViewStory03, story03IdNbox);
+        }
+
+        private void removeStory03Btn_Click(object sender, EventArgs e)
+        {
+            RemoveSelectedItems(listViewStory03);
+        }
+
+        private void insertKnownStory03Btn_Click(object sender, EventArgs e)
+        {
+            InsertKnownStories(listViewStory03, 3, knownExtraStoryBlock2Suffixes);
+        }
+
+        private void clearStory03Btn_Click(object sender, EventArgs e)
+        {
+            listViewStory03.Items.Clear();
+        }
+
+        private void addSongDataBtn_Click(object sender, EventArgs e)
+        {
+            listViewSongData.Items.Add(new ListViewItem(new string[]
+            {
+                songDataIdNbox.Value.ToString(),
+                songDataTimesNbox.Value.ToString()
+            }));
+        }
+
+        private void removeSongDataBtn_Click(object sender, EventArgs e)
+        {
+            RemoveSelectedItems(listViewSongData);
         }
 
          private void openToolStripMenuItem_Click(object sender, EventArgs e)
@@ -48,6 +171,9 @@ namespace PriparaSE
                         listViewSongs.Items.Clear();
                         listViewCharacters.Items.Clear();
                         listViewTomotickets.Items.Clear();
+                        listViewStory01.Items.Clear();
+                        listViewStory03.Items.Clear();
+                        listViewSongData.Items.Clear();
 
                         workFile = new MemoryStream();
                         openedFile.Seek(0, SeekOrigin.Begin);
@@ -111,9 +237,22 @@ namespace PriparaSE
                         {
                             listViewTomotickets.Items.Add(new ListViewItem() { Text = tomoticket.id.ToString() });
                         }
+                        foreach (UnlockedStory unlockedStory in saveFile.UnlockedStories)
+                        {
+                            listViewStory01.Items.Add(new ListViewItem() { Text = unlockedStory.id.ToString() });
+                        }
+                        foreach (MissionCondition missionCondition in saveFile.MissionConditions)
+                        {
+                            listViewStory03.Items.Add(new ListViewItem() { Text = missionCondition.value.ToString() });
+                        }
+                        foreach (UnlockedSongData unlockedSongData in saveFile.UnlockedSongDatas)
+                        {
+                            listViewSongData.Items.Add(new ListViewItem(new string[] { unlockedSongData.id.ToString(), unlockedSongData.timesExecuted.ToString() }));
+                        }
 
                         moneyNbox.Value = saveFile.Misc.Money;
                         iineNbox.Value = saveFile.Misc.Iine;
+                        idolRankNbox.Value = saveFile.Misc.IdolRank;
                         musicVolNbox.Value = saveFile.MusicVol;
                         sfxVolNbox.Value = saveFile.SFXVol;
                         voiceVolNbox.Value = saveFile.VoiceVol;
@@ -160,6 +299,7 @@ namespace PriparaSE
             avatarName.Text = saveFile.Avatars[index].Name;
             eyeTypeNbox.Value = saveFile.Avatars[index].EyeType;
             skinColorNbox.Value = saveFile.Avatars[index].SkinColor;
+            hairStyleNbox.Value = saveFile.Avatars[index].HairStyle;
             hairColorNbox.Value = saveFile.Avatars[index].HairColor;
             eyeColor.Value = saveFile.Avatars[index].EyeColor;
             glassesNbox.Value = saveFile.Avatars[index].Glass;
@@ -188,6 +328,9 @@ namespace PriparaSE
                     saveFile.UnlockedSongs = new List<UnlockedSong>();
                     saveFile.UnlockedCharacters = new List<UnlockedCharacter>();
                     saveFile.Tomotickets = new List<Tomoticket>();
+                    saveFile.UnlockedStories = new List<UnlockedStory>();
+                    saveFile.MissionConditions = new List<MissionCondition>();
+                    saveFile.UnlockedSongDatas = new List<UnlockedSongData>();
 
                     foreach (ListViewItem item in listViewCloset.Items)
                     {
@@ -233,6 +376,22 @@ namespace PriparaSE
                     {
                         saveFile.Tomotickets.Add(new Tomoticket() { id = Convert.ToInt32(item.Text) });
                     }
+                    foreach (ListViewItem item in listViewStory01.Items)
+                    {
+                        saveFile.UnlockedStories.Add(new UnlockedStory() { id = Convert.ToInt32(item.Text) });
+                    }
+                    foreach (ListViewItem item in listViewStory03.Items)
+                    {
+                        saveFile.MissionConditions.Add(new MissionCondition() { value = Convert.ToInt32(item.Text) });
+                    }
+                    foreach (ListViewItem item in listViewSongData.Items)
+                    {
+                        saveFile.UnlockedSongDatas.Add(new UnlockedSongData()
+                        {
+                            id = Convert.ToInt32(item.SubItems[0].Text),
+                            timesExecuted = Convert.ToInt32(item.SubItems[1].Text)
+                        });
+                    }
 
                     workFile = saveFile.injectSaveFile();
                     File.WriteAllBytes(saveFileDialog1.FileName, workFile.ToArray());
@@ -248,6 +407,11 @@ namespace PriparaSE
         private void iineNbox_ValueChanged(object sender, EventArgs e)
         {
             saveFile.Misc.Iine = Convert.ToInt32(iineNbox.Value);
+        }
+
+        private void idolRankNbox_ValueChanged(object sender, EventArgs e)
+        {
+            saveFile.Misc.IdolRank = Convert.ToInt32(idolRankNbox.Value);
         }
 
         private void musicVolNbox_ValueChanged(object sender, EventArgs e)
@@ -394,9 +558,23 @@ namespace PriparaSE
             }
         }
 
+        private void insertHairStyleAllBtn_Click(object sender, EventArgs e)
+        {
+            int[] ids = new int[] { 1,2,4,6,7,18,20,27,28,30,31,32,51,67,68,71,74,75,77,78,82,84,85,86,90,92,93,104,106,108,109,110,111 };
+            listViewHairStyle.Items.Clear();
+            foreach (int id in ids) listViewHairStyle.Items.Add(new ListViewItem() { Text = id.ToString() });
+        }
+
         private void addSkinColorBtn_Click(object sender, EventArgs e)
         {
             listViewSkinColor.Items.Add(new ListViewItem() { Text = skinColorIdNbox.Value.ToString() });
+        }
+
+        private void insertSkinColorAllBtn_Click(object sender, EventArgs e)
+        {
+            int[] ids = new int[] { 0,1,2,3 };
+            listViewSkinColor.Items.Clear();
+            foreach (int id in ids) listViewSkinColor.Items.Add(new ListViewItem() { Text = id.ToString() });
         }
 
         private void removeSkinColorBtn_Click(object sender, EventArgs e)
@@ -442,9 +620,23 @@ namespace PriparaSE
             }
         }
 
+        private void insertEyeColorAllBtn_Click(object sender, EventArgs e)
+        {
+            int[] ids = new int[] { 1,2,3,4,6,8,9,10,11,12,13,14,15,19,20,21,23,24,29,31,32,34,35,40,41,42,44,45,47,51,52,53,54,58,61,65 };
+            listViewEyeColor.Items.Clear();
+            foreach (int id in ids) listViewEyeColor.Items.Add(new ListViewItem() { Text = id.ToString() });
+        }
+
         private void addGlassesBtn_Click(object sender, EventArgs e)
         {
             listViewGlasses.Items.Add(new ListViewItem() { Text = glassesIdNbox.Value.ToString() });
+        }
+
+        private void insertGlassesAllBtn_Click(object sender, EventArgs e)
+        {
+            int[] ids = new int[] { 0,11,12,13,14,15,16,17,18,19,20,22,23,24,25,26,27 };
+            listViewGlasses.Items.Clear();
+            foreach (int id in ids) listViewGlasses.Items.Add(new ListViewItem() { Text = id.ToString() });
         }
 
         private void removeGlassesBtn_Click(object sender, EventArgs e)
@@ -458,6 +650,13 @@ namespace PriparaSE
         private void addMakeUpBtn_Click(object sender, EventArgs e)
         {
             listViewMakeUp.Items.Add(new ListViewItem() { Text = makeUpIdNbox.Value.ToString() });
+        }
+
+        private void insertMakeUpAllBtn_Click(object sender, EventArgs e)
+        {
+            int[] ids = new int[] { 0,1,2,3,4,7,8,9,10,11,12 };
+            listViewMakeUp.Items.Clear();
+            foreach (int id in ids) listViewMakeUp.Items.Add(new ListViewItem() { Text = id.ToString() });
         }
 
         private void removeMakeUpBtn_Click(object sender, EventArgs e)
