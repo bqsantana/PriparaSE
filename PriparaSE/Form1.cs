@@ -6,22 +6,22 @@ namespace PriparaSE
 {
     public partial class Form1 : Form
     {
-        Stream openedFile = null!;
         MemoryStream workFile = null!;
         SaveFile saveFile = new SaveFile();
-        WebBrowser webBrowser = new WebBrowser();
 
-        private readonly int[] defaultStoryBases = new int[]
-        {
-            11, 12, 13, 14, 15, 16, 21, 22, 23, 24, 25,
-            31, 32, 33, 34, 35, 36, 41, 42, 43, 44,
-            91, 92, 93, 94, 95, 96, 97, 98
+        // 固定 id 列表，集中定义便于维护
+        private static readonly int[] UnlockedStoryIds = new int[] {
+            1101,1201,1301,1401,1501,1601,2101,2201,2301,2401,2501,2503,
+            3101,3103,3201,3301,3401,3501,3601,3604,4101,4201,4205,4301,
+            4401,4403,9201,9301,9401,9501,9601,9701,9801,9803
         };
 
-        private readonly int[] knownExtraStoryBlock2Suffixes = new int[]
-        {
-            4, 5, 6
+        private static readonly int[] MissionConditionIds = new int[] {
+            1103,1203,1303,1403,1503,1603,2103,2203,2303,2404,2505,3104,
+            3203,3303,3403,3503,3606,4103,4206,4303,4405,9103,9203,9303,
+            9403,9503,9603,9703,9804
         };
+
 
         public Form1()
         {
@@ -46,6 +46,8 @@ namespace PriparaSE
             songDataTimesNbox.Maximum = max;
         }
 
+
+
         private void AddListItem(ListView listView, NumericUpDown numericUpDown)
         {
             int id = Convert.ToInt32(numericUpDown.Value);
@@ -67,7 +69,7 @@ namespace PriparaSE
         {
             foreach (ListViewItem item in listView.Items)
             {
-                if (Convert.ToInt32(item.Text) == id)
+                if (int.TryParse(item.Text, out int parsed) && parsed == id)
                 {
                     return true;
                 }
@@ -76,27 +78,7 @@ namespace PriparaSE
             return false;
         }
 
-        private void InsertKnownStories(ListView listView, int suffix, int[] extraSuffixes)
-        {
-            listView.Items.Clear();
-            foreach (int baseId in defaultStoryBases)
-            {
-                listView.Items.Add(new ListViewItem() { Text = ((baseId * 100) + suffix).ToString() });
-            }
 
-            foreach (int extraSuffix in extraSuffixes)
-            {
-                foreach (int baseId in defaultStoryBases)
-                {
-                    int extraId = (baseId * 100) + extraSuffix;
-                    if (!ListViewContains(listView, extraId))
-                    {
-                        listView.Items.Add(new ListViewItem() { Text = extraId.ToString() });
-                    }
-                }
-            }
-
-        }
 
         private void addStory01Btn_Click(object sender, EventArgs e)
         {
@@ -110,7 +92,11 @@ namespace PriparaSE
 
         private void insertKnownStory01Btn_Click(object sender, EventArgs e)
         {
-            InsertKnownStories(listViewStory01, 1, Array.Empty<int>());
+            listViewStory01.Items.Clear();
+            foreach (var id in UnlockedStoryIds)
+            {
+                listViewStory01.Items.Add(new ListViewItem() { Text = id.ToString() });
+            }
         }
 
         private void clearStory01Btn_Click(object sender, EventArgs e)
@@ -130,7 +116,11 @@ namespace PriparaSE
 
         private void insertKnownStory03Btn_Click(object sender, EventArgs e)
         {
-            InsertKnownStories(listViewStory03, 3, knownExtraStoryBlock2Suffixes);
+            listViewStory03.Items.Clear();
+            foreach (var id in MissionConditionIds)
+            {
+                listViewStory03.Items.Add(new ListViewItem() { Text = id.ToString() });
+            }
         }
 
         private void clearStory03Btn_Click(object sender, EventArgs e)
@@ -158,7 +148,7 @@ namespace PriparaSE
             {
                 try
                 {
-                    using (openedFile = openFileDialog1.OpenFile())
+                    using (Stream openedFile = openFileDialog1.OpenFile())
                     {
                         listViewCloset.Items.Clear();
                         listViewEyeTypes.Items.Clear();
@@ -334,63 +324,66 @@ namespace PriparaSE
 
                     foreach (ListViewItem item in listViewCloset.Items)
                     {
-                        saveFile.ClothCollections.Add(new ClothCollection() { id = Convert.ToInt32(item.Text) });
+                        if (int.TryParse(item.Text, out int id)) saveFile.ClothCollections.Add(new ClothCollection() { id = id });
                     }
                     foreach (ListViewItem item in listViewEyeTypes.Items)
                     {
-                        saveFile.EyeTypes.Add(new EyeType() { id = Convert.ToInt32(item.Text) });
+                        if (int.TryParse(item.Text, out int id)) saveFile.EyeTypes.Add(new EyeType() { id = id });
                     }
                     foreach (ListViewItem item in listViewHairStyle.Items)
                     {
-                        saveFile.HairTypes.Add(new HairType() { id = Convert.ToInt32(item.Text) });
+                        if (int.TryParse(item.Text, out int id)) saveFile.HairTypes.Add(new HairType() { id = id });
                     }
                     foreach (ListViewItem item in listViewSkinColor.Items)
                     {
-                        saveFile.SkinColors.Add(new SkinColor() { id = Convert.ToInt32(item.Text) });
+                        if (int.TryParse(item.Text, out int id)) saveFile.SkinColors.Add(new SkinColor() { id = id });
                     }
                     foreach (ListViewItem item in listViewHairColor.Items)
                     {
-                        saveFile.HairColors.Add(new HairColor() { id = Convert.ToInt32(item.Text) });
+                        if (int.TryParse(item.Text, out int id)) saveFile.HairColors.Add(new HairColor() { id = id });
                     }
                     foreach (ListViewItem item in listViewEyeColor.Items)
                     {
-                        saveFile.EyeColors.Add(new EyeColor() { id = Convert.ToInt32(item.Text) });
+                        if (int.TryParse(item.Text, out int id)) saveFile.EyeColors.Add(new EyeColor() { id = id });
                     }
                     foreach (ListViewItem item in listViewGlasses.Items)
                     {
-                        saveFile.Glasses.Add(new Glasses() { id = Convert.ToInt32(item.Text) });
+                        if (int.TryParse(item.Text, out int id)) saveFile.Glasses.Add(new Glasses() { id = id });
                     }
                     foreach (ListViewItem item in listViewMakeUp.Items)
                     {
-                        saveFile.MakeUps.Add(new MakeUp() { id = Convert.ToInt32(item.Text) });
+                        if (int.TryParse(item.Text, out int id)) saveFile.MakeUps.Add(new MakeUp() { id = id });
                     }
                     foreach (ListViewItem item in listViewSongs.Items)
                     {
-                        saveFile.UnlockedSongs.Add(new UnlockedSong() { id = Convert.ToInt32(item.Text) });
+                        if (int.TryParse(item.Text, out int id)) saveFile.UnlockedSongs.Add(new UnlockedSong() { id = id });
                     }
                     foreach (ListViewItem item in listViewCharacters.Items)
                     {
-                        saveFile.UnlockedCharacters.Add(new UnlockedCharacter() { id = Convert.ToInt32(item.Text) });
+                        if (int.TryParse(item.Text, out int id)) saveFile.UnlockedCharacters.Add(new UnlockedCharacter() { id = id });
                     }
                     foreach (ListViewItem item in listViewTomotickets.Items)
                     {
-                        saveFile.Tomotickets.Add(new Tomoticket() { id = Convert.ToInt32(item.Text) });
+                        if (int.TryParse(item.Text, out int id)) saveFile.Tomotickets.Add(new Tomoticket() { id = id });
                     }
                     foreach (ListViewItem item in listViewStory01.Items)
                     {
-                        saveFile.UnlockedStories.Add(new UnlockedStory() { id = Convert.ToInt32(item.Text) });
+                        if (int.TryParse(item.Text, out int id)) saveFile.UnlockedStories.Add(new UnlockedStory() { id = id });
                     }
                     foreach (ListViewItem item in listViewStory03.Items)
                     {
-                        saveFile.MissionConditions.Add(new MissionCondition() { value = Convert.ToInt32(item.Text) });
+                        if (int.TryParse(item.Text, out int val)) saveFile.MissionConditions.Add(new MissionCondition() { value = val });
                     }
                     foreach (ListViewItem item in listViewSongData.Items)
                     {
-                        saveFile.UnlockedSongDatas.Add(new UnlockedSongData()
+                        if (int.TryParse(item.SubItems[0].Text, out int sid) && int.TryParse(item.SubItems[1].Text, out int times))
                         {
-                            id = Convert.ToInt32(item.SubItems[0].Text),
-                            timesExecuted = Convert.ToInt32(item.SubItems[1].Text)
-                        });
+                            saveFile.UnlockedSongDatas.Add(new UnlockedSongData()
+                            {
+                                id = sid,
+                                timesExecuted = times
+                            });
+                        }
                     }
 
                     workFile = saveFile.injectSaveFile();
