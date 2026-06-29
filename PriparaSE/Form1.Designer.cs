@@ -29,2302 +29,2173 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.infoSheetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mainTabs = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.joystickScmCbox = new System.Windows.Forms.ComboBox();
-            this.textSpdCbox = new System.Windows.Forms.ComboBox();
-            this.voiceSetCbox = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.voiceVolNbox = new System.Windows.Forms.NumericUpDown();
-            this.sfxVolNbox = new System.Windows.Forms.NumericUpDown();
-            this.musicVolNbox = new System.Windows.Forms.NumericUpDown();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.iineNbox = new System.Windows.Forms.NumericUpDown();
-            this.idolRankNbox = new System.Windows.Forms.NumericUpDown();
-            this.moneyNbox = new System.Windows.Forms.NumericUpDown();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.headNbox = new System.Windows.Forms.NumericUpDown();
-            this.shootNbox = new System.Windows.Forms.NumericUpDown();
-            this.bottomNbox = new System.Windows.Forms.NumericUpDown();
-            this.topNbox = new System.Windows.Forms.NumericUpDown();
-            this.makeUpNbox = new System.Windows.Forms.NumericUpDown();
-            this.glassesNbox = new System.Windows.Forms.NumericUpDown();
-            this.eyeColor = new System.Windows.Forms.NumericUpDown();
-            this.label20 = new System.Windows.Forms.Label();
-            this.hairColorNbox = new System.Windows.Forms.NumericUpDown();
-            this.label19 = new System.Windows.Forms.Label();
-            this.hairStyleNbox = new System.Windows.Forms.NumericUpDown();
-            this.label18 = new System.Windows.Forms.Label();
-            this.skinColorNbox = new System.Windows.Forms.NumericUpDown();
-            this.label17 = new System.Windows.Forms.Label();
-            this.eyeTypeNbox = new System.Windows.Forms.NumericUpDown();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.avatarName = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.itemIdNbox = new System.Windows.Forms.NumericUpDown();
-            this.label21 = new System.Windows.Forms.Label();
-            this.listViewCloset = new System.Windows.Forms.ListView();
-            this.closetId = new System.Windows.Forms.ColumnHeader();
-            this.bodyPartsTab = new System.Windows.Forms.TabPage();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.eyeTypeIdNbox = new System.Windows.Forms.NumericUpDown();
-            this.label22 = new System.Windows.Forms.Label();
-            this.listViewEyeTypes = new System.Windows.Forms.ListView();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.removeSkinColorBtn = new System.Windows.Forms.Button();
-            this.addSkinColorBtn = new System.Windows.Forms.Button();
-            this.skinColorIdNbox = new System.Windows.Forms.NumericUpDown();
-            this.label23 = new System.Windows.Forms.Label();
-            this.listViewSkinColor = new System.Windows.Forms.ListView();
-            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.hairStyleIdNbox = new System.Windows.Forms.NumericUpDown();
-            this.label24 = new System.Windows.Forms.Label();
-            this.listViewHairStyle = new System.Windows.Forms.ListView();
-            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.listViewHairColor = new System.Windows.Forms.ListView();
-            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
-            this.removeHairColor = new System.Windows.Forms.Button();
-            this.addHairColorBtn = new System.Windows.Forms.Button();
-            this.insertHairColorAllBtn = new System.Windows.Forms.Button();
-            this.insertSkinColorAllBtn = new System.Windows.Forms.Button();
-            this.insertHairStyleAllBtn = new System.Windows.Forms.Button();
-            this.hairColorIdNbox = new System.Windows.Forms.NumericUpDown();
-            this.label25 = new System.Windows.Forms.Label();
-            this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.listViewEyeColor = new System.Windows.Forms.ListView();
-            this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
-            this.removeEyeColorBtn = new System.Windows.Forms.Button();
-            this.addEyeColorBtn = new System.Windows.Forms.Button();
-            this.insertEyeColorAllBtn = new System.Windows.Forms.Button();
-            this.eyeColorIdNbox = new System.Windows.Forms.NumericUpDown();
-            this.label26 = new System.Windows.Forms.Label();
-            this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.listViewGlasses = new System.Windows.Forms.ListView();
-            this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
-            this.removeGlassesBtn = new System.Windows.Forms.Button();
-            this.addGlassesBtn = new System.Windows.Forms.Button();
-            this.insertGlassesAllBtn = new System.Windows.Forms.Button();
-            this.glassesIdNbox = new System.Windows.Forms.NumericUpDown();
-            this.label27 = new System.Windows.Forms.Label();
-            this.tabPage12 = new System.Windows.Forms.TabPage();
-            this.listViewMakeUp = new System.Windows.Forms.ListView();
-            this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
-            this.removeMakeUpBtn = new System.Windows.Forms.Button();
-            this.addMakeUpBtn = new System.Windows.Forms.Button();
-            this.insertMakeUpAllBtn = new System.Windows.Forms.Button();
-            this.makeUpIdNbox = new System.Windows.Forms.NumericUpDown();
-            this.label28 = new System.Windows.Forms.Label();
-            this.songsTab = new System.Windows.Forms.TabPage();
-            this.listViewSongs = new System.Windows.Forms.ListView();
-            this.columnHeader8 = new System.Windows.Forms.ColumnHeader();
-            this.removeSongsBtn = new System.Windows.Forms.Button();
-            this.addSongBtn = new System.Windows.Forms.Button();
-            this.songsIdNbox = new System.Windows.Forms.NumericUpDown();
-            this.label29 = new System.Windows.Forms.Label();
-            this.insertSongsListBtn = new System.Windows.Forms.Button();
-            this.charactersTab = new System.Windows.Forms.TabPage();
-            this.listViewCharacters = new System.Windows.Forms.ListView();
-            this.columnHeader9 = new System.Windows.Forms.ColumnHeader();
-            this.removeCharacterBtn = new System.Windows.Forms.Button();
-            this.addCharacterBtn = new System.Windows.Forms.Button();
-            this.insertCharactersAllBtn = new System.Windows.Forms.Button();
-            this.characterIdNbox = new System.Windows.Forms.NumericUpDown();
-            this.label30 = new System.Windows.Forms.Label();
-            this.tomoticketsTab = new System.Windows.Forms.TabPage();
-            this.listViewTomotickets = new System.Windows.Forms.ListView();
-            this.columnHeader10 = new System.Windows.Forms.ColumnHeader();
-            this.removeTomoticketsBtn = new System.Windows.Forms.Button();
-            this.addTomoticketsBtn = new System.Windows.Forms.Button();
-            this.tomoticketsIdNbox = new System.Windows.Forms.NumericUpDown();
-            this.label31 = new System.Windows.Forms.Label();
-            this.insertTomoticketsAllBtn = new System.Windows.Forms.Button();
-            this.storiesTab = new System.Windows.Forms.TabPage();
-            this.storiesLayout = new System.Windows.Forms.TableLayoutPanel();
-            this.storyBlock1Group = new System.Windows.Forms.GroupBox();
-            this.storyBlock1Layout = new System.Windows.Forms.TableLayoutPanel();
-            this.storyBlock1InputPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.story01IdNbox = new System.Windows.Forms.NumericUpDown();
-            this.addStory01Btn = new System.Windows.Forms.Button();
-            this.removeStory01Btn = new System.Windows.Forms.Button();
-            this.listViewStory01 = new System.Windows.Forms.ListView();
-            this.story01ColumnHeader = new System.Windows.Forms.ColumnHeader();
-            this.storyBlock1ActionPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.insertKnownStory01Btn = new System.Windows.Forms.Button();
-            this.clearStory01Btn = new System.Windows.Forms.Button();
-            this.storyBlock2Group = new System.Windows.Forms.GroupBox();
-            this.storyBlock2Layout = new System.Windows.Forms.TableLayoutPanel();
-            this.storyBlock2InputPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.story03IdNbox = new System.Windows.Forms.NumericUpDown();
-            this.addStory03Btn = new System.Windows.Forms.Button();
-            this.removeStory03Btn = new System.Windows.Forms.Button();
-            this.listViewStory03 = new System.Windows.Forms.ListView();
-            this.story03ColumnHeader = new System.Windows.Forms.ColumnHeader();
-            this.storyBlock2ActionPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.insertKnownStory03Btn = new System.Windows.Forms.Button();
-            this.clearStory03Btn = new System.Windows.Forms.Button();
-            this.songDataTab = new System.Windows.Forms.TabPage();
-            this.listViewSongData = new System.Windows.Forms.ListView();
-            this.songDataIdColumnHeader = new System.Windows.Forms.ColumnHeader();
-            this.songDataTimesColumnHeader = new System.Windows.Forms.ColumnHeader();
-            this.removeSongDataBtn = new System.Windows.Forms.Button();
-            this.addSongDataBtn = new System.Windows.Forms.Button();
-            this.songDataTimesNbox = new System.Windows.Forms.NumericUpDown();
-            this.songDataIdNbox = new System.Windows.Forms.NumericUpDown();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.donateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
-            this.mainTabs.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.voiceVolNbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sfxVolNbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.musicVolNbox)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iineNbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.idolRankNbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.moneyNbox)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.headNbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shootNbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bottomNbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.topNbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.makeUpNbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.glassesNbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eyeColor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hairColorNbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hairStyleNbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.skinColorNbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eyeTypeNbox)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.itemIdNbox)).BeginInit();
-            this.bodyPartsTab.SuspendLayout();
-            this.tabControl2.SuspendLayout();
-            this.tabPage6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.eyeTypeIdNbox)).BeginInit();
-            this.tabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.skinColorIdNbox)).BeginInit();
-            this.tabPage8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hairStyleIdNbox)).BeginInit();
-            this.tabPage9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hairColorIdNbox)).BeginInit();
-            this.tabPage10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.eyeColorIdNbox)).BeginInit();
-            this.tabPage11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.glassesIdNbox)).BeginInit();
-            this.tabPage12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.makeUpIdNbox)).BeginInit();
-            this.songsTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.songsIdNbox)).BeginInit();
-            this.charactersTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.characterIdNbox)).BeginInit();
-            this.tomoticketsTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tomoticketsIdNbox)).BeginInit();
-            this.storiesTab.SuspendLayout();
-            this.storiesLayout.SuspendLayout();
-            this.storyBlock1Group.SuspendLayout();
-            this.storyBlock1Layout.SuspendLayout();
-            this.storyBlock1InputPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.story01IdNbox)).BeginInit();
-            this.storyBlock1ActionPanel.SuspendLayout();
-            this.storyBlock2Group.SuspendLayout();
-            this.storyBlock2Layout.SuspendLayout();
-            this.storyBlock2InputPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.story03IdNbox)).BeginInit();
-            this.storyBlock2ActionPanel.SuspendLayout();
-            this.songDataTab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.songDataTimesNbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.songDataIdNbox)).BeginInit();
-            this.SuspendLayout();
+            openFileDialog1 = new OpenFileDialog();
+            saveFileDialog1 = new SaveFileDialog();
+            menuStrip1 = new MenuStrip();
+            fileToolStripMenuItem = new ToolStripMenuItem();
+            openToolStripMenuItem = new ToolStripMenuItem();
+            saveAsToolStripMenuItem = new ToolStripMenuItem();
+            toolStripSeparator1 = new ToolStripSeparator();
+            exitToolStripMenuItem = new ToolStripMenuItem();
+            helpToolStripMenuItem = new ToolStripMenuItem();
+            infoSheetToolStripMenuItem = new ToolStripMenuItem();
+            mainTabs = new TabControl();
+            tabPage1 = new TabPage();
+            groupBox2 = new GroupBox();
+            joystickScmCbox = new ComboBox();
+            textSpdCbox = new ComboBox();
+            voiceSetCbox = new ComboBox();
+            label8 = new Label();
+            voiceVolNbox = new NumericUpDown();
+            sfxVolNbox = new NumericUpDown();
+            musicVolNbox = new NumericUpDown();
+            label7 = new Label();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            groupBox1 = new GroupBox();
+            iineNbox = new NumericUpDown();
+            idolRankNbox = new NumericUpDown();
+            moneyNbox = new NumericUpDown();
+            label32 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            tabPage2 = new TabPage();
+            listBox1 = new ListBox();
+            groupBox3 = new GroupBox();
+            headNbox = new NumericUpDown();
+            shootNbox = new NumericUpDown();
+            bottomNbox = new NumericUpDown();
+            topNbox = new NumericUpDown();
+            makeUpNbox = new NumericUpDown();
+            glassesNbox = new NumericUpDown();
+            eyeColor = new NumericUpDown();
+            label20 = new Label();
+            hairColorNbox = new NumericUpDown();
+            label19 = new Label();
+            hairStyleNbox = new NumericUpDown();
+            label18 = new Label();
+            skinColorNbox = new NumericUpDown();
+            label17 = new Label();
+            eyeTypeNbox = new NumericUpDown();
+            label16 = new Label();
+            label15 = new Label();
+            label14 = new Label();
+            label13 = new Label();
+            label12 = new Label();
+            label11 = new Label();
+            label10 = new Label();
+            avatarName = new TextBox();
+            label9 = new Label();
+            tabPage3 = new TabPage();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
+            itemIdNbox = new NumericUpDown();
+            label21 = new Label();
+            listViewCloset = new ListView();
+            closetId = new ColumnHeader();
+            bodyPartsTab = new TabPage();
+            tabControl2 = new TabControl();
+            tabPage6 = new TabPage();
+            button5 = new Button();
+            button4 = new Button();
+            eyeTypeIdNbox = new NumericUpDown();
+            label22 = new Label();
+            listViewEyeTypes = new ListView();
+            columnHeader1 = new ColumnHeader();
+            tabPage7 = new TabPage();
+            removeSkinColorBtn = new Button();
+            insertSkinColorAllBtn = new Button();
+            addSkinColorBtn = new Button();
+            skinColorIdNbox = new NumericUpDown();
+            label23 = new Label();
+            listViewSkinColor = new ListView();
+            columnHeader2 = new ColumnHeader();
+            tabPage8 = new TabPage();
+            button8 = new Button();
+            button9 = new Button();
+            hairStyleIdNbox = new NumericUpDown();
+            label24 = new Label();
+            insertHairStyleAllBtn = new Button();
+            listViewHairStyle = new ListView();
+            columnHeader3 = new ColumnHeader();
+            tabPage9 = new TabPage();
+            listViewHairColor = new ListView();
+            columnHeader4 = new ColumnHeader();
+            removeHairColor = new Button();
+            addHairColorBtn = new Button();
+            insertHairColorAllBtn = new Button();
+            hairColorIdNbox = new NumericUpDown();
+            label25 = new Label();
+            tabPage10 = new TabPage();
+            listViewEyeColor = new ListView();
+            columnHeader5 = new ColumnHeader();
+            removeEyeColorBtn = new Button();
+            addEyeColorBtn = new Button();
+            insertEyeColorAllBtn = new Button();
+            eyeColorIdNbox = new NumericUpDown();
+            label26 = new Label();
+            tabPage11 = new TabPage();
+            listViewGlasses = new ListView();
+            columnHeader6 = new ColumnHeader();
+            removeGlassesBtn = new Button();
+            addGlassesBtn = new Button();
+            insertGlassesAllBtn = new Button();
+            glassesIdNbox = new NumericUpDown();
+            label27 = new Label();
+            tabPage12 = new TabPage();
+            listViewMakeUp = new ListView();
+            columnHeader7 = new ColumnHeader();
+            removeMakeUpBtn = new Button();
+            addMakeUpBtn = new Button();
+            insertMakeUpAllBtn = new Button();
+            makeUpIdNbox = new NumericUpDown();
+            label28 = new Label();
+            songDataTab = new TabPage();
+            listViewSongData = new ListView();
+            songDataIdColumnHeader = new ColumnHeader();
+            songDataTimesColumnHeader = new ColumnHeader();
+            removeSongDataBtn = new Button();
+            addSongDataBtn = new Button();
+            songDataTimesNbox = new NumericUpDown();
+            songDataIdNbox = new NumericUpDown();
+            label34 = new Label();
+            label33 = new Label();
+            songsTab = new TabPage();
+            listViewSongs = new ListView();
+            columnHeader8 = new ColumnHeader();
+            removeSongsBtn = new Button();
+            addSongBtn = new Button();
+            insertSongsListBtn = new Button();
+            songsIdNbox = new NumericUpDown();
+            label29 = new Label();
+            charactersTab = new TabPage();
+            listViewCharacters = new ListView();
+            columnHeader9 = new ColumnHeader();
+            removeCharacterBtn = new Button();
+            addCharacterBtn = new Button();
+            insertCharactersAllBtn = new Button();
+            characterIdNbox = new NumericUpDown();
+            label30 = new Label();
+            tomoticketsTab = new TabPage();
+            listViewTomotickets = new ListView();
+            columnHeader10 = new ColumnHeader();
+            removeTomoticketsBtn = new Button();
+            addTomoticketsBtn = new Button();
+            insertTomoticketsAllBtn = new Button();
+            tomoticketsIdNbox = new NumericUpDown();
+            label31 = new Label();
+            storiesTab = new TabPage();
+            storiesLayout = new TableLayoutPanel();
+            storyBlock1Group = new GroupBox();
+            storyBlock1Layout = new TableLayoutPanel();
+            storyBlock1InputPanel = new FlowLayoutPanel();
+            story01IdNbox = new NumericUpDown();
+            addStory01Btn = new Button();
+            removeStory01Btn = new Button();
+            listViewStory01 = new ListView();
+            story01ColumnHeader = new ColumnHeader();
+            storyBlock1ActionPanel = new FlowLayoutPanel();
+            insertKnownStory01Btn = new Button();
+            clearStory01Btn = new Button();
+            storyBlock2Group = new GroupBox();
+            storyBlock2Layout = new TableLayoutPanel();
+            storyBlock2InputPanel = new FlowLayoutPanel();
+            story03IdNbox = new NumericUpDown();
+            addStory03Btn = new Button();
+            removeStory03Btn = new Button();
+            listViewStory03 = new ListView();
+            story03ColumnHeader = new ColumnHeader();
+            storyBlock2ActionPanel = new FlowLayoutPanel();
+            insertKnownStory03Btn = new Button();
+            clearStory03Btn = new Button();
+            menuStrip1.SuspendLayout();
+            mainTabs.SuspendLayout();
+            tabPage1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)voiceVolNbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)sfxVolNbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)musicVolNbox).BeginInit();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)iineNbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)idolRankNbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)moneyNbox).BeginInit();
+            tabPage2.SuspendLayout();
+            groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)headNbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)shootNbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)bottomNbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)topNbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)makeUpNbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)glassesNbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)eyeColor).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)hairColorNbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)hairStyleNbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)skinColorNbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)eyeTypeNbox).BeginInit();
+            tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)itemIdNbox).BeginInit();
+            bodyPartsTab.SuspendLayout();
+            tabControl2.SuspendLayout();
+            tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)eyeTypeIdNbox).BeginInit();
+            tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)skinColorIdNbox).BeginInit();
+            tabPage8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)hairStyleIdNbox).BeginInit();
+            tabPage9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)hairColorIdNbox).BeginInit();
+            tabPage10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)eyeColorIdNbox).BeginInit();
+            tabPage11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)glassesIdNbox).BeginInit();
+            tabPage12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)makeUpIdNbox).BeginInit();
+            songDataTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)songDataTimesNbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)songDataIdNbox).BeginInit();
+            songsTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)songsIdNbox).BeginInit();
+            charactersTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)characterIdNbox).BeginInit();
+            tomoticketsTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)tomoticketsIdNbox).BeginInit();
+            storiesTab.SuspendLayout();
+            storiesLayout.SuspendLayout();
+            storyBlock1Group.SuspendLayout();
+            storyBlock1Layout.SuspendLayout();
+            storyBlock1InputPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)story01IdNbox).BeginInit();
+            storyBlock1ActionPanel.SuspendLayout();
+            storyBlock2Group.SuspendLayout();
+            storyBlock2Layout.SuspendLayout();
+            storyBlock2InputPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)story03IdNbox).BeginInit();
+            storyBlock2ActionPanel.SuspendLayout();
+            SuspendLayout();
             // 
             // openFileDialog1
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            openFileDialog1.FileName = "openFileDialog1";
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.helpToolStripMenuItem,
-            this.donateToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(379, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, helpToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(379, 24);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.openToolStripMenuItem,
-            this.saveAsToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.exitToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem.Text = "File";
+            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { openToolStripMenuItem, saveAsToolStripMenuItem, toolStripSeparator1, exitToolStripMenuItem });
+            fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            fileToolStripMenuItem.Size = new Size(37, 20);
+            fileToolStripMenuItem.Text = "File";
             // 
             // openToolStripMenuItem
             // 
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
-            this.openToolStripMenuItem.Text = "Open...";
-            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
+            openToolStripMenuItem.Name = "openToolStripMenuItem";
+            openToolStripMenuItem.Size = new Size(180, 22);
+            openToolStripMenuItem.Text = "Open...";
+            openToolStripMenuItem.Click += openToolStripMenuItem_Click;
             // 
             // saveAsToolStripMenuItem
             // 
-            this.saveAsToolStripMenuItem.Enabled = false;
-            this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
-            this.saveAsToolStripMenuItem.Text = "Save As...";
-            this.saveAsToolStripMenuItem.Click += new System.EventHandler(this.saveAsToolStripMenuItem_Click);
+            saveAsToolStripMenuItem.Enabled = false;
+            saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
+            saveAsToolStripMenuItem.Size = new Size(180, 22);
+            saveAsToolStripMenuItem.Text = "Save As...";
+            saveAsToolStripMenuItem.Click += saveAsToolStripMenuItem_Click;
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(120, 6);
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(177, 6);
             // 
             // exitToolStripMenuItem
             // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            exitToolStripMenuItem.Size = new Size(180, 22);
+            exitToolStripMenuItem.Text = "Exit";
+            exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
             // helpToolStripMenuItem
             // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.infoSheetToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
+            helpToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { infoSheetToolStripMenuItem });
+            helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            helpToolStripMenuItem.Size = new Size(44, 20);
+            helpToolStripMenuItem.Text = "Help";
             // 
             // infoSheetToolStripMenuItem
             // 
-            this.infoSheetToolStripMenuItem.Name = "infoSheetToolStripMenuItem";
-            this.infoSheetToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.infoSheetToolStripMenuItem.Text = "Pripara Info Sheet";
-            this.infoSheetToolStripMenuItem.Click += new System.EventHandler(this.infoSheetToolStripMenuItem_Click);
+            infoSheetToolStripMenuItem.Name = "infoSheetToolStripMenuItem";
+            infoSheetToolStripMenuItem.Size = new Size(167, 22);
+            infoSheetToolStripMenuItem.Text = "Pripara Info Sheet";
+            infoSheetToolStripMenuItem.Click += infoSheetToolStripMenuItem_Click;
             // 
             // mainTabs
             // 
-            this.mainTabs.Controls.Add(this.tabPage1);
-            this.mainTabs.Controls.Add(this.tabPage2);
-            this.mainTabs.Controls.Add(this.tabPage3);
-            this.mainTabs.Controls.Add(this.bodyPartsTab);
-            this.mainTabs.Controls.Add(this.songDataTab);
-            this.mainTabs.Controls.Add(this.songsTab);
-            this.mainTabs.Controls.Add(this.charactersTab);
-            this.mainTabs.Controls.Add(this.tomoticketsTab);
-            this.mainTabs.Controls.Add(this.storiesTab);
-            this.mainTabs.Enabled = false;
-            this.mainTabs.Location = new System.Drawing.Point(12, 27);
-            this.mainTabs.Name = "mainTabs";
-            this.mainTabs.SelectedIndex = 0;
-            this.mainTabs.Size = new System.Drawing.Size(353, 427);
-            this.mainTabs.TabIndex = 1;
+            mainTabs.Controls.Add(tabPage1);
+            mainTabs.Controls.Add(tabPage2);
+            mainTabs.Controls.Add(tabPage3);
+            mainTabs.Controls.Add(bodyPartsTab);
+            mainTabs.Controls.Add(songDataTab);
+            mainTabs.Controls.Add(songsTab);
+            mainTabs.Controls.Add(charactersTab);
+            mainTabs.Controls.Add(tomoticketsTab);
+            mainTabs.Controls.Add(storiesTab);
+            mainTabs.Enabled = false;
+            mainTabs.Location = new Point(12, 27);
+            mainTabs.Name = "mainTabs";
+            mainTabs.SelectedIndex = 0;
+            mainTabs.Size = new Size(353, 427);
+            mainTabs.TabIndex = 1;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.groupBox2);
-            this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(345, 399);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Misc";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            tabPage1.Controls.Add(groupBox2);
+            tabPage1.Controls.Add(groupBox1);
+            tabPage1.Location = new Point(4, 24);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(3);
+            tabPage1.Size = new Size(345, 399);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "Misc";
+            tabPage1.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.joystickScmCbox);
-            this.groupBox2.Controls.Add(this.textSpdCbox);
-            this.groupBox2.Controls.Add(this.voiceSetCbox);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.voiceVolNbox);
-            this.groupBox2.Controls.Add(this.sfxVolNbox);
-            this.groupBox2.Controls.Add(this.musicVolNbox);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(6, 100);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(333, 225);
-            this.groupBox2.TabIndex = 3;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Settings";
+            groupBox2.Controls.Add(joystickScmCbox);
+            groupBox2.Controls.Add(textSpdCbox);
+            groupBox2.Controls.Add(voiceSetCbox);
+            groupBox2.Controls.Add(label8);
+            groupBox2.Controls.Add(voiceVolNbox);
+            groupBox2.Controls.Add(sfxVolNbox);
+            groupBox2.Controls.Add(musicVolNbox);
+            groupBox2.Controls.Add(label7);
+            groupBox2.Controls.Add(label6);
+            groupBox2.Controls.Add(label5);
+            groupBox2.Controls.Add(label4);
+            groupBox2.Controls.Add(label3);
+            groupBox2.Location = new Point(6, 100);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(333, 225);
+            groupBox2.TabIndex = 3;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Settings";
             // 
             // joystickScmCbox
             // 
-            this.joystickScmCbox.FormattingEnabled = true;
-            this.joystickScmCbox.Items.AddRange(new object[] {
-            "Scheme 1",
-            "Scheme 2"});
-            this.joystickScmCbox.Location = new System.Drawing.Point(116, 177);
-            this.joystickScmCbox.Name = "joystickScmCbox";
-            this.joystickScmCbox.Size = new System.Drawing.Size(121, 23);
-            this.joystickScmCbox.TabIndex = 3;
-            this.joystickScmCbox.SelectedIndexChanged += new System.EventHandler(this.joystickScmCbox_SelectedIndexChanged);
+            joystickScmCbox.FormattingEnabled = true;
+            joystickScmCbox.Items.AddRange(new object[] { "Scheme 1", "Scheme 2" });
+            joystickScmCbox.Location = new Point(116, 177);
+            joystickScmCbox.Name = "joystickScmCbox";
+            joystickScmCbox.Size = new Size(121, 23);
+            joystickScmCbox.TabIndex = 3;
+            joystickScmCbox.SelectedIndexChanged += joystickScmCbox_SelectedIndexChanged;
             // 
             // textSpdCbox
             // 
-            this.textSpdCbox.FormattingEnabled = true;
-            this.textSpdCbox.Items.AddRange(new object[] {
-            "Slow",
-            "Normal",
-            "Fast"});
-            this.textSpdCbox.Location = new System.Drawing.Point(116, 148);
-            this.textSpdCbox.Name = "textSpdCbox";
-            this.textSpdCbox.Size = new System.Drawing.Size(121, 23);
-            this.textSpdCbox.TabIndex = 3;
-            this.textSpdCbox.SelectedIndexChanged += new System.EventHandler(this.textSpdCbox_SelectedIndexChanged);
+            textSpdCbox.FormattingEnabled = true;
+            textSpdCbox.Items.AddRange(new object[] { "Slow", "Normal", "Fast" });
+            textSpdCbox.Location = new Point(116, 148);
+            textSpdCbox.Name = "textSpdCbox";
+            textSpdCbox.Size = new Size(121, 23);
+            textSpdCbox.TabIndex = 3;
+            textSpdCbox.SelectedIndexChanged += textSpdCbox_SelectedIndexChanged;
             // 
             // voiceSetCbox
             // 
-            this.voiceSetCbox.FormattingEnabled = true;
-            this.voiceSetCbox.Items.AddRange(new object[] {
-            "Enabled",
-            "Disabled"});
-            this.voiceSetCbox.Location = new System.Drawing.Point(116, 119);
-            this.voiceSetCbox.Name = "voiceSetCbox";
-            this.voiceSetCbox.Size = new System.Drawing.Size(121, 23);
-            this.voiceSetCbox.TabIndex = 3;
-            this.voiceSetCbox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            voiceSetCbox.FormattingEnabled = true;
+            voiceSetCbox.Items.AddRange(new object[] { "Enabled", "Disabled" });
+            voiceSetCbox.Location = new Point(116, 119);
+            voiceSetCbox.Name = "voiceSetCbox";
+            voiceSetCbox.Size = new Size(121, 23);
+            voiceSetCbox.TabIndex = 3;
+            voiceSetCbox.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(14, 180);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(96, 15);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Joystick Scheme:";
+            label8.AutoSize = true;
+            label8.Location = new Point(14, 180);
+            label8.Name = "label8";
+            label8.Size = new Size(96, 15);
+            label8.TabIndex = 1;
+            label8.Text = "Joystick Scheme:";
             // 
             // voiceVolNbox
             // 
-            this.voiceVolNbox.Location = new System.Drawing.Point(116, 90);
-            this.voiceVolNbox.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.voiceVolNbox.Name = "voiceVolNbox";
-            this.voiceVolNbox.Size = new System.Drawing.Size(54, 23);
-            this.voiceVolNbox.TabIndex = 2;
-            this.voiceVolNbox.ValueChanged += new System.EventHandler(this.voiceVolNbox_ValueChanged);
+            voiceVolNbox.Location = new Point(116, 90);
+            voiceVolNbox.Maximum = new decimal(new int[] { 5, 0, 0, 0 });
+            voiceVolNbox.Name = "voiceVolNbox";
+            voiceVolNbox.Size = new Size(54, 23);
+            voiceVolNbox.TabIndex = 2;
+            voiceVolNbox.ValueChanged += voiceVolNbox_ValueChanged;
             // 
             // sfxVolNbox
             // 
-            this.sfxVolNbox.Location = new System.Drawing.Point(116, 61);
-            this.sfxVolNbox.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.sfxVolNbox.Name = "sfxVolNbox";
-            this.sfxVolNbox.Size = new System.Drawing.Size(54, 23);
-            this.sfxVolNbox.TabIndex = 2;
-            this.sfxVolNbox.ValueChanged += new System.EventHandler(this.sfxVolNbox_ValueChanged);
+            sfxVolNbox.Location = new Point(116, 61);
+            sfxVolNbox.Maximum = new decimal(new int[] { 5, 0, 0, 0 });
+            sfxVolNbox.Name = "sfxVolNbox";
+            sfxVolNbox.Size = new Size(54, 23);
+            sfxVolNbox.TabIndex = 2;
+            sfxVolNbox.ValueChanged += sfxVolNbox_ValueChanged;
             // 
             // musicVolNbox
             // 
-            this.musicVolNbox.Location = new System.Drawing.Point(116, 32);
-            this.musicVolNbox.Maximum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.musicVolNbox.Name = "musicVolNbox";
-            this.musicVolNbox.Size = new System.Drawing.Size(54, 23);
-            this.musicVolNbox.TabIndex = 2;
-            this.musicVolNbox.ValueChanged += new System.EventHandler(this.musicVolNbox_ValueChanged);
+            musicVolNbox.Location = new Point(116, 32);
+            musicVolNbox.Maximum = new decimal(new int[] { 5, 0, 0, 0 });
+            musicVolNbox.Name = "musicVolNbox";
+            musicVolNbox.Size = new Size(54, 23);
+            musicVolNbox.TabIndex = 2;
+            musicVolNbox.ValueChanged += musicVolNbox_ValueChanged;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(14, 151);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(66, 15);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Text Speed:";
+            label7.AutoSize = true;
+            label7.Location = new Point(14, 151);
+            label7.Name = "label7";
+            label7.Size = new Size(66, 15);
+            label7.TabIndex = 1;
+            label7.Text = "Text Speed:";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(14, 121);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 15);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Voice Setting:";
+            label6.AutoSize = true;
+            label6.Location = new Point(14, 121);
+            label6.Name = "label6";
+            label6.Size = new Size(78, 15);
+            label6.TabIndex = 1;
+            label6.Text = "Voice Setting:";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 91);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 15);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Voice Volume:";
+            label5.AutoSize = true;
+            label5.Location = new Point(14, 91);
+            label5.Name = "label5";
+            label5.Size = new Size(81, 15);
+            label5.TabIndex = 1;
+            label5.Text = "Voice Volume:";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 62);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 15);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "SFX Volume:";
+            label4.AutoSize = true;
+            label4.Location = new Point(14, 62);
+            label4.Name = "label4";
+            label4.Size = new Size(72, 15);
+            label4.TabIndex = 1;
+            label4.Text = "SFX Volume:";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 33);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 15);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Music Volume:";
+            label3.AutoSize = true;
+            label3.Location = new Point(14, 33);
+            label3.Name = "label3";
+            label3.Size = new Size(85, 15);
+            label3.TabIndex = 1;
+            label3.Text = "Music Volume:";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.iineNbox);
-            this.groupBox1.Controls.Add(this.idolRankNbox);
-            this.groupBox1.Controls.Add(this.moneyNbox);
-            this.groupBox1.Controls.Add(this.label32);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(6, 6);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(333, 88);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Capital";
+            groupBox1.Controls.Add(iineNbox);
+            groupBox1.Controls.Add(idolRankNbox);
+            groupBox1.Controls.Add(moneyNbox);
+            groupBox1.Controls.Add(label32);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Location = new Point(6, 6);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(333, 88);
+            groupBox1.TabIndex = 2;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Capital";
             // 
             // iineNbox
             // 
-            this.iineNbox.Location = new System.Drawing.Point(67, 52);
-            this.iineNbox.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.iineNbox.Name = "iineNbox";
-            this.iineNbox.Size = new System.Drawing.Size(92, 23);
-            this.iineNbox.TabIndex = 2;
-            this.iineNbox.ValueChanged += new System.EventHandler(this.iineNbox_ValueChanged);
+            iineNbox.Location = new Point(67, 52);
+            iineNbox.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            iineNbox.Name = "iineNbox";
+            iineNbox.Size = new Size(92, 23);
+            iineNbox.TabIndex = 2;
+            iineNbox.ValueChanged += iineNbox_ValueChanged;
             // 
             // idolRankNbox
             // 
-            this.idolRankNbox.Location = new System.Drawing.Point(213, 22);
-            this.idolRankNbox.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.idolRankNbox.Name = "idolRankNbox";
-            this.idolRankNbox.Size = new System.Drawing.Size(92, 23);
-            this.idolRankNbox.TabIndex = 3;
-            this.idolRankNbox.ValueChanged += new System.EventHandler(this.idolRankNbox_ValueChanged);
+            idolRankNbox.Location = new Point(213, 22);
+            idolRankNbox.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            idolRankNbox.Name = "idolRankNbox";
+            idolRankNbox.Size = new Size(92, 23);
+            idolRankNbox.TabIndex = 3;
+            idolRankNbox.ValueChanged += idolRankNbox_ValueChanged;
             // 
             // moneyNbox
             // 
-            this.moneyNbox.Location = new System.Drawing.Point(67, 22);
-            this.moneyNbox.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.moneyNbox.Name = "moneyNbox";
-            this.moneyNbox.Size = new System.Drawing.Size(92, 23);
-            this.moneyNbox.TabIndex = 2;
-            this.moneyNbox.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 54);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "iine:";
+            moneyNbox.Location = new Point(67, 22);
+            moneyNbox.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            moneyNbox.Name = "moneyNbox";
+            moneyNbox.Size = new Size(92, 23);
+            moneyNbox.TabIndex = 2;
+            moneyNbox.ValueChanged += numericUpDown1_ValueChanged;
             // 
             // label32
             // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(178, 25);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(36, 15);
-            this.label32.TabIndex = 1;
-            this.label32.Text = "Rank:";
+            label32.AutoSize = true;
+            label32.Location = new Point(178, 25);
+            label32.Name = "label32";
+            label32.Size = new Size(36, 15);
+            label32.TabIndex = 1;
+            label32.Text = "Rank:";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(14, 54);
+            label2.Name = "label2";
+            label2.Size = new Size(29, 15);
+            label2.TabIndex = 1;
+            label2.Text = "iine:";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Money:";
+            label1.AutoSize = true;
+            label1.Location = new Point(14, 25);
+            label1.Name = "label1";
+            label1.Size = new Size(47, 15);
+            label1.TabIndex = 1;
+            label1.Text = "Money:";
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.listBox1);
-            this.tabPage2.Controls.Add(this.groupBox3);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(345, 399);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Avatars";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            tabPage2.Controls.Add(listBox1);
+            tabPage2.Controls.Add(groupBox3);
+            tabPage2.Location = new Point(4, 24);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(3);
+            tabPage2.Size = new Size(345, 399);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "Avatars";
+            tabPage2.UseVisualStyleBackColor = true;
             // 
             // listBox1
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 15;
-            this.listBox1.Items.AddRange(new object[] {
-            "Avatar 1",
-            "Avatar 2",
-            "Avatar 3",
-            "Avatar 4",
-            "Avatar 5",
-            "Avatar 6"});
-            this.listBox1.Location = new System.Drawing.Point(6, 6);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(93, 379);
-            this.listBox1.TabIndex = 1;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Items.AddRange(new object[] { "Avatar 1", "Avatar 2", "Avatar 3", "Avatar 4", "Avatar 5", "Avatar 6" });
+            listBox1.Location = new Point(6, 6);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(93, 379);
+            listBox1.TabIndex = 1;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.headNbox);
-            this.groupBox3.Controls.Add(this.shootNbox);
-            this.groupBox3.Controls.Add(this.bottomNbox);
-            this.groupBox3.Controls.Add(this.topNbox);
-            this.groupBox3.Controls.Add(this.makeUpNbox);
-            this.groupBox3.Controls.Add(this.glassesNbox);
-            this.groupBox3.Controls.Add(this.eyeColor);
-            this.groupBox3.Controls.Add(this.label20);
-            this.groupBox3.Controls.Add(this.hairColorNbox);
-            this.groupBox3.Controls.Add(this.label19);
-            this.groupBox3.Controls.Add(this.hairStyleNbox);
-            this.groupBox3.Controls.Add(this.label18);
-            this.groupBox3.Controls.Add(this.skinColorNbox);
-            this.groupBox3.Controls.Add(this.label17);
-            this.groupBox3.Controls.Add(this.eyeTypeNbox);
-            this.groupBox3.Controls.Add(this.label16);
-            this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.label14);
-            this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.avatarName);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Location = new System.Drawing.Point(105, 6);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(234, 387);
-            this.groupBox3.TabIndex = 0;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Avatar Parameters";
+            groupBox3.Controls.Add(headNbox);
+            groupBox3.Controls.Add(shootNbox);
+            groupBox3.Controls.Add(bottomNbox);
+            groupBox3.Controls.Add(topNbox);
+            groupBox3.Controls.Add(makeUpNbox);
+            groupBox3.Controls.Add(glassesNbox);
+            groupBox3.Controls.Add(eyeColor);
+            groupBox3.Controls.Add(label20);
+            groupBox3.Controls.Add(hairColorNbox);
+            groupBox3.Controls.Add(label19);
+            groupBox3.Controls.Add(hairStyleNbox);
+            groupBox3.Controls.Add(label18);
+            groupBox3.Controls.Add(skinColorNbox);
+            groupBox3.Controls.Add(label17);
+            groupBox3.Controls.Add(eyeTypeNbox);
+            groupBox3.Controls.Add(label16);
+            groupBox3.Controls.Add(label15);
+            groupBox3.Controls.Add(label14);
+            groupBox3.Controls.Add(label13);
+            groupBox3.Controls.Add(label12);
+            groupBox3.Controls.Add(label11);
+            groupBox3.Controls.Add(label10);
+            groupBox3.Controls.Add(avatarName);
+            groupBox3.Controls.Add(label9);
+            groupBox3.Location = new Point(105, 6);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(234, 387);
+            groupBox3.TabIndex = 0;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Avatar Parameters";
             // 
             // headNbox
             // 
-            this.headNbox.Location = new System.Drawing.Point(92, 338);
-            this.headNbox.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.headNbox.Name = "headNbox";
-            this.headNbox.Size = new System.Drawing.Size(61, 23);
-            this.headNbox.TabIndex = 2;
-            this.headNbox.ValueChanged += new System.EventHandler(this.headNbox_ValueChanged);
+            headNbox.Location = new Point(92, 338);
+            headNbox.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            headNbox.Name = "headNbox";
+            headNbox.Size = new Size(61, 23);
+            headNbox.TabIndex = 2;
+            headNbox.ValueChanged += headNbox_ValueChanged;
             // 
             // shootNbox
             // 
-            this.shootNbox.Location = new System.Drawing.Point(92, 309);
-            this.shootNbox.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.shootNbox.Name = "shootNbox";
-            this.shootNbox.Size = new System.Drawing.Size(61, 23);
-            this.shootNbox.TabIndex = 2;
-            this.shootNbox.ValueChanged += new System.EventHandler(this.shootNbox_ValueChanged);
+            shootNbox.Location = new Point(92, 309);
+            shootNbox.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            shootNbox.Name = "shootNbox";
+            shootNbox.Size = new Size(61, 23);
+            shootNbox.TabIndex = 2;
+            shootNbox.ValueChanged += shootNbox_ValueChanged;
             // 
             // bottomNbox
             // 
-            this.bottomNbox.Location = new System.Drawing.Point(92, 280);
-            this.bottomNbox.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.bottomNbox.Name = "bottomNbox";
-            this.bottomNbox.Size = new System.Drawing.Size(61, 23);
-            this.bottomNbox.TabIndex = 2;
-            this.bottomNbox.ValueChanged += new System.EventHandler(this.bottomNbox_ValueChanged);
+            bottomNbox.Location = new Point(92, 280);
+            bottomNbox.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            bottomNbox.Name = "bottomNbox";
+            bottomNbox.Size = new Size(61, 23);
+            bottomNbox.TabIndex = 2;
+            bottomNbox.ValueChanged += bottomNbox_ValueChanged;
             // 
             // topNbox
             // 
-            this.topNbox.Location = new System.Drawing.Point(92, 251);
-            this.topNbox.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.topNbox.Name = "topNbox";
-            this.topNbox.Size = new System.Drawing.Size(61, 23);
-            this.topNbox.TabIndex = 2;
-            this.topNbox.ValueChanged += new System.EventHandler(this.topNbox_ValueChanged);
+            topNbox.Location = new Point(92, 251);
+            topNbox.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            topNbox.Name = "topNbox";
+            topNbox.Size = new Size(61, 23);
+            topNbox.TabIndex = 2;
+            topNbox.ValueChanged += topNbox_ValueChanged;
             // 
             // makeUpNbox
             // 
-            this.makeUpNbox.Location = new System.Drawing.Point(92, 222);
-            this.makeUpNbox.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.makeUpNbox.Name = "makeUpNbox";
-            this.makeUpNbox.Size = new System.Drawing.Size(61, 23);
-            this.makeUpNbox.TabIndex = 2;
-            this.makeUpNbox.ValueChanged += new System.EventHandler(this.makeUpNbox_ValueChanged);
+            makeUpNbox.Location = new Point(92, 222);
+            makeUpNbox.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            makeUpNbox.Name = "makeUpNbox";
+            makeUpNbox.Size = new Size(61, 23);
+            makeUpNbox.TabIndex = 2;
+            makeUpNbox.ValueChanged += makeUpNbox_ValueChanged;
             // 
             // glassesNbox
             // 
-            this.glassesNbox.Location = new System.Drawing.Point(92, 193);
-            this.glassesNbox.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.glassesNbox.Name = "glassesNbox";
-            this.glassesNbox.Size = new System.Drawing.Size(61, 23);
-            this.glassesNbox.TabIndex = 2;
-            this.glassesNbox.ValueChanged += new System.EventHandler(this.glassesNbox_ValueChanged);
+            glassesNbox.Location = new Point(92, 193);
+            glassesNbox.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            glassesNbox.Name = "glassesNbox";
+            glassesNbox.Size = new Size(61, 23);
+            glassesNbox.TabIndex = 2;
+            glassesNbox.ValueChanged += glassesNbox_ValueChanged;
             // 
             // eyeColor
             // 
-            this.eyeColor.Location = new System.Drawing.Point(92, 164);
-            this.eyeColor.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.eyeColor.Name = "eyeColor";
-            this.eyeColor.Size = new System.Drawing.Size(61, 23);
-            this.eyeColor.TabIndex = 2;
-            this.eyeColor.ValueChanged += new System.EventHandler(this.eyeColor_ValueChanged);
+            eyeColor.Location = new Point(92, 164);
+            eyeColor.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            eyeColor.Name = "eyeColor";
+            eyeColor.Size = new Size(61, 23);
+            eyeColor.TabIndex = 2;
+            eyeColor.ValueChanged += eyeColor_ValueChanged;
             // 
             // label20
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(17, 340);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(38, 15);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "Head:";
+            label20.AutoSize = true;
+            label20.Location = new Point(17, 340);
+            label20.Name = "label20";
+            label20.Size = new Size(38, 15);
+            label20.TabIndex = 0;
+            label20.Text = "Head:";
             // 
             // hairColorNbox
             // 
-            this.hairColorNbox.Location = new System.Drawing.Point(92, 135);
-            this.hairColorNbox.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.hairColorNbox.Name = "hairColorNbox";
-            this.hairColorNbox.Size = new System.Drawing.Size(61, 23);
-            this.hairColorNbox.TabIndex = 2;
-            this.hairColorNbox.ValueChanged += new System.EventHandler(this.hairColorNbox_ValueChanged);
+            hairColorNbox.Location = new Point(92, 135);
+            hairColorNbox.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            hairColorNbox.Name = "hairColorNbox";
+            hairColorNbox.Size = new Size(61, 23);
+            hairColorNbox.TabIndex = 2;
+            hairColorNbox.ValueChanged += hairColorNbox_ValueChanged;
             // 
             // label19
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(17, 311);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(41, 15);
-            this.label19.TabIndex = 0;
-            this.label19.Text = "Shoot:";
+            label19.AutoSize = true;
+            label19.Location = new Point(17, 311);
+            label19.Name = "label19";
+            label19.Size = new Size(41, 15);
+            label19.TabIndex = 0;
+            label19.Text = "Shoot:";
             // 
             // hairStyleNbox
             // 
-            this.hairStyleNbox.Location = new System.Drawing.Point(92, 106);
-            this.hairStyleNbox.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.hairStyleNbox.Name = "hairStyleNbox";
-            this.hairStyleNbox.Size = new System.Drawing.Size(61, 23);
-            this.hairStyleNbox.TabIndex = 2;
-            this.hairStyleNbox.ValueChanged += new System.EventHandler(this.hairStyleNbox_ValueChanged);
+            hairStyleNbox.Location = new Point(92, 106);
+            hairStyleNbox.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            hairStyleNbox.Name = "hairStyleNbox";
+            hairStyleNbox.Size = new Size(61, 23);
+            hairStyleNbox.TabIndex = 2;
+            hairStyleNbox.ValueChanged += hairStyleNbox_ValueChanged;
             // 
             // label18
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(17, 282);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(50, 15);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "Bottom:";
+            label18.AutoSize = true;
+            label18.Location = new Point(17, 282);
+            label18.Name = "label18";
+            label18.Size = new Size(50, 15);
+            label18.TabIndex = 0;
+            label18.Text = "Bottom:";
             // 
             // skinColorNbox
             // 
-            this.skinColorNbox.Location = new System.Drawing.Point(92, 77);
-            this.skinColorNbox.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.skinColorNbox.Name = "skinColorNbox";
-            this.skinColorNbox.Size = new System.Drawing.Size(61, 23);
-            this.skinColorNbox.TabIndex = 2;
-            this.skinColorNbox.ValueChanged += new System.EventHandler(this.skinColorNbox_ValueChanged);
+            skinColorNbox.Location = new Point(92, 77);
+            skinColorNbox.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            skinColorNbox.Name = "skinColorNbox";
+            skinColorNbox.Size = new Size(61, 23);
+            skinColorNbox.TabIndex = 2;
+            skinColorNbox.ValueChanged += skinColorNbox_ValueChanged;
             // 
             // label17
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(17, 253);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(29, 15);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Top:";
+            label17.AutoSize = true;
+            label17.Location = new Point(17, 253);
+            label17.Name = "label17";
+            label17.Size = new Size(29, 15);
+            label17.TabIndex = 0;
+            label17.Text = "Top:";
             // 
             // eyeTypeNbox
             // 
-            this.eyeTypeNbox.Location = new System.Drawing.Point(92, 48);
-            this.eyeTypeNbox.Maximum = new decimal(new int[] {
-            2147483647,
-            0,
-            0,
-            0});
-            this.eyeTypeNbox.Name = "eyeTypeNbox";
-            this.eyeTypeNbox.Size = new System.Drawing.Size(61, 23);
-            this.eyeTypeNbox.TabIndex = 2;
-            this.eyeTypeNbox.ValueChanged += new System.EventHandler(this.eyeTypeNbox_ValueChanged);
+            eyeTypeNbox.Location = new Point(92, 48);
+            eyeTypeNbox.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            eyeTypeNbox.Name = "eyeTypeNbox";
+            eyeTypeNbox.Size = new Size(61, 23);
+            eyeTypeNbox.TabIndex = 2;
+            eyeTypeNbox.ValueChanged += eyeTypeNbox_ValueChanged;
             // 
             // label16
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(17, 224);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(57, 15);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Make Up:";
+            label16.AutoSize = true;
+            label16.Location = new Point(17, 224);
+            label16.Name = "label16";
+            label16.Size = new Size(57, 15);
+            label16.TabIndex = 0;
+            label16.Text = "Make Up:";
             // 
             // label15
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(17, 195);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(48, 15);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "Glasses:";
+            label15.AutoSize = true;
+            label15.Location = new Point(17, 195);
+            label15.Name = "label15";
+            label15.Size = new Size(48, 15);
+            label15.TabIndex = 0;
+            label15.Text = "Glasses:";
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(17, 166);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(60, 15);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Eye Color:";
+            label14.AutoSize = true;
+            label14.Location = new Point(17, 166);
+            label14.Name = "label14";
+            label14.Size = new Size(60, 15);
+            label14.TabIndex = 0;
+            label14.Text = "Eye Color:";
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(17, 137);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(64, 15);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Hair Color:";
+            label13.AutoSize = true;
+            label13.Location = new Point(17, 137);
+            label13.Name = "label13";
+            label13.Size = new Size(64, 15);
+            label13.TabIndex = 0;
+            label13.Text = "Hair Color:";
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(17, 108);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(60, 15);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Hair Style:";
+            label12.AutoSize = true;
+            label12.Location = new Point(17, 108);
+            label12.Name = "label12";
+            label12.Size = new Size(60, 15);
+            label12.TabIndex = 0;
+            label12.Text = "Hair Style:";
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(17, 80);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(64, 15);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Skin Color:";
+            label11.AutoSize = true;
+            label11.Location = new Point(17, 80);
+            label11.Name = "label11";
+            label11.Size = new Size(64, 15);
+            label11.TabIndex = 0;
+            label11.Text = "Skin Color:";
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(17, 51);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(55, 15);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "Eye Type:";
+            label10.AutoSize = true;
+            label10.Location = new Point(17, 51);
+            label10.Name = "label10";
+            label10.Size = new Size(55, 15);
+            label10.TabIndex = 0;
+            label10.Text = "Eye Type:";
             // 
             // avatarName
             // 
-            this.avatarName.Location = new System.Drawing.Point(92, 19);
-            this.avatarName.Name = "avatarName";
-            this.avatarName.Size = new System.Drawing.Size(110, 23);
-            this.avatarName.TabIndex = 1;
-            this.avatarName.TextChanged += new System.EventHandler(this.avatarName_TextChanged);
+            avatarName.Location = new Point(92, 19);
+            avatarName.Name = "avatarName";
+            avatarName.Size = new Size(110, 23);
+            avatarName.TabIndex = 1;
+            avatarName.TextChanged += avatarName_TextChanged;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(17, 22);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(42, 15);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Name:";
+            label9.AutoSize = true;
+            label9.Location = new Point(17, 22);
+            label9.Name = "label9";
+            label9.Size = new Size(42, 15);
+            label9.TabIndex = 0;
+            label9.Text = "Name:";
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.button3);
-            this.tabPage3.Controls.Add(this.button2);
-            this.tabPage3.Controls.Add(this.button1);
-            this.tabPage3.Controls.Add(this.itemIdNbox);
-            this.tabPage3.Controls.Add(this.label21);
-            this.tabPage3.Controls.Add(this.listViewCloset);
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(345, 399);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Closet";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            tabPage3.Controls.Add(button3);
+            tabPage3.Controls.Add(button2);
+            tabPage3.Controls.Add(button1);
+            tabPage3.Controls.Add(itemIdNbox);
+            tabPage3.Controls.Add(label21);
+            tabPage3.Controls.Add(listViewCloset);
+            tabPage3.Location = new Point(4, 24);
+            tabPage3.Name = "tabPage3";
+            tabPage3.Padding = new Padding(3);
+            tabPage3.Size = new Size(345, 399);
+            tabPage3.TabIndex = 2;
+            tabPage3.Text = "Closet";
+            tabPage3.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(97, 370);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Insert All";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            button3.Location = new Point(97, 370);
+            button3.Name = "button3";
+            button3.Size = new Size(137, 23);
+            button3.TabIndex = 4;
+            button3.Text = "Insert All";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(200, 14);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(137, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Remove Selected";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            button2.Location = new Point(200, 14);
+            button2.Name = "button2";
+            button2.Size = new Size(137, 23);
+            button2.TabIndex = 4;
+            button2.Text = "Remove Selected";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(134, 14);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(60, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Location = new Point(134, 14);
+            button1.Name = "button1";
+            button1.Size = new Size(60, 23);
+            button1.TabIndex = 3;
+            button1.Text = "Add";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // itemIdNbox
             // 
-            this.itemIdNbox.Location = new System.Drawing.Point(57, 14);
-            this.itemIdNbox.Maximum = new decimal(new int[] {
-            -2,
-            0,
-            0,
-            0});
-            this.itemIdNbox.Name = "itemIdNbox";
-            this.itemIdNbox.Size = new System.Drawing.Size(69, 23);
-            this.itemIdNbox.TabIndex = 2;
+            itemIdNbox.Location = new Point(57, 14);
+            itemIdNbox.Maximum = new decimal(new int[] { -2, 0, 0, 0 });
+            itemIdNbox.Name = "itemIdNbox";
+            itemIdNbox.Size = new Size(69, 23);
+            itemIdNbox.TabIndex = 2;
             // 
             // label21
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(4, 18);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(50, 15);
-            this.label21.TabIndex = 1;
-            this.label21.Text = "ITEM ID:";
+            label21.AutoSize = true;
+            label21.Location = new Point(4, 18);
+            label21.Name = "label21";
+            label21.Size = new Size(50, 15);
+            label21.TabIndex = 1;
+            label21.Text = "ITEM ID:";
             // 
             // listViewCloset
             // 
-            this.listViewCloset.BackColor = System.Drawing.SystemColors.Window;
-            this.listViewCloset.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.closetId});
-            this.listViewCloset.FullRowSelect = true;
-            this.listViewCloset.GridLines = true;
-            this.listViewCloset.Location = new System.Drawing.Point(6, 53);
-            this.listViewCloset.Name = "listViewCloset";
-            this.listViewCloset.Size = new System.Drawing.Size(333, 311);
-            this.listViewCloset.TabIndex = 0;
-            this.listViewCloset.UseCompatibleStateImageBehavior = false;
-            this.listViewCloset.View = System.Windows.Forms.View.Details;
+            listViewCloset.BackColor = SystemColors.Window;
+            listViewCloset.Columns.AddRange(new ColumnHeader[] { closetId });
+            listViewCloset.FullRowSelect = true;
+            listViewCloset.GridLines = true;
+            listViewCloset.Location = new Point(6, 53);
+            listViewCloset.Name = "listViewCloset";
+            listViewCloset.Size = new Size(333, 311);
+            listViewCloset.TabIndex = 0;
+            listViewCloset.UseCompatibleStateImageBehavior = false;
+            listViewCloset.View = View.Details;
             // 
             // closetId
             // 
-            this.closetId.Text = "ITEM ID";
-            this.closetId.Width = 100;
+            closetId.Text = "ITEM ID";
+            closetId.Width = 100;
             // 
             // bodyPartsTab
             // 
-            this.bodyPartsTab.Controls.Add(this.tabControl2);
-            this.bodyPartsTab.Location = new System.Drawing.Point(4, 24);
-            this.bodyPartsTab.Name = "bodyPartsTab";
-            this.bodyPartsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.bodyPartsTab.Size = new System.Drawing.Size(345, 399);
-            this.bodyPartsTab.TabIndex = 3;
-            this.bodyPartsTab.Text = "Body Parts";
-            this.bodyPartsTab.UseVisualStyleBackColor = true;
+            bodyPartsTab.Controls.Add(tabControl2);
+            bodyPartsTab.Location = new Point(4, 24);
+            bodyPartsTab.Name = "bodyPartsTab";
+            bodyPartsTab.Padding = new Padding(3);
+            bodyPartsTab.Size = new Size(345, 399);
+            bodyPartsTab.TabIndex = 3;
+            bodyPartsTab.Text = "Body Parts";
+            bodyPartsTab.UseVisualStyleBackColor = true;
             // 
             // tabControl2
             // 
-            this.tabControl2.Controls.Add(this.tabPage6);
-            this.tabControl2.Controls.Add(this.tabPage7);
-            this.tabControl2.Controls.Add(this.tabPage8);
-            this.tabControl2.Controls.Add(this.tabPage9);
-            this.tabControl2.Controls.Add(this.tabPage10);
-            this.tabControl2.Controls.Add(this.tabPage11);
-            this.tabControl2.Controls.Add(this.tabPage12);
-            this.tabControl2.Location = new System.Drawing.Point(6, 6);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(333, 387);
-            this.tabControl2.TabIndex = 0;
+            tabControl2.Controls.Add(tabPage6);
+            tabControl2.Controls.Add(tabPage7);
+            tabControl2.Controls.Add(tabPage8);
+            tabControl2.Controls.Add(tabPage9);
+            tabControl2.Controls.Add(tabPage10);
+            tabControl2.Controls.Add(tabPage11);
+            tabControl2.Controls.Add(tabPage12);
+            tabControl2.Location = new Point(6, 6);
+            tabControl2.Name = "tabControl2";
+            tabControl2.SelectedIndex = 0;
+            tabControl2.Size = new Size(333, 387);
+            tabControl2.TabIndex = 0;
             // 
             // tabPage6
             // 
-            this.tabPage6.Controls.Add(this.button5);
-            this.tabPage6.Controls.Add(this.button4);
-            this.tabPage6.Controls.Add(this.eyeTypeIdNbox);
-            this.tabPage6.Controls.Add(this.label22);
-            this.tabPage6.Controls.Add(this.listViewEyeTypes);
-            this.tabPage6.Location = new System.Drawing.Point(4, 24);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(325, 359);
-            this.tabPage6.TabIndex = 0;
-            this.tabPage6.Text = "Eye Type";
-            this.tabPage6.UseVisualStyleBackColor = true;
+            tabPage6.Controls.Add(button5);
+            tabPage6.Controls.Add(button4);
+            tabPage6.Controls.Add(eyeTypeIdNbox);
+            tabPage6.Controls.Add(label22);
+            tabPage6.Controls.Add(listViewEyeTypes);
+            tabPage6.Location = new Point(4, 24);
+            tabPage6.Name = "tabPage6";
+            tabPage6.Padding = new Padding(3);
+            tabPage6.Size = new Size(325, 359);
+            tabPage6.TabIndex = 0;
+            tabPage6.Text = "Eye Type";
+            tabPage6.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(189, 29);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(119, 23);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Remove Selected";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            button5.Location = new Point(189, 29);
+            button5.Name = "button5";
+            button5.Size = new Size(119, 23);
+            button5.TabIndex = 3;
+            button5.Text = "Remove Selected";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(108, 29);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(62, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Add";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            button4.Location = new Point(108, 29);
+            button4.Name = "button4";
+            button4.Size = new Size(62, 23);
+            button4.TabIndex = 3;
+            button4.Text = "Add";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // eyeTypeIdNbox
             // 
-            this.eyeTypeIdNbox.Location = new System.Drawing.Point(33, 27);
-            this.eyeTypeIdNbox.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.eyeTypeIdNbox.Name = "eyeTypeIdNbox";
-            this.eyeTypeIdNbox.Size = new System.Drawing.Size(59, 23);
-            this.eyeTypeIdNbox.TabIndex = 2;
+            eyeTypeIdNbox.Location = new Point(33, 27);
+            eyeTypeIdNbox.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
+            eyeTypeIdNbox.Name = "eyeTypeIdNbox";
+            eyeTypeIdNbox.Size = new Size(59, 23);
+            eyeTypeIdNbox.TabIndex = 2;
             // 
             // label22
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(6, 29);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(21, 15);
-            this.label22.TabIndex = 1;
-            this.label22.Text = "ID:";
+            label22.AutoSize = true;
+            label22.Location = new Point(6, 29);
+            label22.Name = "label22";
+            label22.Size = new Size(21, 15);
+            label22.TabIndex = 1;
+            label22.Text = "ID:";
             // 
             // listViewEyeTypes
             // 
-            this.listViewEyeTypes.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1});
-            this.listViewEyeTypes.FullRowSelect = true;
-            this.listViewEyeTypes.GridLines = true;
-            this.listViewEyeTypes.Location = new System.Drawing.Point(6, 74);
-            this.listViewEyeTypes.Name = "listViewEyeTypes";
-            this.listViewEyeTypes.Size = new System.Drawing.Size(313, 241);
-            this.listViewEyeTypes.TabIndex = 0;
-            this.listViewEyeTypes.UseCompatibleStateImageBehavior = false;
-            this.listViewEyeTypes.View = System.Windows.Forms.View.Details;
+            listViewEyeTypes.Columns.AddRange(new ColumnHeader[] { columnHeader1 });
+            listViewEyeTypes.FullRowSelect = true;
+            listViewEyeTypes.GridLines = true;
+            listViewEyeTypes.Location = new Point(6, 74);
+            listViewEyeTypes.Name = "listViewEyeTypes";
+            listViewEyeTypes.Size = new Size(313, 241);
+            listViewEyeTypes.TabIndex = 0;
+            listViewEyeTypes.UseCompatibleStateImageBehavior = false;
+            listViewEyeTypes.View = View.Details;
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "ID:";
-            this.columnHeader1.Width = 100;
+            columnHeader1.Text = "ID:";
+            columnHeader1.Width = 100;
             // 
             // tabPage7
             // 
-            this.tabPage7.Controls.Add(this.removeSkinColorBtn);
-            this.tabPage7.Controls.Add(this.insertSkinColorAllBtn);
-            this.tabPage7.Controls.Add(this.addSkinColorBtn);
-            this.tabPage7.Controls.Add(this.skinColorIdNbox);
-            this.tabPage7.Controls.Add(this.label23);
-            this.tabPage7.Controls.Add(this.listViewSkinColor);
-            this.tabPage7.Location = new System.Drawing.Point(4, 24);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(325, 359);
-            this.tabPage7.TabIndex = 1;
-            this.tabPage7.Text = "Skin Color";
-            this.tabPage7.UseVisualStyleBackColor = true;
+            tabPage7.Controls.Add(removeSkinColorBtn);
+            tabPage7.Controls.Add(insertSkinColorAllBtn);
+            tabPage7.Controls.Add(addSkinColorBtn);
+            tabPage7.Controls.Add(skinColorIdNbox);
+            tabPage7.Controls.Add(label23);
+            tabPage7.Controls.Add(listViewSkinColor);
+            tabPage7.Location = new Point(4, 24);
+            tabPage7.Name = "tabPage7";
+            tabPage7.Padding = new Padding(3);
+            tabPage7.Size = new Size(325, 359);
+            tabPage7.TabIndex = 1;
+            tabPage7.Text = "Skin Color";
+            tabPage7.UseVisualStyleBackColor = true;
             // 
             // removeSkinColorBtn
             // 
-            this.removeSkinColorBtn.Location = new System.Drawing.Point(189, 37);
-            this.removeSkinColorBtn.Name = "removeSkinColorBtn";
-            this.removeSkinColorBtn.Size = new System.Drawing.Size(119, 23);
-            this.removeSkinColorBtn.TabIndex = 7;
-            this.removeSkinColorBtn.Text = "Remove Selected";
-            this.removeSkinColorBtn.UseVisualStyleBackColor = true;
-            this.removeSkinColorBtn.Click += new System.EventHandler(this.removeSkinColorBtn_Click);
+            removeSkinColorBtn.Location = new Point(189, 37);
+            removeSkinColorBtn.Name = "removeSkinColorBtn";
+            removeSkinColorBtn.Size = new Size(119, 23);
+            removeSkinColorBtn.TabIndex = 7;
+            removeSkinColorBtn.Text = "Remove Selected";
+            removeSkinColorBtn.UseVisualStyleBackColor = true;
+            removeSkinColorBtn.Click += removeSkinColorBtn_Click;
             // 
             // insertSkinColorAllBtn
             // 
-            this.insertSkinColorAllBtn.Location = new System.Drawing.Point(97, 326);
-            this.insertSkinColorAllBtn.Name = "insertSkinColorAllBtn";
-            this.insertSkinColorAllBtn.Size = new System.Drawing.Size(137, 23);
-            this.insertSkinColorAllBtn.TabIndex = 9;
-            this.insertSkinColorAllBtn.Text = "Insert All";
-            this.insertSkinColorAllBtn.UseVisualStyleBackColor = true;
-            this.insertSkinColorAllBtn.Click += new System.EventHandler(this.insertSkinColorAllBtn_Click);
+            insertSkinColorAllBtn.Location = new Point(97, 326);
+            insertSkinColorAllBtn.Name = "insertSkinColorAllBtn";
+            insertSkinColorAllBtn.Size = new Size(137, 23);
+            insertSkinColorAllBtn.TabIndex = 9;
+            insertSkinColorAllBtn.Text = "Insert All";
+            insertSkinColorAllBtn.UseVisualStyleBackColor = true;
+            insertSkinColorAllBtn.Click += insertSkinColorAllBtn_Click;
             // 
             // addSkinColorBtn
             // 
-            this.addSkinColorBtn.Location = new System.Drawing.Point(108, 37);
-            this.addSkinColorBtn.Name = "addSkinColorBtn";
-            this.addSkinColorBtn.Size = new System.Drawing.Size(62, 23);
-            this.addSkinColorBtn.TabIndex = 8;
-            this.addSkinColorBtn.Text = "Add";
-            this.addSkinColorBtn.UseVisualStyleBackColor = true;
-            this.addSkinColorBtn.Click += new System.EventHandler(this.addSkinColorBtn_Click);
+            addSkinColorBtn.Location = new Point(108, 37);
+            addSkinColorBtn.Name = "addSkinColorBtn";
+            addSkinColorBtn.Size = new Size(62, 23);
+            addSkinColorBtn.TabIndex = 8;
+            addSkinColorBtn.Text = "Add";
+            addSkinColorBtn.UseVisualStyleBackColor = true;
+            addSkinColorBtn.Click += addSkinColorBtn_Click;
             // 
             // skinColorIdNbox
             // 
-            this.skinColorIdNbox.Location = new System.Drawing.Point(33, 35);
-            this.skinColorIdNbox.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.skinColorIdNbox.Name = "skinColorIdNbox";
-            this.skinColorIdNbox.Size = new System.Drawing.Size(59, 23);
-            this.skinColorIdNbox.TabIndex = 6;
+            skinColorIdNbox.Location = new Point(33, 35);
+            skinColorIdNbox.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
+            skinColorIdNbox.Name = "skinColorIdNbox";
+            skinColorIdNbox.Size = new Size(59, 23);
+            skinColorIdNbox.TabIndex = 6;
             // 
             // label23
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(6, 37);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(21, 15);
-            this.label23.TabIndex = 5;
-            this.label23.Text = "ID:";
+            label23.AutoSize = true;
+            label23.Location = new Point(6, 37);
+            label23.Name = "label23";
+            label23.Size = new Size(21, 15);
+            label23.TabIndex = 5;
+            label23.Text = "ID:";
             // 
             // listViewSkinColor
             // 
-            this.listViewSkinColor.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader2});
-            this.listViewSkinColor.FullRowSelect = true;
-            this.listViewSkinColor.GridLines = true;
-            this.listViewSkinColor.Location = new System.Drawing.Point(6, 82);
-            this.listViewSkinColor.Name = "listViewSkinColor";
-            this.listViewSkinColor.Size = new System.Drawing.Size(313, 241);
-            this.listViewSkinColor.TabIndex = 4;
-            this.listViewSkinColor.UseCompatibleStateImageBehavior = false;
-            this.listViewSkinColor.View = System.Windows.Forms.View.Details;
+            listViewSkinColor.Columns.AddRange(new ColumnHeader[] { columnHeader2 });
+            listViewSkinColor.FullRowSelect = true;
+            listViewSkinColor.GridLines = true;
+            listViewSkinColor.Location = new Point(6, 82);
+            listViewSkinColor.Name = "listViewSkinColor";
+            listViewSkinColor.Size = new Size(313, 241);
+            listViewSkinColor.TabIndex = 4;
+            listViewSkinColor.UseCompatibleStateImageBehavior = false;
+            listViewSkinColor.View = View.Details;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "ID:";
-            this.columnHeader2.Width = 100;
+            columnHeader2.Text = "ID:";
+            columnHeader2.Width = 100;
             // 
             // tabPage8
             // 
-            this.tabPage8.Controls.Add(this.button8);
-            this.tabPage8.Controls.Add(this.button9);
-            this.tabPage8.Controls.Add(this.hairStyleIdNbox);
-            this.tabPage8.Controls.Add(this.label24);
-            this.tabPage8.Controls.Add(this.insertHairStyleAllBtn);
-            this.tabPage8.Controls.Add(this.listViewHairStyle);
-            this.tabPage8.Location = new System.Drawing.Point(4, 24);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(325, 359);
-            this.tabPage8.TabIndex = 2;
-            this.tabPage8.Text = "Hair Style";
-            this.tabPage8.UseVisualStyleBackColor = true;
+            tabPage8.Controls.Add(button8);
+            tabPage8.Controls.Add(button9);
+            tabPage8.Controls.Add(hairStyleIdNbox);
+            tabPage8.Controls.Add(label24);
+            tabPage8.Controls.Add(insertHairStyleAllBtn);
+            tabPage8.Controls.Add(listViewHairStyle);
+            tabPage8.Location = new Point(4, 24);
+            tabPage8.Name = "tabPage8";
+            tabPage8.Padding = new Padding(3);
+            tabPage8.Size = new Size(325, 359);
+            tabPage8.TabIndex = 2;
+            tabPage8.Text = "Hair Style";
+            tabPage8.UseVisualStyleBackColor = true;
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(189, 37);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(119, 23);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "Remove Selected";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            button8.Location = new Point(189, 37);
+            button8.Name = "button8";
+            button8.Size = new Size(119, 23);
+            button8.TabIndex = 7;
+            button8.Text = "Remove Selected";
+            button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(108, 37);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(62, 23);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "Add";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            button9.Location = new Point(108, 37);
+            button9.Name = "button9";
+            button9.Size = new Size(62, 23);
+            button9.TabIndex = 8;
+            button9.Text = "Add";
+            button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // hairStyleIdNbox
             // 
-            this.hairStyleIdNbox.Location = new System.Drawing.Point(33, 35);
-            this.hairStyleIdNbox.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.hairStyleIdNbox.Name = "hairStyleIdNbox";
-            this.hairStyleIdNbox.Size = new System.Drawing.Size(59, 23);
-            this.hairStyleIdNbox.TabIndex = 6;
+            hairStyleIdNbox.Location = new Point(33, 35);
+            hairStyleIdNbox.Maximum = new decimal(new int[] { 255, 0, 0, 0 });
+            hairStyleIdNbox.Name = "hairStyleIdNbox";
+            hairStyleIdNbox.Size = new Size(59, 23);
+            hairStyleIdNbox.TabIndex = 6;
             // 
             // label24
             // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(6, 37);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(21, 15);
-            this.label24.TabIndex = 5;
-            this.label24.Text = "ID:";
-            // 
-            // listViewHairStyle
-            // 
-            this.listViewHairStyle.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader3});
-            this.listViewHairStyle.FullRowSelect = true;
-            this.listViewHairStyle.GridLines = true;
-            this.listViewHairStyle.Location = new System.Drawing.Point(6, 82);
-            this.listViewHairStyle.Name = "listViewHairStyle";
-            this.listViewHairStyle.Size = new System.Drawing.Size(313, 241);
-            this.listViewHairStyle.TabIndex = 4;
-            this.listViewHairStyle.UseCompatibleStateImageBehavior = false;
-            this.listViewHairStyle.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "ID:";
-            this.columnHeader3.Width = 100;
-            // 
-            // tabPage9
-            // 
-            this.tabPage9.Controls.Add(this.listViewHairColor);
-            this.tabPage9.Controls.Add(this.removeHairColor);
-            this.tabPage9.Controls.Add(this.addHairColorBtn);
-            this.tabPage9.Controls.Add(this.insertHairColorAllBtn);
-            this.tabPage9.Controls.Add(this.hairColorIdNbox);
-            this.tabPage9.Controls.Add(this.label25);
-            this.tabPage9.Location = new System.Drawing.Point(4, 24);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(325, 359);
-            this.tabPage9.TabIndex = 3;
-            this.tabPage9.Text = "Hair Color";
-            this.tabPage9.UseVisualStyleBackColor = true;
-            // 
-            // listViewHairColor
-            // 
-            this.listViewHairColor.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader4});
-            this.listViewHairColor.FullRowSelect = true;
-            this.listViewHairColor.GridLines = true;
-            this.listViewHairColor.Location = new System.Drawing.Point(6, 82);
-            this.listViewHairColor.Name = "listViewHairColor";
-            this.listViewHairColor.Size = new System.Drawing.Size(313, 241);
-            this.listViewHairColor.TabIndex = 9;
-            this.listViewHairColor.UseCompatibleStateImageBehavior = false;
-            this.listViewHairColor.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "ID:";
-            this.columnHeader4.Width = 100;
-            // 
-            // removeHairColor
-            // 
-            this.removeHairColor.Location = new System.Drawing.Point(189, 37);
-            this.removeHairColor.Name = "removeHairColor";
-            this.removeHairColor.Size = new System.Drawing.Size(119, 23);
-            this.removeHairColor.TabIndex = 7;
-            this.removeHairColor.Text = "Remove Selected";
-            this.removeHairColor.UseVisualStyleBackColor = true;
-            this.removeHairColor.Click += new System.EventHandler(this.removeHairColor_Click);
-            // 
-            // addHairColorBtn
-            // 
-            this.addHairColorBtn.Location = new System.Drawing.Point(108, 37);
-            this.addHairColorBtn.Name = "addHairColorBtn";
-            this.addHairColorBtn.Size = new System.Drawing.Size(62, 23);
-            this.addHairColorBtn.TabIndex = 8;
-            this.addHairColorBtn.Text = "Add";
-            this.addHairColorBtn.UseVisualStyleBackColor = true;
-            this.addHairColorBtn.Click += new System.EventHandler(this.addHairColorBtn_Click);
-            // 
-            // insertHairColorAllBtn
-            // 
-            this.insertHairColorAllBtn.Location = new System.Drawing.Point(97, 326);
-            this.insertHairColorAllBtn.Name = "insertHairColorAllBtn";
-            this.insertHairColorAllBtn.Size = new System.Drawing.Size(137, 23);
-            this.insertHairColorAllBtn.TabIndex = 10;
-            this.insertHairColorAllBtn.Text = "Insert All";
-            this.insertHairColorAllBtn.UseVisualStyleBackColor = true;
-            this.insertHairColorAllBtn.Click += new System.EventHandler(this.insertHairColorAllBtn_Click);
+            label24.AutoSize = true;
+            label24.Location = new Point(6, 37);
+            label24.Name = "label24";
+            label24.Size = new Size(21, 15);
+            label24.TabIndex = 5;
+            label24.Text = "ID:";
             // 
             // insertHairStyleAllBtn
             // 
-            this.insertHairStyleAllBtn.Location = new System.Drawing.Point(97, 326);
-            this.insertHairStyleAllBtn.Name = "insertHairStyleAllBtn";
-            this.insertHairStyleAllBtn.Size = new System.Drawing.Size(137, 23);
-            this.insertHairStyleAllBtn.TabIndex = 11;
-            this.insertHairStyleAllBtn.Text = "Insert All";
-            this.insertHairStyleAllBtn.UseVisualStyleBackColor = true;
-            this.insertHairStyleAllBtn.Click += new System.EventHandler(this.insertHairStyleAllBtn_Click);
+            insertHairStyleAllBtn.Location = new Point(97, 326);
+            insertHairStyleAllBtn.Name = "insertHairStyleAllBtn";
+            insertHairStyleAllBtn.Size = new Size(137, 23);
+            insertHairStyleAllBtn.TabIndex = 11;
+            insertHairStyleAllBtn.Text = "Insert All";
+            insertHairStyleAllBtn.UseVisualStyleBackColor = true;
+            insertHairStyleAllBtn.Click += insertHairStyleAllBtn_Click;
+            // 
+            // listViewHairStyle
+            // 
+            listViewHairStyle.Columns.AddRange(new ColumnHeader[] { columnHeader3 });
+            listViewHairStyle.FullRowSelect = true;
+            listViewHairStyle.GridLines = true;
+            listViewHairStyle.Location = new Point(6, 82);
+            listViewHairStyle.Name = "listViewHairStyle";
+            listViewHairStyle.Size = new Size(313, 241);
+            listViewHairStyle.TabIndex = 4;
+            listViewHairStyle.UseCompatibleStateImageBehavior = false;
+            listViewHairStyle.View = View.Details;
+            // 
+            // columnHeader3
+            // 
+            columnHeader3.Text = "ID:";
+            columnHeader3.Width = 100;
+            // 
+            // tabPage9
+            // 
+            tabPage9.Controls.Add(listViewHairColor);
+            tabPage9.Controls.Add(removeHairColor);
+            tabPage9.Controls.Add(addHairColorBtn);
+            tabPage9.Controls.Add(insertHairColorAllBtn);
+            tabPage9.Controls.Add(hairColorIdNbox);
+            tabPage9.Controls.Add(label25);
+            tabPage9.Location = new Point(4, 24);
+            tabPage9.Name = "tabPage9";
+            tabPage9.Padding = new Padding(3);
+            tabPage9.Size = new Size(325, 359);
+            tabPage9.TabIndex = 3;
+            tabPage9.Text = "Hair Color";
+            tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // listViewHairColor
+            // 
+            listViewHairColor.Columns.AddRange(new ColumnHeader[] { columnHeader4 });
+            listViewHairColor.FullRowSelect = true;
+            listViewHairColor.GridLines = true;
+            listViewHairColor.Location = new Point(6, 82);
+            listViewHairColor.Name = "listViewHairColor";
+            listViewHairColor.Size = new Size(313, 241);
+            listViewHairColor.TabIndex = 9;
+            listViewHairColor.UseCompatibleStateImageBehavior = false;
+            listViewHairColor.View = View.Details;
+            // 
+            // columnHeader4
+            // 
+            columnHeader4.Text = "ID:";
+            columnHeader4.Width = 100;
+            // 
+            // removeHairColor
+            // 
+            removeHairColor.Location = new Point(189, 37);
+            removeHairColor.Name = "removeHairColor";
+            removeHairColor.Size = new Size(119, 23);
+            removeHairColor.TabIndex = 7;
+            removeHairColor.Text = "Remove Selected";
+            removeHairColor.UseVisualStyleBackColor = true;
+            removeHairColor.Click += removeHairColor_Click;
+            // 
+            // addHairColorBtn
+            // 
+            addHairColorBtn.Location = new Point(108, 37);
+            addHairColorBtn.Name = "addHairColorBtn";
+            addHairColorBtn.Size = new Size(62, 23);
+            addHairColorBtn.TabIndex = 8;
+            addHairColorBtn.Text = "Add";
+            addHairColorBtn.UseVisualStyleBackColor = true;
+            addHairColorBtn.Click += addHairColorBtn_Click;
+            // 
+            // insertHairColorAllBtn
+            // 
+            insertHairColorAllBtn.Location = new Point(97, 326);
+            insertHairColorAllBtn.Name = "insertHairColorAllBtn";
+            insertHairColorAllBtn.Size = new Size(137, 23);
+            insertHairColorAllBtn.TabIndex = 10;
+            insertHairColorAllBtn.Text = "Insert All";
+            insertHairColorAllBtn.UseVisualStyleBackColor = true;
+            insertHairColorAllBtn.Click += insertHairColorAllBtn_Click;
             // 
             // hairColorIdNbox
             // 
-            this.hairColorIdNbox.Location = new System.Drawing.Point(33, 35);
-            this.hairColorIdNbox.Name = "hairColorIdNbox";
-            this.hairColorIdNbox.Size = new System.Drawing.Size(59, 23);
-            this.hairColorIdNbox.TabIndex = 6;
+            hairColorIdNbox.Location = new Point(33, 35);
+            hairColorIdNbox.Name = "hairColorIdNbox";
+            hairColorIdNbox.Size = new Size(59, 23);
+            hairColorIdNbox.TabIndex = 6;
             // 
             // label25
             // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(6, 37);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(21, 15);
-            this.label25.TabIndex = 5;
-            this.label25.Text = "ID:";
+            label25.AutoSize = true;
+            label25.Location = new Point(6, 37);
+            label25.Name = "label25";
+            label25.Size = new Size(21, 15);
+            label25.TabIndex = 5;
+            label25.Text = "ID:";
             // 
             // tabPage10
             // 
-            this.tabPage10.Controls.Add(this.listViewEyeColor);
-            this.tabPage10.Controls.Add(this.removeEyeColorBtn);
-            this.tabPage10.Controls.Add(this.addEyeColorBtn);
-            this.tabPage10.Controls.Add(this.insertEyeColorAllBtn);
-            this.tabPage10.Controls.Add(this.eyeColorIdNbox);
-            this.tabPage10.Controls.Add(this.label26);
-            this.tabPage10.Location = new System.Drawing.Point(4, 24);
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(325, 359);
-            this.tabPage10.TabIndex = 4;
-            this.tabPage10.Text = "Eye Color";
-            this.tabPage10.UseVisualStyleBackColor = true;
+            tabPage10.Controls.Add(listViewEyeColor);
+            tabPage10.Controls.Add(removeEyeColorBtn);
+            tabPage10.Controls.Add(addEyeColorBtn);
+            tabPage10.Controls.Add(insertEyeColorAllBtn);
+            tabPage10.Controls.Add(eyeColorIdNbox);
+            tabPage10.Controls.Add(label26);
+            tabPage10.Location = new Point(4, 24);
+            tabPage10.Name = "tabPage10";
+            tabPage10.Padding = new Padding(3);
+            tabPage10.Size = new Size(325, 359);
+            tabPage10.TabIndex = 4;
+            tabPage10.Text = "Eye Color";
+            tabPage10.UseVisualStyleBackColor = true;
             // 
             // listViewEyeColor
             // 
-            this.listViewEyeColor.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader5});
-            this.listViewEyeColor.FullRowSelect = true;
-            this.listViewEyeColor.GridLines = true;
-            this.listViewEyeColor.Location = new System.Drawing.Point(6, 82);
-            this.listViewEyeColor.Name = "listViewEyeColor";
-            this.listViewEyeColor.Size = new System.Drawing.Size(313, 241);
-            this.listViewEyeColor.TabIndex = 10;
-            this.listViewEyeColor.UseCompatibleStateImageBehavior = false;
-            this.listViewEyeColor.View = System.Windows.Forms.View.Details;
+            listViewEyeColor.Columns.AddRange(new ColumnHeader[] { columnHeader5 });
+            listViewEyeColor.FullRowSelect = true;
+            listViewEyeColor.GridLines = true;
+            listViewEyeColor.Location = new Point(6, 82);
+            listViewEyeColor.Name = "listViewEyeColor";
+            listViewEyeColor.Size = new Size(313, 241);
+            listViewEyeColor.TabIndex = 10;
+            listViewEyeColor.UseCompatibleStateImageBehavior = false;
+            listViewEyeColor.View = View.Details;
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "ID:";
-            this.columnHeader5.Width = 100;
+            columnHeader5.Text = "ID:";
+            columnHeader5.Width = 100;
             // 
             // removeEyeColorBtn
             // 
-            this.removeEyeColorBtn.Location = new System.Drawing.Point(189, 37);
-            this.removeEyeColorBtn.Name = "removeEyeColorBtn";
-            this.removeEyeColorBtn.Size = new System.Drawing.Size(119, 23);
-            this.removeEyeColorBtn.TabIndex = 7;
-            this.removeEyeColorBtn.Text = "Remove Selected";
-            this.removeEyeColorBtn.UseVisualStyleBackColor = true;
-            this.removeEyeColorBtn.Click += new System.EventHandler(this.removeEyeColorBtn_Click);
+            removeEyeColorBtn.Location = new Point(189, 37);
+            removeEyeColorBtn.Name = "removeEyeColorBtn";
+            removeEyeColorBtn.Size = new Size(119, 23);
+            removeEyeColorBtn.TabIndex = 7;
+            removeEyeColorBtn.Text = "Remove Selected";
+            removeEyeColorBtn.UseVisualStyleBackColor = true;
+            removeEyeColorBtn.Click += removeEyeColorBtn_Click;
             // 
             // addEyeColorBtn
             // 
-            this.addEyeColorBtn.Location = new System.Drawing.Point(108, 37);
-            this.addEyeColorBtn.Name = "addEyeColorBtn";
-            this.addEyeColorBtn.Size = new System.Drawing.Size(62, 23);
-            this.addEyeColorBtn.TabIndex = 8;
-            this.addEyeColorBtn.Text = "Add";
-            this.addEyeColorBtn.UseVisualStyleBackColor = true;
-            this.addEyeColorBtn.Click += new System.EventHandler(this.addEyeColorBtn_Click);
+            addEyeColorBtn.Location = new Point(108, 37);
+            addEyeColorBtn.Name = "addEyeColorBtn";
+            addEyeColorBtn.Size = new Size(62, 23);
+            addEyeColorBtn.TabIndex = 8;
+            addEyeColorBtn.Text = "Add";
+            addEyeColorBtn.UseVisualStyleBackColor = true;
+            addEyeColorBtn.Click += addEyeColorBtn_Click;
             // 
             // insertEyeColorAllBtn
             // 
-            this.insertEyeColorAllBtn.Location = new System.Drawing.Point(97, 326);
-            this.insertEyeColorAllBtn.Name = "insertEyeColorAllBtn";
-            this.insertEyeColorAllBtn.Size = new System.Drawing.Size(137, 23);
-            this.insertEyeColorAllBtn.TabIndex = 11;
-            this.insertEyeColorAllBtn.Text = "Insert All";
-            this.insertEyeColorAllBtn.UseVisualStyleBackColor = true;
-            this.insertEyeColorAllBtn.Click += new System.EventHandler(this.insertEyeColorAllBtn_Click);
+            insertEyeColorAllBtn.Location = new Point(97, 326);
+            insertEyeColorAllBtn.Name = "insertEyeColorAllBtn";
+            insertEyeColorAllBtn.Size = new Size(137, 23);
+            insertEyeColorAllBtn.TabIndex = 11;
+            insertEyeColorAllBtn.Text = "Insert All";
+            insertEyeColorAllBtn.UseVisualStyleBackColor = true;
+            insertEyeColorAllBtn.Click += insertEyeColorAllBtn_Click;
             // 
             // eyeColorIdNbox
             // 
-            this.eyeColorIdNbox.Location = new System.Drawing.Point(33, 35);
-            this.eyeColorIdNbox.Name = "eyeColorIdNbox";
-            this.eyeColorIdNbox.Size = new System.Drawing.Size(59, 23);
-            this.eyeColorIdNbox.TabIndex = 6;
+            eyeColorIdNbox.Location = new Point(33, 35);
+            eyeColorIdNbox.Name = "eyeColorIdNbox";
+            eyeColorIdNbox.Size = new Size(59, 23);
+            eyeColorIdNbox.TabIndex = 6;
             // 
             // label26
             // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(6, 37);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(21, 15);
-            this.label26.TabIndex = 5;
-            this.label26.Text = "ID:";
+            label26.AutoSize = true;
+            label26.Location = new Point(6, 37);
+            label26.Name = "label26";
+            label26.Size = new Size(21, 15);
+            label26.TabIndex = 5;
+            label26.Text = "ID:";
             // 
             // tabPage11
             // 
-            this.tabPage11.Controls.Add(this.listViewGlasses);
-            this.tabPage11.Controls.Add(this.removeGlassesBtn);
-            this.tabPage11.Controls.Add(this.addGlassesBtn);
-            this.tabPage11.Controls.Add(this.insertGlassesAllBtn);
-            this.tabPage11.Controls.Add(this.glassesIdNbox);
-            this.tabPage11.Controls.Add(this.label27);
-            this.tabPage11.Location = new System.Drawing.Point(4, 24);
-            this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(325, 359);
-            this.tabPage11.TabIndex = 5;
-            this.tabPage11.Text = "Glasses";
-            this.tabPage11.UseVisualStyleBackColor = true;
+            tabPage11.Controls.Add(listViewGlasses);
+            tabPage11.Controls.Add(removeGlassesBtn);
+            tabPage11.Controls.Add(addGlassesBtn);
+            tabPage11.Controls.Add(insertGlassesAllBtn);
+            tabPage11.Controls.Add(glassesIdNbox);
+            tabPage11.Controls.Add(label27);
+            tabPage11.Location = new Point(4, 24);
+            tabPage11.Name = "tabPage11";
+            tabPage11.Padding = new Padding(3);
+            tabPage11.Size = new Size(325, 359);
+            tabPage11.TabIndex = 5;
+            tabPage11.Text = "Glasses";
+            tabPage11.UseVisualStyleBackColor = true;
             // 
             // listViewGlasses
             // 
-            this.listViewGlasses.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader6});
-            this.listViewGlasses.FullRowSelect = true;
-            this.listViewGlasses.GridLines = true;
-            this.listViewGlasses.Location = new System.Drawing.Point(6, 82);
-            this.listViewGlasses.Name = "listViewGlasses";
-            this.listViewGlasses.Size = new System.Drawing.Size(313, 241);
-            this.listViewGlasses.TabIndex = 11;
-            this.listViewGlasses.UseCompatibleStateImageBehavior = false;
-            this.listViewGlasses.View = System.Windows.Forms.View.Details;
+            listViewGlasses.Columns.AddRange(new ColumnHeader[] { columnHeader6 });
+            listViewGlasses.FullRowSelect = true;
+            listViewGlasses.GridLines = true;
+            listViewGlasses.Location = new Point(6, 82);
+            listViewGlasses.Name = "listViewGlasses";
+            listViewGlasses.Size = new Size(313, 241);
+            listViewGlasses.TabIndex = 11;
+            listViewGlasses.UseCompatibleStateImageBehavior = false;
+            listViewGlasses.View = View.Details;
             // 
             // columnHeader6
             // 
-            this.columnHeader6.Text = "ID:";
-            this.columnHeader6.Width = 100;
+            columnHeader6.Text = "ID:";
+            columnHeader6.Width = 100;
             // 
             // removeGlassesBtn
             // 
-            this.removeGlassesBtn.Location = new System.Drawing.Point(189, 37);
-            this.removeGlassesBtn.Name = "removeGlassesBtn";
-            this.removeGlassesBtn.Size = new System.Drawing.Size(119, 23);
-            this.removeGlassesBtn.TabIndex = 7;
-            this.removeGlassesBtn.Text = "Remove Selected";
-            this.removeGlassesBtn.UseVisualStyleBackColor = true;
-            this.removeGlassesBtn.Click += new System.EventHandler(this.removeGlassesBtn_Click);
+            removeGlassesBtn.Location = new Point(189, 37);
+            removeGlassesBtn.Name = "removeGlassesBtn";
+            removeGlassesBtn.Size = new Size(119, 23);
+            removeGlassesBtn.TabIndex = 7;
+            removeGlassesBtn.Text = "Remove Selected";
+            removeGlassesBtn.UseVisualStyleBackColor = true;
+            removeGlassesBtn.Click += removeGlassesBtn_Click;
             // 
             // addGlassesBtn
             // 
-            this.addGlassesBtn.Location = new System.Drawing.Point(108, 37);
-            this.addGlassesBtn.Name = "addGlassesBtn";
-            this.addGlassesBtn.Size = new System.Drawing.Size(62, 23);
-            this.addGlassesBtn.TabIndex = 8;
-            this.addGlassesBtn.Text = "Add";
-            this.addGlassesBtn.UseVisualStyleBackColor = true;
-            this.addGlassesBtn.Click += new System.EventHandler(this.addGlassesBtn_Click);
+            addGlassesBtn.Location = new Point(108, 37);
+            addGlassesBtn.Name = "addGlassesBtn";
+            addGlassesBtn.Size = new Size(62, 23);
+            addGlassesBtn.TabIndex = 8;
+            addGlassesBtn.Text = "Add";
+            addGlassesBtn.UseVisualStyleBackColor = true;
+            addGlassesBtn.Click += addGlassesBtn_Click;
             // 
             // insertGlassesAllBtn
             // 
-            this.insertGlassesAllBtn.Location = new System.Drawing.Point(97, 326);
-            this.insertGlassesAllBtn.Name = "insertGlassesAllBtn";
-            this.insertGlassesAllBtn.Size = new System.Drawing.Size(137, 23);
-            this.insertGlassesAllBtn.TabIndex = 9;
-            this.insertGlassesAllBtn.Text = "Insert All";
-            this.insertGlassesAllBtn.UseVisualStyleBackColor = true;
-            this.insertGlassesAllBtn.Click += new System.EventHandler(this.insertGlassesAllBtn_Click);
+            insertGlassesAllBtn.Location = new Point(97, 326);
+            insertGlassesAllBtn.Name = "insertGlassesAllBtn";
+            insertGlassesAllBtn.Size = new Size(137, 23);
+            insertGlassesAllBtn.TabIndex = 9;
+            insertGlassesAllBtn.Text = "Insert All";
+            insertGlassesAllBtn.UseVisualStyleBackColor = true;
+            insertGlassesAllBtn.Click += insertGlassesAllBtn_Click;
             // 
             // glassesIdNbox
             // 
-            this.glassesIdNbox.Location = new System.Drawing.Point(33, 35);
-            this.glassesIdNbox.Name = "glassesIdNbox";
-            this.glassesIdNbox.Size = new System.Drawing.Size(59, 23);
-            this.glassesIdNbox.TabIndex = 6;
+            glassesIdNbox.Location = new Point(33, 35);
+            glassesIdNbox.Name = "glassesIdNbox";
+            glassesIdNbox.Size = new Size(59, 23);
+            glassesIdNbox.TabIndex = 6;
             // 
             // label27
             // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(6, 37);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(21, 15);
-            this.label27.TabIndex = 5;
-            this.label27.Text = "ID:";
+            label27.AutoSize = true;
+            label27.Location = new Point(6, 37);
+            label27.Name = "label27";
+            label27.Size = new Size(21, 15);
+            label27.TabIndex = 5;
+            label27.Text = "ID:";
             // 
             // tabPage12
             // 
-            this.tabPage12.Controls.Add(this.listViewMakeUp);
-            this.tabPage12.Controls.Add(this.removeMakeUpBtn);
-            this.tabPage12.Controls.Add(this.addMakeUpBtn);
-            this.tabPage12.Controls.Add(this.insertMakeUpAllBtn);
-            this.tabPage12.Controls.Add(this.makeUpIdNbox);
-            this.tabPage12.Controls.Add(this.label28);
-            this.tabPage12.Location = new System.Drawing.Point(4, 24);
-            this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage12.Size = new System.Drawing.Size(325, 359);
-            this.tabPage12.TabIndex = 6;
-            this.tabPage12.Text = "Make Up";
-            this.tabPage12.UseVisualStyleBackColor = true;
+            tabPage12.Controls.Add(listViewMakeUp);
+            tabPage12.Controls.Add(removeMakeUpBtn);
+            tabPage12.Controls.Add(addMakeUpBtn);
+            tabPage12.Controls.Add(insertMakeUpAllBtn);
+            tabPage12.Controls.Add(makeUpIdNbox);
+            tabPage12.Controls.Add(label28);
+            tabPage12.Location = new Point(4, 24);
+            tabPage12.Name = "tabPage12";
+            tabPage12.Padding = new Padding(3);
+            tabPage12.Size = new Size(325, 359);
+            tabPage12.TabIndex = 6;
+            tabPage12.Text = "Make Up";
+            tabPage12.UseVisualStyleBackColor = true;
             // 
             // listViewMakeUp
             // 
-            this.listViewMakeUp.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader7});
-            this.listViewMakeUp.FullRowSelect = true;
-            this.listViewMakeUp.GridLines = true;
-            this.listViewMakeUp.Location = new System.Drawing.Point(6, 84);
-            this.listViewMakeUp.Name = "listViewMakeUp";
-            this.listViewMakeUp.Size = new System.Drawing.Size(313, 241);
-            this.listViewMakeUp.TabIndex = 12;
-            this.listViewMakeUp.UseCompatibleStateImageBehavior = false;
-            this.listViewMakeUp.View = System.Windows.Forms.View.Details;
+            listViewMakeUp.Columns.AddRange(new ColumnHeader[] { columnHeader7 });
+            listViewMakeUp.FullRowSelect = true;
+            listViewMakeUp.GridLines = true;
+            listViewMakeUp.Location = new Point(6, 84);
+            listViewMakeUp.Name = "listViewMakeUp";
+            listViewMakeUp.Size = new Size(313, 241);
+            listViewMakeUp.TabIndex = 12;
+            listViewMakeUp.UseCompatibleStateImageBehavior = false;
+            listViewMakeUp.View = View.Details;
             // 
             // columnHeader7
             // 
-            this.columnHeader7.Text = "ID:";
-            this.columnHeader7.Width = 100;
+            columnHeader7.Text = "ID:";
+            columnHeader7.Width = 100;
             // 
             // removeMakeUpBtn
             // 
-            this.removeMakeUpBtn.Location = new System.Drawing.Point(189, 37);
-            this.removeMakeUpBtn.Name = "removeMakeUpBtn";
-            this.removeMakeUpBtn.Size = new System.Drawing.Size(119, 23);
-            this.removeMakeUpBtn.TabIndex = 7;
-            this.removeMakeUpBtn.Text = "Remove Selected";
-            this.removeMakeUpBtn.UseVisualStyleBackColor = true;
-            this.removeMakeUpBtn.Click += new System.EventHandler(this.removeMakeUpBtn_Click);
+            removeMakeUpBtn.Location = new Point(189, 37);
+            removeMakeUpBtn.Name = "removeMakeUpBtn";
+            removeMakeUpBtn.Size = new Size(119, 23);
+            removeMakeUpBtn.TabIndex = 7;
+            removeMakeUpBtn.Text = "Remove Selected";
+            removeMakeUpBtn.UseVisualStyleBackColor = true;
+            removeMakeUpBtn.Click += removeMakeUpBtn_Click;
             // 
             // addMakeUpBtn
             // 
-            this.addMakeUpBtn.Location = new System.Drawing.Point(108, 37);
-            this.addMakeUpBtn.Name = "addMakeUpBtn";
-            this.addMakeUpBtn.Size = new System.Drawing.Size(62, 23);
-            this.addMakeUpBtn.TabIndex = 8;
-            this.addMakeUpBtn.Text = "Add";
-            this.addMakeUpBtn.UseVisualStyleBackColor = true;
-            this.addMakeUpBtn.Click += new System.EventHandler(this.addMakeUpBtn_Click);
+            addMakeUpBtn.Location = new Point(108, 37);
+            addMakeUpBtn.Name = "addMakeUpBtn";
+            addMakeUpBtn.Size = new Size(62, 23);
+            addMakeUpBtn.TabIndex = 8;
+            addMakeUpBtn.Text = "Add";
+            addMakeUpBtn.UseVisualStyleBackColor = true;
+            addMakeUpBtn.Click += addMakeUpBtn_Click;
             // 
             // insertMakeUpAllBtn
             // 
-            this.insertMakeUpAllBtn.Location = new System.Drawing.Point(97, 326);
-            this.insertMakeUpAllBtn.Name = "insertMakeUpAllBtn";
-            this.insertMakeUpAllBtn.Size = new System.Drawing.Size(137, 23);
-            this.insertMakeUpAllBtn.TabIndex = 9;
-            this.insertMakeUpAllBtn.Text = "Insert All";
-            this.insertMakeUpAllBtn.UseVisualStyleBackColor = true;
-            this.insertMakeUpAllBtn.Click += new System.EventHandler(this.insertMakeUpAllBtn_Click);
+            insertMakeUpAllBtn.Location = new Point(97, 326);
+            insertMakeUpAllBtn.Name = "insertMakeUpAllBtn";
+            insertMakeUpAllBtn.Size = new Size(137, 23);
+            insertMakeUpAllBtn.TabIndex = 9;
+            insertMakeUpAllBtn.Text = "Insert All";
+            insertMakeUpAllBtn.UseVisualStyleBackColor = true;
+            insertMakeUpAllBtn.Click += insertMakeUpAllBtn_Click;
             // 
             // makeUpIdNbox
             // 
-            this.makeUpIdNbox.Location = new System.Drawing.Point(33, 35);
-            this.makeUpIdNbox.Name = "makeUpIdNbox";
-            this.makeUpIdNbox.Size = new System.Drawing.Size(59, 23);
-            this.makeUpIdNbox.TabIndex = 6;
+            makeUpIdNbox.Location = new Point(33, 35);
+            makeUpIdNbox.Name = "makeUpIdNbox";
+            makeUpIdNbox.Size = new Size(59, 23);
+            makeUpIdNbox.TabIndex = 6;
             // 
             // label28
             // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(6, 37);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(21, 15);
-            this.label28.TabIndex = 5;
-            this.label28.Text = "ID:";
-            // 
-            // songsTab
-            // 
-            this.songsTab.Controls.Add(this.listViewSongs);
-            this.songsTab.Controls.Add(this.removeSongsBtn);
-            this.songsTab.Controls.Add(this.addSongBtn);
-            this.songsTab.Controls.Add(this.insertSongsListBtn);
-            this.songsTab.Controls.Add(this.songsIdNbox);
-            this.songsTab.Controls.Add(this.label29);
-            this.songsTab.Location = new System.Drawing.Point(4, 24);
-            this.songsTab.Name = "songsTab";
-            this.songsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.songsTab.Size = new System.Drawing.Size(345, 399);
-            this.songsTab.TabIndex = 4;
-            this.songsTab.Text = "Songs";
-            this.songsTab.UseVisualStyleBackColor = true;
-            // 
-            // listViewSongs
-            // 
-            this.listViewSongs.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader8});
-            this.listViewSongs.FullRowSelect = true;
-            this.listViewSongs.GridLines = true;
-            this.listViewSongs.Location = new System.Drawing.Point(16, 103);
-            this.listViewSongs.Name = "listViewSongs";
-            this.listViewSongs.Size = new System.Drawing.Size(313, 241);
-            this.listViewSongs.TabIndex = 17;
-            this.listViewSongs.UseCompatibleStateImageBehavior = false;
-            this.listViewSongs.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "ID:";
-            this.columnHeader8.Width = 100;
-            // 
-            // removeSongsBtn
-            // 
-            this.removeSongsBtn.Location = new System.Drawing.Point(199, 56);
-            this.removeSongsBtn.Name = "removeSongsBtn";
-            this.removeSongsBtn.Size = new System.Drawing.Size(119, 23);
-            this.removeSongsBtn.TabIndex = 15;
-            this.removeSongsBtn.Text = "Remove Selected";
-            this.removeSongsBtn.UseVisualStyleBackColor = true;
-            this.removeSongsBtn.Click += new System.EventHandler(this.removeSongsBtn_Click);
-            // 
-            // addSongBtn
-            // 
-            this.addSongBtn.Location = new System.Drawing.Point(118, 56);
-            this.addSongBtn.Name = "addSongBtn";
-            this.addSongBtn.Size = new System.Drawing.Size(62, 23);
-            this.addSongBtn.TabIndex = 16;
-            this.addSongBtn.Text = "Add";
-            this.addSongBtn.UseVisualStyleBackColor = true;
-            this.addSongBtn.Click += new System.EventHandler(this.addSongBtn_Click);
-            // 
-            // insertSongsListBtn
-            // 
-            this.insertSongsListBtn.Location = new System.Drawing.Point(97, 370);
-            this.insertSongsListBtn.Name = "insertSongsListBtn";
-            this.insertSongsListBtn.Size = new System.Drawing.Size(137, 23);
-            this.insertSongsListBtn.TabIndex = 18;
-            this.insertSongsListBtn.Text = "Insert All";
-            this.insertSongsListBtn.UseVisualStyleBackColor = true;
-            this.insertSongsListBtn.Click += new System.EventHandler(this.insertSongsListBtn_Click);
-            // 
-            // songsIdNbox
-            // 
-            this.songsIdNbox.Location = new System.Drawing.Point(43, 54);
-            this.songsIdNbox.Name = "songsIdNbox";
-            this.songsIdNbox.Size = new System.Drawing.Size(59, 23);
-            this.songsIdNbox.TabIndex = 14;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(16, 56);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(21, 15);
-            this.label29.TabIndex = 13;
-            this.label29.Text = "ID:";
-            // 
-            // charactersTab
-            // 
-            this.charactersTab.Controls.Add(this.listViewCharacters);
-            this.charactersTab.Controls.Add(this.removeCharacterBtn);
-            this.charactersTab.Controls.Add(this.addCharacterBtn);
-            this.charactersTab.Controls.Add(this.insertCharactersAllBtn);
-            this.charactersTab.Controls.Add(this.characterIdNbox);
-            this.charactersTab.Controls.Add(this.label30);
-            this.charactersTab.Location = new System.Drawing.Point(4, 24);
-            this.charactersTab.Name = "charactersTab";
-            this.charactersTab.Padding = new System.Windows.Forms.Padding(3);
-            this.charactersTab.Size = new System.Drawing.Size(345, 399);
-            this.charactersTab.TabIndex = 5;
-            this.charactersTab.Text = "Characters";
-            this.charactersTab.UseVisualStyleBackColor = true;
-            // 
-            // listViewCharacters
-            // 
-            this.listViewCharacters.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader9});
-            this.listViewCharacters.FullRowSelect = true;
-            this.listViewCharacters.GridLines = true;
-            this.listViewCharacters.Location = new System.Drawing.Point(16, 103);
-            this.listViewCharacters.Name = "listViewCharacters";
-            this.listViewCharacters.Size = new System.Drawing.Size(313, 241);
-            this.listViewCharacters.TabIndex = 22;
-            this.listViewCharacters.UseCompatibleStateImageBehavior = false;
-            this.listViewCharacters.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader9
-            // 
-            this.columnHeader9.Text = "ID:";
-            this.columnHeader9.Width = 100;
-            // 
-            // removeCharacterBtn
-            // 
-            this.removeCharacterBtn.Location = new System.Drawing.Point(199, 56);
-            this.removeCharacterBtn.Name = "removeCharacterBtn";
-            this.removeCharacterBtn.Size = new System.Drawing.Size(119, 23);
-            this.removeCharacterBtn.TabIndex = 20;
-            this.removeCharacterBtn.Text = "Remove Selected";
-            this.removeCharacterBtn.UseVisualStyleBackColor = true;
-            this.removeCharacterBtn.Click += new System.EventHandler(this.removeCharacterBtn_Click);
-            // 
-            // addCharacterBtn
-            // 
-            this.addCharacterBtn.Location = new System.Drawing.Point(118, 56);
-            this.addCharacterBtn.Name = "addCharacterBtn";
-            this.addCharacterBtn.Size = new System.Drawing.Size(62, 23);
-            this.addCharacterBtn.TabIndex = 21;
-            this.addCharacterBtn.Text = "Add";
-            this.addCharacterBtn.UseVisualStyleBackColor = true;
-            this.addCharacterBtn.Click += new System.EventHandler(this.addCharacterBtn_Click);
-            // 
-            // insertCharactersAllBtn
-            // 
-            this.insertCharactersAllBtn.Location = new System.Drawing.Point(97, 370);
-            this.insertCharactersAllBtn.Name = "insertCharactersAllBtn";
-            this.insertCharactersAllBtn.Size = new System.Drawing.Size(137, 23);
-            this.insertCharactersAllBtn.TabIndex = 22;
-            this.insertCharactersAllBtn.Text = "Insert All";
-            this.insertCharactersAllBtn.UseVisualStyleBackColor = true;
-            this.insertCharactersAllBtn.Click += new System.EventHandler(this.insertCharactersAllBtn_Click);
-            // 
-            // characterIdNbox
-            // 
-            this.characterIdNbox.Location = new System.Drawing.Point(43, 54);
-            this.characterIdNbox.Name = "characterIdNbox";
-            this.characterIdNbox.Size = new System.Drawing.Size(59, 23);
-            this.characterIdNbox.TabIndex = 19;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(16, 56);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(21, 15);
-            this.label30.TabIndex = 18;
-            this.label30.Text = "ID:";
-            // 
-            // tomoticketsTab
-            // 
-            this.tomoticketsTab.Controls.Add(this.listViewTomotickets);
-            this.tomoticketsTab.Controls.Add(this.removeTomoticketsBtn);
-            this.tomoticketsTab.Controls.Add(this.addTomoticketsBtn);
-            this.tomoticketsTab.Controls.Add(this.insertTomoticketsAllBtn);
-            this.tomoticketsTab.Controls.Add(this.tomoticketsIdNbox);
-            this.tomoticketsTab.Controls.Add(this.label31);
-            this.tomoticketsTab.Location = new System.Drawing.Point(4, 24);
-            this.tomoticketsTab.Name = "tomoticketsTab";
-            this.tomoticketsTab.Padding = new System.Windows.Forms.Padding(3);
-            this.tomoticketsTab.Size = new System.Drawing.Size(345, 399);
-            this.tomoticketsTab.TabIndex = 6;
-            this.tomoticketsTab.Text = "Tomotickets";
-            this.tomoticketsTab.UseVisualStyleBackColor = true;
-            // 
-            // listViewTomotickets
-            // 
-            this.listViewTomotickets.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader10});
-            this.listViewTomotickets.FullRowSelect = true;
-            this.listViewTomotickets.GridLines = true;
-            this.listViewTomotickets.Location = new System.Drawing.Point(16, 103);
-            this.listViewTomotickets.Name = "listViewTomotickets";
-            this.listViewTomotickets.Size = new System.Drawing.Size(313, 241);
-            this.listViewTomotickets.TabIndex = 27;
-            this.listViewTomotickets.UseCompatibleStateImageBehavior = false;
-            this.listViewTomotickets.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader10
-            // 
-            this.columnHeader10.Text = "ID:";
-            this.columnHeader10.Width = 100;
-            // 
-            // removeTomoticketsBtn
-            // 
-            this.removeTomoticketsBtn.Location = new System.Drawing.Point(199, 56);
-            this.removeTomoticketsBtn.Name = "removeTomoticketsBtn";
-            this.removeTomoticketsBtn.Size = new System.Drawing.Size(119, 23);
-            this.removeTomoticketsBtn.TabIndex = 25;
-            this.removeTomoticketsBtn.Text = "Remove Selected";
-            this.removeTomoticketsBtn.UseVisualStyleBackColor = true;
-            this.removeTomoticketsBtn.Click += new System.EventHandler(this.removeTomoticketsBtn_Click);
-            // 
-            // addTomoticketsBtn
-            // 
-            this.addTomoticketsBtn.Location = new System.Drawing.Point(118, 56);
-            this.addTomoticketsBtn.Name = "addTomoticketsBtn";
-            this.addTomoticketsBtn.Size = new System.Drawing.Size(62, 23);
-            this.addTomoticketsBtn.TabIndex = 26;
-            this.addTomoticketsBtn.Text = "Add";
-            this.addTomoticketsBtn.UseVisualStyleBackColor = true;
-            this.addTomoticketsBtn.Click += new System.EventHandler(this.addTomoticketsBtn_Click);
-            // 
-            // insertTomoticketsAllBtn
-            // 
-            this.insertTomoticketsAllBtn.Location = new System.Drawing.Point(97, 370);
-            this.insertTomoticketsAllBtn.Name = "insertTomoticketsAllBtn";
-            this.insertTomoticketsAllBtn.Size = new System.Drawing.Size(137, 23);
-            this.insertTomoticketsAllBtn.TabIndex = 28;
-            this.insertTomoticketsAllBtn.Text = "Insert All";
-            this.insertTomoticketsAllBtn.UseVisualStyleBackColor = true;
-            this.insertTomoticketsAllBtn.Click += new System.EventHandler(this.insertTomoticketsAllBtn_Click);
-            // 
-            // tomoticketsIdNbox
-            // 
-            this.tomoticketsIdNbox.Location = new System.Drawing.Point(43, 54);
-            this.tomoticketsIdNbox.Name = "tomoticketsIdNbox";
-            this.tomoticketsIdNbox.Size = new System.Drawing.Size(59, 23);
-            this.tomoticketsIdNbox.TabIndex = 24;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(16, 56);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(21, 15);
-            this.label31.TabIndex = 23;
-            this.label31.Text = "ID:";
-            // 
-            // storiesTab
-            // 
-            this.storiesTab.Controls.Add(this.storiesLayout);
-            this.storiesTab.Location = new System.Drawing.Point(4, 24);
-            this.storiesTab.Name = "storiesTab";
-            this.storiesTab.Padding = new System.Windows.Forms.Padding(3);
-            this.storiesTab.Size = new System.Drawing.Size(345, 399);
-            this.storiesTab.TabIndex = 7;
-            this.storiesTab.Text = "Stories";
-            this.storiesTab.UseVisualStyleBackColor = true;
-            // 
-            // storiesLayout
-            // 
-            this.storiesLayout.ColumnCount = 1;
-            this.storiesLayout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.storiesLayout.Controls.Add(this.storyBlock1Group, 0, 0);
-            this.storiesLayout.Controls.Add(this.storyBlock2Group, 0, 1);
-            this.storiesLayout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.storiesLayout.Location = new System.Drawing.Point(3, 3);
-            this.storiesLayout.Name = "storiesLayout";
-            this.storiesLayout.Padding = new System.Windows.Forms.Padding(8);
-            this.storiesLayout.RowCount = 2;
-            this.storiesLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.storiesLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.storiesLayout.Size = new System.Drawing.Size(339, 393);
-            this.storiesLayout.TabIndex = 0;
-            // 
-            // storyBlock1Group
-            // 
-            this.storyBlock1Group.Controls.Add(this.storyBlock1Layout);
-            this.storyBlock1Group.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.storyBlock1Group.Location = new System.Drawing.Point(11, 11);
-            this.storyBlock1Group.Name = "storyBlock1Group";
-            this.storyBlock1Group.Size = new System.Drawing.Size(317, 182);
-            this.storyBlock1Group.TabIndex = 0;
-            this.storyBlock1Group.TabStop = false;
-            this.storyBlock1Group.Text = "Unlocked Stories";
-            // 
-            // storyBlock1Layout
-            // 
-            this.storyBlock1Layout.ColumnCount = 1;
-            this.storyBlock1Layout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.storyBlock1Layout.Controls.Add(this.storyBlock1InputPanel, 0, 0);
-            this.storyBlock1Layout.Controls.Add(this.listViewStory01, 0, 1);
-            this.storyBlock1Layout.Controls.Add(this.storyBlock1ActionPanel, 0, 2);
-            this.storyBlock1Layout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.storyBlock1Layout.Location = new System.Drawing.Point(3, 19);
-            this.storyBlock1Layout.Name = "storyBlock1Layout";
-            this.storyBlock1Layout.Padding = new System.Windows.Forms.Padding(8, 12, 8, 8);
-            this.storyBlock1Layout.RowCount = 3;
-            this.storyBlock1Layout.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.storyBlock1Layout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.storyBlock1Layout.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.storyBlock1Layout.Size = new System.Drawing.Size(311, 160);
-            this.storyBlock1Layout.TabIndex = 0;
-            // 
-            // storyBlock1InputPanel
-            // 
-            this.storyBlock1InputPanel.AutoSize = true;
-            this.storyBlock1InputPanel.Controls.Add(this.story01IdNbox);
-            this.storyBlock1InputPanel.Controls.Add(this.addStory01Btn);
-            this.storyBlock1InputPanel.Controls.Add(this.removeStory01Btn);
-            this.storyBlock1InputPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.storyBlock1InputPanel.Location = new System.Drawing.Point(8, 12);
-            this.storyBlock1InputPanel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.storyBlock1InputPanel.Name = "storyBlock1InputPanel";
-            this.storyBlock1InputPanel.Size = new System.Drawing.Size(295, 29);
-            this.storyBlock1InputPanel.TabIndex = 0;
-            this.storyBlock1InputPanel.WrapContents = false;
-            // 
-            // story01IdNbox
-            // 
-            this.story01IdNbox.Location = new System.Drawing.Point(0, 0);
-            this.story01IdNbox.Margin = new System.Windows.Forms.Padding(0, 0, 8, 0);
-            this.story01IdNbox.Name = "story01IdNbox";
-            this.story01IdNbox.Size = new System.Drawing.Size(92, 23);
-            this.story01IdNbox.TabIndex = 0;
-            // 
-            // addStory01Btn
-            // 
-            this.addStory01Btn.Location = new System.Drawing.Point(100, 0);
-            this.addStory01Btn.Margin = new System.Windows.Forms.Padding(0, 0, 8, 0);
-            this.addStory01Btn.Name = "addStory01Btn";
-            this.addStory01Btn.Size = new System.Drawing.Size(66, 28);
-            this.addStory01Btn.TabIndex = 1;
-            this.addStory01Btn.Text = "Add";
-            this.addStory01Btn.UseVisualStyleBackColor = true;
-            this.addStory01Btn.Click += new System.EventHandler(this.addStory01Btn_Click);
-            // 
-            // removeStory01Btn
-            // 
-            this.removeStory01Btn.Location = new System.Drawing.Point(174, 0);
-            this.removeStory01Btn.Margin = new System.Windows.Forms.Padding(0);
-            this.removeStory01Btn.Name = "removeStory01Btn";
-            this.removeStory01Btn.Size = new System.Drawing.Size(86, 28);
-            this.removeStory01Btn.TabIndex = 2;
-            this.removeStory01Btn.Text = "Remove";
-            this.removeStory01Btn.UseVisualStyleBackColor = true;
-            this.removeStory01Btn.Click += new System.EventHandler(this.removeStory01Btn_Click);
-            // 
-            // listViewStory01
-            // 
-            this.listViewStory01.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.story01ColumnHeader});
-            this.listViewStory01.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listViewStory01.FullRowSelect = true;
-            this.listViewStory01.GridLines = true;
-            this.listViewStory01.Location = new System.Drawing.Point(8, 49);
-            this.listViewStory01.Margin = new System.Windows.Forms.Padding(0);
-            this.listViewStory01.Name = "listViewStory01";
-            this.listViewStory01.Size = new System.Drawing.Size(295, 66);
-            this.listViewStory01.TabIndex = 3;
-            this.listViewStory01.UseCompatibleStateImageBehavior = false;
-            this.listViewStory01.View = System.Windows.Forms.View.Details;
-            // 
-            // story01ColumnHeader
-            // 
-            this.story01ColumnHeader.Text = "Story ID";
-            this.story01ColumnHeader.Width = 270;
-            // 
-            // storyBlock1ActionPanel
-            // 
-            this.storyBlock1ActionPanel.AutoSize = true;
-            this.storyBlock1ActionPanel.Controls.Add(this.insertKnownStory01Btn);
-            this.storyBlock1ActionPanel.Controls.Add(this.clearStory01Btn);
-            this.storyBlock1ActionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.storyBlock1ActionPanel.Location = new System.Drawing.Point(8, 123);
-            this.storyBlock1ActionPanel.Margin = new System.Windows.Forms.Padding(0, 8, 0, 0);
-            this.storyBlock1ActionPanel.Name = "storyBlock1ActionPanel";
-            this.storyBlock1ActionPanel.Size = new System.Drawing.Size(295, 29);
-            this.storyBlock1ActionPanel.TabIndex = 4;
-            this.storyBlock1ActionPanel.WrapContents = false;
-            // 
-            // insertKnownStory01Btn
-            // 
-            this.insertKnownStory01Btn.Location = new System.Drawing.Point(0, 0);
-            this.insertKnownStory01Btn.Margin = new System.Windows.Forms.Padding(0, 0, 8, 0);
-            this.insertKnownStory01Btn.Name = "insertKnownStory01Btn";
-            this.insertKnownStory01Btn.Size = new System.Drawing.Size(132, 28);
-            this.insertKnownStory01Btn.TabIndex = 0;
-            this.insertKnownStory01Btn.Text = "Insert Known";
-            this.insertKnownStory01Btn.UseVisualStyleBackColor = true;
-            this.insertKnownStory01Btn.Click += new System.EventHandler(this.insertKnownStory01Btn_Click);
-            // 
-            // clearStory01Btn
-            // 
-            this.clearStory01Btn.Location = new System.Drawing.Point(140, 0);
-            this.clearStory01Btn.Margin = new System.Windows.Forms.Padding(0);
-            this.clearStory01Btn.Name = "clearStory01Btn";
-            this.clearStory01Btn.Size = new System.Drawing.Size(80, 28);
-            this.clearStory01Btn.TabIndex = 1;
-            this.clearStory01Btn.Text = "Clear";
-            this.clearStory01Btn.UseVisualStyleBackColor = true;
-            this.clearStory01Btn.Click += new System.EventHandler(this.clearStory01Btn_Click);
-            // 
-            // storyBlock2Group
-            // 
-            this.storyBlock2Group.Controls.Add(this.storyBlock2Layout);
-            this.storyBlock2Group.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.storyBlock2Group.Location = new System.Drawing.Point(11, 199);
-            this.storyBlock2Group.Name = "storyBlock2Group";
-            this.storyBlock2Group.Size = new System.Drawing.Size(317, 183);
-            this.storyBlock2Group.TabIndex = 1;
-            this.storyBlock2Group.TabStop = false;
-            this.storyBlock2Group.Text = "Mission Conditions";
-            // 
-            // storyBlock2Layout
-            // 
-            this.storyBlock2Layout.ColumnCount = 1;
-            this.storyBlock2Layout.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.storyBlock2Layout.Controls.Add(this.storyBlock2InputPanel, 0, 0);
-            this.storyBlock2Layout.Controls.Add(this.listViewStory03, 0, 1);
-            this.storyBlock2Layout.Controls.Add(this.storyBlock2ActionPanel, 0, 2);
-            this.storyBlock2Layout.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.storyBlock2Layout.Location = new System.Drawing.Point(3, 19);
-            this.storyBlock2Layout.Name = "storyBlock2Layout";
-            this.storyBlock2Layout.Padding = new System.Windows.Forms.Padding(8, 12, 8, 8);
-            this.storyBlock2Layout.RowCount = 3;
-            this.storyBlock2Layout.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.storyBlock2Layout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.storyBlock2Layout.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.storyBlock2Layout.Size = new System.Drawing.Size(311, 161);
-            this.storyBlock2Layout.TabIndex = 0;
-            // 
-            // storyBlock2InputPanel
-            // 
-            this.storyBlock2InputPanel.AutoSize = true;
-            this.storyBlock2InputPanel.Controls.Add(this.story03IdNbox);
-            this.storyBlock2InputPanel.Controls.Add(this.addStory03Btn);
-            this.storyBlock2InputPanel.Controls.Add(this.removeStory03Btn);
-            this.storyBlock2InputPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.storyBlock2InputPanel.Location = new System.Drawing.Point(8, 12);
-            this.storyBlock2InputPanel.Margin = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.storyBlock2InputPanel.Name = "storyBlock2InputPanel";
-            this.storyBlock2InputPanel.Size = new System.Drawing.Size(295, 29);
-            this.storyBlock2InputPanel.TabIndex = 0;
-            this.storyBlock2InputPanel.WrapContents = false;
-            // 
-            // story03IdNbox
-            // 
-            this.story03IdNbox.Location = new System.Drawing.Point(0, 0);
-            this.story03IdNbox.Margin = new System.Windows.Forms.Padding(0, 0, 8, 0);
-            this.story03IdNbox.Name = "story03IdNbox";
-            this.story03IdNbox.Size = new System.Drawing.Size(92, 23);
-            this.story03IdNbox.TabIndex = 0;
-            // 
-            // addStory03Btn
-            // 
-            this.addStory03Btn.Location = new System.Drawing.Point(100, 0);
-            this.addStory03Btn.Margin = new System.Windows.Forms.Padding(0, 0, 8, 0);
-            this.addStory03Btn.Name = "addStory03Btn";
-            this.addStory03Btn.Size = new System.Drawing.Size(66, 28);
-            this.addStory03Btn.TabIndex = 1;
-            this.addStory03Btn.Text = "Add";
-            this.addStory03Btn.UseVisualStyleBackColor = true;
-            this.addStory03Btn.Click += new System.EventHandler(this.addStory03Btn_Click);
-            // 
-            // removeStory03Btn
-            // 
-            this.removeStory03Btn.Location = new System.Drawing.Point(174, 0);
-            this.removeStory03Btn.Margin = new System.Windows.Forms.Padding(0);
-            this.removeStory03Btn.Name = "removeStory03Btn";
-            this.removeStory03Btn.Size = new System.Drawing.Size(86, 28);
-            this.removeStory03Btn.TabIndex = 2;
-            this.removeStory03Btn.Text = "Remove";
-            this.removeStory03Btn.UseVisualStyleBackColor = true;
-            this.removeStory03Btn.Click += new System.EventHandler(this.removeStory03Btn_Click);
-            // 
-            // listViewStory03
-            // 
-            this.listViewStory03.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.story03ColumnHeader});
-            this.listViewStory03.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listViewStory03.FullRowSelect = true;
-            this.listViewStory03.GridLines = true;
-            this.listViewStory03.Location = new System.Drawing.Point(8, 49);
-            this.listViewStory03.Margin = new System.Windows.Forms.Padding(0);
-            this.listViewStory03.Name = "listViewStory03";
-            this.listViewStory03.Size = new System.Drawing.Size(295, 67);
-            this.listViewStory03.TabIndex = 3;
-            this.listViewStory03.UseCompatibleStateImageBehavior = false;
-            this.listViewStory03.View = System.Windows.Forms.View.Details;
-            // 
-            // story03ColumnHeader
-            // 
-            this.story03ColumnHeader.Text = "Story ID";
-            this.story03ColumnHeader.Width = 270;
-            // 
-            // storyBlock2ActionPanel
-            // 
-            this.storyBlock2ActionPanel.AutoSize = true;
-            this.storyBlock2ActionPanel.Controls.Add(this.insertKnownStory03Btn);
-            this.storyBlock2ActionPanel.Controls.Add(this.clearStory03Btn);
-            this.storyBlock2ActionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.storyBlock2ActionPanel.Location = new System.Drawing.Point(8, 124);
-            this.storyBlock2ActionPanel.Margin = new System.Windows.Forms.Padding(0, 8, 0, 0);
-            this.storyBlock2ActionPanel.Name = "storyBlock2ActionPanel";
-            this.storyBlock2ActionPanel.Size = new System.Drawing.Size(295, 29);
-            this.storyBlock2ActionPanel.TabIndex = 4;
-            this.storyBlock2ActionPanel.WrapContents = false;
-            // 
-            // insertKnownStory03Btn
-            // 
-            this.insertKnownStory03Btn.Location = new System.Drawing.Point(0, 0);
-            this.insertKnownStory03Btn.Margin = new System.Windows.Forms.Padding(0, 0, 8, 0);
-            this.insertKnownStory03Btn.Name = "insertKnownStory03Btn";
-            this.insertKnownStory03Btn.Size = new System.Drawing.Size(132, 28);
-            this.insertKnownStory03Btn.TabIndex = 0;
-            this.insertKnownStory03Btn.Text = "Insert Known";
-            this.insertKnownStory03Btn.UseVisualStyleBackColor = true;
-            this.insertKnownStory03Btn.Click += new System.EventHandler(this.insertKnownStory03Btn_Click);
-            // 
-            // clearStory03Btn
-            // 
-            this.clearStory03Btn.Location = new System.Drawing.Point(140, 0);
-            this.clearStory03Btn.Margin = new System.Windows.Forms.Padding(0);
-            this.clearStory03Btn.Name = "clearStory03Btn";
-            this.clearStory03Btn.Size = new System.Drawing.Size(80, 28);
-            this.clearStory03Btn.TabIndex = 1;
-            this.clearStory03Btn.Text = "Clear";
-            this.clearStory03Btn.UseVisualStyleBackColor = true;
-            this.clearStory03Btn.Click += new System.EventHandler(this.clearStory03Btn_Click);
+            label28.AutoSize = true;
+            label28.Location = new Point(6, 37);
+            label28.Name = "label28";
+            label28.Size = new Size(21, 15);
+            label28.TabIndex = 5;
+            label28.Text = "ID:";
             // 
             // songDataTab
             // 
-            this.songDataTab.Controls.Add(this.listViewSongData);
-            this.songDataTab.Controls.Add(this.removeSongDataBtn);
-            this.songDataTab.Controls.Add(this.addSongDataBtn);
-            this.songDataTab.Controls.Add(this.songDataTimesNbox);
-            this.songDataTab.Controls.Add(this.songDataIdNbox);
-            this.songDataTab.Controls.Add(this.label34);
-            this.songDataTab.Controls.Add(this.label33);
-            this.songDataTab.Location = new System.Drawing.Point(4, 24);
-            this.songDataTab.Name = "songDataTab";
-            this.songDataTab.Padding = new System.Windows.Forms.Padding(3);
-            this.songDataTab.Size = new System.Drawing.Size(345, 399);
-            this.songDataTab.TabIndex = 8;
-            this.songDataTab.Text = "Song Data";
-            this.songDataTab.UseVisualStyleBackColor = true;
+            songDataTab.Controls.Add(listViewSongData);
+            songDataTab.Controls.Add(removeSongDataBtn);
+            songDataTab.Controls.Add(addSongDataBtn);
+            songDataTab.Controls.Add(songDataTimesNbox);
+            songDataTab.Controls.Add(songDataIdNbox);
+            songDataTab.Controls.Add(label34);
+            songDataTab.Controls.Add(label33);
+            songDataTab.Location = new Point(4, 24);
+            songDataTab.Name = "songDataTab";
+            songDataTab.Padding = new Padding(3);
+            songDataTab.Size = new Size(345, 399);
+            songDataTab.TabIndex = 8;
+            songDataTab.Text = "Song Data";
+            songDataTab.UseVisualStyleBackColor = true;
             // 
             // listViewSongData
             // 
-            this.listViewSongData.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.songDataIdColumnHeader,
-            this.songDataTimesColumnHeader});
-            this.listViewSongData.FullRowSelect = true;
-            this.listViewSongData.GridLines = true;
-            this.listViewSongData.Location = new System.Drawing.Point(16, 103);
-            this.listViewSongData.Name = "listViewSongData";
-            this.listViewSongData.Size = new System.Drawing.Size(313, 241);
-            this.listViewSongData.TabIndex = 6;
-            this.listViewSongData.UseCompatibleStateImageBehavior = false;
-            this.listViewSongData.View = System.Windows.Forms.View.Details;
+            listViewSongData.Columns.AddRange(new ColumnHeader[] { songDataIdColumnHeader, songDataTimesColumnHeader });
+            listViewSongData.FullRowSelect = true;
+            listViewSongData.GridLines = true;
+            listViewSongData.Location = new Point(16, 103);
+            listViewSongData.Name = "listViewSongData";
+            listViewSongData.Size = new Size(313, 241);
+            listViewSongData.TabIndex = 6;
+            listViewSongData.UseCompatibleStateImageBehavior = false;
+            listViewSongData.View = View.Details;
             // 
             // songDataIdColumnHeader
             // 
-            this.songDataIdColumnHeader.Text = "Song ID";
-            this.songDataIdColumnHeader.Width = 120;
+            songDataIdColumnHeader.Text = "Song ID";
+            songDataIdColumnHeader.Width = 120;
             // 
             // songDataTimesColumnHeader
             // 
-            this.songDataTimesColumnHeader.Text = "Times";
-            this.songDataTimesColumnHeader.Width = 120;
+            songDataTimesColumnHeader.Text = "Times";
+            songDataTimesColumnHeader.Width = 120;
             // 
             // removeSongDataBtn
             // 
-            this.removeSongDataBtn.Location = new System.Drawing.Point(199, 56);
-            this.removeSongDataBtn.Name = "removeSongDataBtn";
-            this.removeSongDataBtn.Size = new System.Drawing.Size(119, 23);
-            this.removeSongDataBtn.TabIndex = 5;
-            this.removeSongDataBtn.Text = "Remove Selected";
-            this.removeSongDataBtn.UseVisualStyleBackColor = true;
-            this.removeSongDataBtn.Click += new System.EventHandler(this.removeSongDataBtn_Click);
+            removeSongDataBtn.Location = new Point(199, 56);
+            removeSongDataBtn.Name = "removeSongDataBtn";
+            removeSongDataBtn.Size = new Size(119, 23);
+            removeSongDataBtn.TabIndex = 5;
+            removeSongDataBtn.Text = "Remove Selected";
+            removeSongDataBtn.UseVisualStyleBackColor = true;
+            removeSongDataBtn.Click += removeSongDataBtn_Click;
             // 
             // addSongDataBtn
             // 
-            this.addSongDataBtn.Location = new System.Drawing.Point(118, 56);
-            this.addSongDataBtn.Name = "addSongDataBtn";
-            this.addSongDataBtn.Size = new System.Drawing.Size(62, 23);
-            this.addSongDataBtn.TabIndex = 4;
-            this.addSongDataBtn.Text = "Add";
-            this.addSongDataBtn.UseVisualStyleBackColor = true;
-            this.addSongDataBtn.Click += new System.EventHandler(this.addSongDataBtn_Click);
+            addSongDataBtn.Location = new Point(118, 56);
+            addSongDataBtn.Name = "addSongDataBtn";
+            addSongDataBtn.Size = new Size(62, 23);
+            addSongDataBtn.TabIndex = 4;
+            addSongDataBtn.Text = "Add";
+            addSongDataBtn.UseVisualStyleBackColor = true;
+            addSongDataBtn.Click += addSongDataBtn_Click;
             // 
             // songDataTimesNbox
             // 
-            this.songDataTimesNbox.Location = new System.Drawing.Point(244, 22);
-            this.songDataTimesNbox.Name = "songDataTimesNbox";
-            this.songDataTimesNbox.Size = new System.Drawing.Size(74, 23);
-            this.songDataTimesNbox.TabIndex = 3;
+            songDataTimesNbox.Location = new Point(244, 22);
+            songDataTimesNbox.Name = "songDataTimesNbox";
+            songDataTimesNbox.Size = new Size(74, 23);
+            songDataTimesNbox.TabIndex = 3;
             // 
             // songDataIdNbox
             // 
-            this.songDataIdNbox.Location = new System.Drawing.Point(67, 22);
-            this.songDataIdNbox.Name = "songDataIdNbox";
-            this.songDataIdNbox.Size = new System.Drawing.Size(74, 23);
-            this.songDataIdNbox.TabIndex = 1;
+            songDataIdNbox.Location = new Point(67, 22);
+            songDataIdNbox.Name = "songDataIdNbox";
+            songDataIdNbox.Size = new Size(74, 23);
+            songDataIdNbox.TabIndex = 1;
             // 
             // label34
             // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(168, 24);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(70, 15);
-            this.label34.TabIndex = 2;
-            this.label34.Text = "Times Done:";
+            label34.AutoSize = true;
+            label34.Location = new Point(168, 24);
+            label34.Name = "label34";
+            label34.Size = new Size(72, 15);
+            label34.TabIndex = 2;
+            label34.Text = "Times Done:";
             // 
             // label33
             // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(16, 24);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(52, 15);
-            this.label33.TabIndex = 0;
-            this.label33.Text = "Song ID:";
+            label33.AutoSize = true;
+            label33.Location = new Point(16, 24);
+            label33.Name = "label33";
+            label33.Size = new Size(51, 15);
+            label33.TabIndex = 0;
+            label33.Text = "Song ID:";
             // 
-            // donateToolStripMenuItem
+            // songsTab
             // 
-            this.donateToolStripMenuItem.Name = "donateToolStripMenuItem";
-            this.donateToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
-            this.donateToolStripMenuItem.Text = "Donate";
-            this.donateToolStripMenuItem.Click += new System.EventHandler(this.donateToolStripMenuItem_Click_1);
+            songsTab.Controls.Add(listViewSongs);
+            songsTab.Controls.Add(removeSongsBtn);
+            songsTab.Controls.Add(addSongBtn);
+            songsTab.Controls.Add(insertSongsListBtn);
+            songsTab.Controls.Add(songsIdNbox);
+            songsTab.Controls.Add(label29);
+            songsTab.Location = new Point(4, 24);
+            songsTab.Name = "songsTab";
+            songsTab.Padding = new Padding(3);
+            songsTab.Size = new Size(345, 399);
+            songsTab.TabIndex = 4;
+            songsTab.Text = "Songs";
+            songsTab.UseVisualStyleBackColor = true;
+            // 
+            // listViewSongs
+            // 
+            listViewSongs.Columns.AddRange(new ColumnHeader[] { columnHeader8 });
+            listViewSongs.FullRowSelect = true;
+            listViewSongs.GridLines = true;
+            listViewSongs.Location = new Point(16, 103);
+            listViewSongs.Name = "listViewSongs";
+            listViewSongs.Size = new Size(313, 241);
+            listViewSongs.TabIndex = 17;
+            listViewSongs.UseCompatibleStateImageBehavior = false;
+            listViewSongs.View = View.Details;
+            // 
+            // columnHeader8
+            // 
+            columnHeader8.Text = "ID:";
+            columnHeader8.Width = 100;
+            // 
+            // removeSongsBtn
+            // 
+            removeSongsBtn.Location = new Point(199, 56);
+            removeSongsBtn.Name = "removeSongsBtn";
+            removeSongsBtn.Size = new Size(119, 23);
+            removeSongsBtn.TabIndex = 15;
+            removeSongsBtn.Text = "Remove Selected";
+            removeSongsBtn.UseVisualStyleBackColor = true;
+            removeSongsBtn.Click += removeSongsBtn_Click;
+            // 
+            // addSongBtn
+            // 
+            addSongBtn.Location = new Point(118, 56);
+            addSongBtn.Name = "addSongBtn";
+            addSongBtn.Size = new Size(62, 23);
+            addSongBtn.TabIndex = 16;
+            addSongBtn.Text = "Add";
+            addSongBtn.UseVisualStyleBackColor = true;
+            addSongBtn.Click += addSongBtn_Click;
+            // 
+            // insertSongsListBtn
+            // 
+            insertSongsListBtn.Location = new Point(97, 370);
+            insertSongsListBtn.Name = "insertSongsListBtn";
+            insertSongsListBtn.Size = new Size(137, 23);
+            insertSongsListBtn.TabIndex = 18;
+            insertSongsListBtn.Text = "Insert All";
+            insertSongsListBtn.UseVisualStyleBackColor = true;
+            insertSongsListBtn.Click += insertSongsListBtn_Click;
+            // 
+            // songsIdNbox
+            // 
+            songsIdNbox.Location = new Point(43, 54);
+            songsIdNbox.Name = "songsIdNbox";
+            songsIdNbox.Size = new Size(59, 23);
+            songsIdNbox.TabIndex = 14;
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Location = new Point(16, 56);
+            label29.Name = "label29";
+            label29.Size = new Size(21, 15);
+            label29.TabIndex = 13;
+            label29.Text = "ID:";
+            // 
+            // charactersTab
+            // 
+            charactersTab.Controls.Add(listViewCharacters);
+            charactersTab.Controls.Add(removeCharacterBtn);
+            charactersTab.Controls.Add(addCharacterBtn);
+            charactersTab.Controls.Add(insertCharactersAllBtn);
+            charactersTab.Controls.Add(characterIdNbox);
+            charactersTab.Controls.Add(label30);
+            charactersTab.Location = new Point(4, 24);
+            charactersTab.Name = "charactersTab";
+            charactersTab.Padding = new Padding(3);
+            charactersTab.Size = new Size(345, 399);
+            charactersTab.TabIndex = 5;
+            charactersTab.Text = "Characters";
+            charactersTab.UseVisualStyleBackColor = true;
+            // 
+            // listViewCharacters
+            // 
+            listViewCharacters.Columns.AddRange(new ColumnHeader[] { columnHeader9 });
+            listViewCharacters.FullRowSelect = true;
+            listViewCharacters.GridLines = true;
+            listViewCharacters.Location = new Point(16, 103);
+            listViewCharacters.Name = "listViewCharacters";
+            listViewCharacters.Size = new Size(313, 241);
+            listViewCharacters.TabIndex = 22;
+            listViewCharacters.UseCompatibleStateImageBehavior = false;
+            listViewCharacters.View = View.Details;
+            // 
+            // columnHeader9
+            // 
+            columnHeader9.Text = "ID:";
+            columnHeader9.Width = 100;
+            // 
+            // removeCharacterBtn
+            // 
+            removeCharacterBtn.Location = new Point(199, 56);
+            removeCharacterBtn.Name = "removeCharacterBtn";
+            removeCharacterBtn.Size = new Size(119, 23);
+            removeCharacterBtn.TabIndex = 20;
+            removeCharacterBtn.Text = "Remove Selected";
+            removeCharacterBtn.UseVisualStyleBackColor = true;
+            removeCharacterBtn.Click += removeCharacterBtn_Click;
+            // 
+            // addCharacterBtn
+            // 
+            addCharacterBtn.Location = new Point(118, 56);
+            addCharacterBtn.Name = "addCharacterBtn";
+            addCharacterBtn.Size = new Size(62, 23);
+            addCharacterBtn.TabIndex = 21;
+            addCharacterBtn.Text = "Add";
+            addCharacterBtn.UseVisualStyleBackColor = true;
+            addCharacterBtn.Click += addCharacterBtn_Click;
+            // 
+            // insertCharactersAllBtn
+            // 
+            insertCharactersAllBtn.Location = new Point(97, 370);
+            insertCharactersAllBtn.Name = "insertCharactersAllBtn";
+            insertCharactersAllBtn.Size = new Size(137, 23);
+            insertCharactersAllBtn.TabIndex = 22;
+            insertCharactersAllBtn.Text = "Insert All";
+            insertCharactersAllBtn.UseVisualStyleBackColor = true;
+            insertCharactersAllBtn.Click += insertCharactersAllBtn_Click;
+            // 
+            // characterIdNbox
+            // 
+            characterIdNbox.Location = new Point(43, 54);
+            characterIdNbox.Name = "characterIdNbox";
+            characterIdNbox.Size = new Size(59, 23);
+            characterIdNbox.TabIndex = 19;
+            // 
+            // label30
+            // 
+            label30.AutoSize = true;
+            label30.Location = new Point(16, 56);
+            label30.Name = "label30";
+            label30.Size = new Size(21, 15);
+            label30.TabIndex = 18;
+            label30.Text = "ID:";
+            // 
+            // tomoticketsTab
+            // 
+            tomoticketsTab.Controls.Add(listViewTomotickets);
+            tomoticketsTab.Controls.Add(removeTomoticketsBtn);
+            tomoticketsTab.Controls.Add(addTomoticketsBtn);
+            tomoticketsTab.Controls.Add(insertTomoticketsAllBtn);
+            tomoticketsTab.Controls.Add(tomoticketsIdNbox);
+            tomoticketsTab.Controls.Add(label31);
+            tomoticketsTab.Location = new Point(4, 24);
+            tomoticketsTab.Name = "tomoticketsTab";
+            tomoticketsTab.Padding = new Padding(3);
+            tomoticketsTab.Size = new Size(345, 399);
+            tomoticketsTab.TabIndex = 6;
+            tomoticketsTab.Text = "Tomotickets";
+            tomoticketsTab.UseVisualStyleBackColor = true;
+            // 
+            // listViewTomotickets
+            // 
+            listViewTomotickets.Columns.AddRange(new ColumnHeader[] { columnHeader10 });
+            listViewTomotickets.FullRowSelect = true;
+            listViewTomotickets.GridLines = true;
+            listViewTomotickets.Location = new Point(16, 103);
+            listViewTomotickets.Name = "listViewTomotickets";
+            listViewTomotickets.Size = new Size(313, 241);
+            listViewTomotickets.TabIndex = 27;
+            listViewTomotickets.UseCompatibleStateImageBehavior = false;
+            listViewTomotickets.View = View.Details;
+            // 
+            // columnHeader10
+            // 
+            columnHeader10.Text = "ID:";
+            columnHeader10.Width = 100;
+            // 
+            // removeTomoticketsBtn
+            // 
+            removeTomoticketsBtn.Location = new Point(199, 56);
+            removeTomoticketsBtn.Name = "removeTomoticketsBtn";
+            removeTomoticketsBtn.Size = new Size(119, 23);
+            removeTomoticketsBtn.TabIndex = 25;
+            removeTomoticketsBtn.Text = "Remove Selected";
+            removeTomoticketsBtn.UseVisualStyleBackColor = true;
+            removeTomoticketsBtn.Click += removeTomoticketsBtn_Click;
+            // 
+            // addTomoticketsBtn
+            // 
+            addTomoticketsBtn.Location = new Point(118, 56);
+            addTomoticketsBtn.Name = "addTomoticketsBtn";
+            addTomoticketsBtn.Size = new Size(62, 23);
+            addTomoticketsBtn.TabIndex = 26;
+            addTomoticketsBtn.Text = "Add";
+            addTomoticketsBtn.UseVisualStyleBackColor = true;
+            addTomoticketsBtn.Click += addTomoticketsBtn_Click;
+            // 
+            // insertTomoticketsAllBtn
+            // 
+            insertTomoticketsAllBtn.Location = new Point(97, 370);
+            insertTomoticketsAllBtn.Name = "insertTomoticketsAllBtn";
+            insertTomoticketsAllBtn.Size = new Size(137, 23);
+            insertTomoticketsAllBtn.TabIndex = 28;
+            insertTomoticketsAllBtn.Text = "Insert All";
+            insertTomoticketsAllBtn.UseVisualStyleBackColor = true;
+            insertTomoticketsAllBtn.Click += insertTomoticketsAllBtn_Click;
+            // 
+            // tomoticketsIdNbox
+            // 
+            tomoticketsIdNbox.Location = new Point(43, 54);
+            tomoticketsIdNbox.Name = "tomoticketsIdNbox";
+            tomoticketsIdNbox.Size = new Size(59, 23);
+            tomoticketsIdNbox.TabIndex = 24;
+            // 
+            // label31
+            // 
+            label31.AutoSize = true;
+            label31.Location = new Point(16, 56);
+            label31.Name = "label31";
+            label31.Size = new Size(21, 15);
+            label31.TabIndex = 23;
+            label31.Text = "ID:";
+            // 
+            // storiesTab
+            // 
+            storiesTab.Controls.Add(storiesLayout);
+            storiesTab.Location = new Point(4, 24);
+            storiesTab.Name = "storiesTab";
+            storiesTab.Padding = new Padding(3);
+            storiesTab.Size = new Size(345, 399);
+            storiesTab.TabIndex = 7;
+            storiesTab.Text = "Stories";
+            storiesTab.UseVisualStyleBackColor = true;
+            // 
+            // storiesLayout
+            // 
+            storiesLayout.ColumnCount = 1;
+            storiesLayout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            storiesLayout.Controls.Add(storyBlock1Group, 0, 0);
+            storiesLayout.Controls.Add(storyBlock2Group, 0, 1);
+            storiesLayout.Dock = DockStyle.Fill;
+            storiesLayout.Location = new Point(3, 3);
+            storiesLayout.Name = "storiesLayout";
+            storiesLayout.Padding = new Padding(8);
+            storiesLayout.RowCount = 2;
+            storiesLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            storiesLayout.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            storiesLayout.Size = new Size(339, 393);
+            storiesLayout.TabIndex = 0;
+            // 
+            // storyBlock1Group
+            // 
+            storyBlock1Group.Controls.Add(storyBlock1Layout);
+            storyBlock1Group.Dock = DockStyle.Fill;
+            storyBlock1Group.Location = new Point(11, 11);
+            storyBlock1Group.Name = "storyBlock1Group";
+            storyBlock1Group.Size = new Size(317, 182);
+            storyBlock1Group.TabIndex = 0;
+            storyBlock1Group.TabStop = false;
+            storyBlock1Group.Text = "Unlocked Stories";
+            // 
+            // storyBlock1Layout
+            // 
+            storyBlock1Layout.ColumnCount = 1;
+            storyBlock1Layout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            storyBlock1Layout.Controls.Add(storyBlock1InputPanel, 0, 0);
+            storyBlock1Layout.Controls.Add(listViewStory01, 0, 1);
+            storyBlock1Layout.Controls.Add(storyBlock1ActionPanel, 0, 2);
+            storyBlock1Layout.Dock = DockStyle.Fill;
+            storyBlock1Layout.Location = new Point(3, 19);
+            storyBlock1Layout.Name = "storyBlock1Layout";
+            storyBlock1Layout.Padding = new Padding(8, 12, 8, 8);
+            storyBlock1Layout.RowCount = 3;
+            storyBlock1Layout.RowStyles.Add(new RowStyle());
+            storyBlock1Layout.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            storyBlock1Layout.RowStyles.Add(new RowStyle());
+            storyBlock1Layout.Size = new Size(311, 160);
+            storyBlock1Layout.TabIndex = 0;
+            // 
+            // storyBlock1InputPanel
+            // 
+            storyBlock1InputPanel.AutoSize = true;
+            storyBlock1InputPanel.Controls.Add(story01IdNbox);
+            storyBlock1InputPanel.Controls.Add(addStory01Btn);
+            storyBlock1InputPanel.Controls.Add(removeStory01Btn);
+            storyBlock1InputPanel.Dock = DockStyle.Fill;
+            storyBlock1InputPanel.Location = new Point(8, 12);
+            storyBlock1InputPanel.Margin = new Padding(0, 0, 0, 8);
+            storyBlock1InputPanel.Name = "storyBlock1InputPanel";
+            storyBlock1InputPanel.Size = new Size(295, 28);
+            storyBlock1InputPanel.TabIndex = 0;
+            storyBlock1InputPanel.WrapContents = false;
+            // 
+            // story01IdNbox
+            // 
+            story01IdNbox.Location = new Point(0, 0);
+            story01IdNbox.Margin = new Padding(0, 0, 8, 0);
+            story01IdNbox.Name = "story01IdNbox";
+            story01IdNbox.Size = new Size(92, 23);
+            story01IdNbox.TabIndex = 0;
+            // 
+            // addStory01Btn
+            // 
+            addStory01Btn.Location = new Point(100, 0);
+            addStory01Btn.Margin = new Padding(0, 0, 8, 0);
+            addStory01Btn.Name = "addStory01Btn";
+            addStory01Btn.Size = new Size(66, 28);
+            addStory01Btn.TabIndex = 1;
+            addStory01Btn.Text = "Add";
+            addStory01Btn.UseVisualStyleBackColor = true;
+            addStory01Btn.Click += addStory01Btn_Click;
+            // 
+            // removeStory01Btn
+            // 
+            removeStory01Btn.Location = new Point(174, 0);
+            removeStory01Btn.Margin = new Padding(0);
+            removeStory01Btn.Name = "removeStory01Btn";
+            removeStory01Btn.Size = new Size(86, 28);
+            removeStory01Btn.TabIndex = 2;
+            removeStory01Btn.Text = "Remove";
+            removeStory01Btn.UseVisualStyleBackColor = true;
+            removeStory01Btn.Click += removeStory01Btn_Click;
+            // 
+            // listViewStory01
+            // 
+            listViewStory01.Columns.AddRange(new ColumnHeader[] { story01ColumnHeader });
+            listViewStory01.Dock = DockStyle.Fill;
+            listViewStory01.FullRowSelect = true;
+            listViewStory01.GridLines = true;
+            listViewStory01.Location = new Point(8, 48);
+            listViewStory01.Margin = new Padding(0);
+            listViewStory01.Name = "listViewStory01";
+            listViewStory01.Size = new Size(295, 68);
+            listViewStory01.TabIndex = 3;
+            listViewStory01.UseCompatibleStateImageBehavior = false;
+            listViewStory01.View = View.Details;
+            // 
+            // story01ColumnHeader
+            // 
+            story01ColumnHeader.Text = "Story ID";
+            story01ColumnHeader.Width = 270;
+            // 
+            // storyBlock1ActionPanel
+            // 
+            storyBlock1ActionPanel.AutoSize = true;
+            storyBlock1ActionPanel.Controls.Add(insertKnownStory01Btn);
+            storyBlock1ActionPanel.Controls.Add(clearStory01Btn);
+            storyBlock1ActionPanel.Dock = DockStyle.Fill;
+            storyBlock1ActionPanel.Location = new Point(8, 124);
+            storyBlock1ActionPanel.Margin = new Padding(0, 8, 0, 0);
+            storyBlock1ActionPanel.Name = "storyBlock1ActionPanel";
+            storyBlock1ActionPanel.Size = new Size(295, 28);
+            storyBlock1ActionPanel.TabIndex = 4;
+            storyBlock1ActionPanel.WrapContents = false;
+            // 
+            // insertKnownStory01Btn
+            // 
+            insertKnownStory01Btn.Location = new Point(0, 0);
+            insertKnownStory01Btn.Margin = new Padding(0, 0, 8, 0);
+            insertKnownStory01Btn.Name = "insertKnownStory01Btn";
+            insertKnownStory01Btn.Size = new Size(132, 28);
+            insertKnownStory01Btn.TabIndex = 0;
+            insertKnownStory01Btn.Text = "Insert Known";
+            insertKnownStory01Btn.UseVisualStyleBackColor = true;
+            insertKnownStory01Btn.Click += insertKnownStory01Btn_Click;
+            // 
+            // clearStory01Btn
+            // 
+            clearStory01Btn.Location = new Point(140, 0);
+            clearStory01Btn.Margin = new Padding(0);
+            clearStory01Btn.Name = "clearStory01Btn";
+            clearStory01Btn.Size = new Size(80, 28);
+            clearStory01Btn.TabIndex = 1;
+            clearStory01Btn.Text = "Clear";
+            clearStory01Btn.UseVisualStyleBackColor = true;
+            clearStory01Btn.Click += clearStory01Btn_Click;
+            // 
+            // storyBlock2Group
+            // 
+            storyBlock2Group.Controls.Add(storyBlock2Layout);
+            storyBlock2Group.Dock = DockStyle.Fill;
+            storyBlock2Group.Location = new Point(11, 199);
+            storyBlock2Group.Name = "storyBlock2Group";
+            storyBlock2Group.Size = new Size(317, 183);
+            storyBlock2Group.TabIndex = 1;
+            storyBlock2Group.TabStop = false;
+            storyBlock2Group.Text = "Mission Conditions";
+            // 
+            // storyBlock2Layout
+            // 
+            storyBlock2Layout.ColumnCount = 1;
+            storyBlock2Layout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            storyBlock2Layout.Controls.Add(storyBlock2InputPanel, 0, 0);
+            storyBlock2Layout.Controls.Add(listViewStory03, 0, 1);
+            storyBlock2Layout.Controls.Add(storyBlock2ActionPanel, 0, 2);
+            storyBlock2Layout.Dock = DockStyle.Fill;
+            storyBlock2Layout.Location = new Point(3, 19);
+            storyBlock2Layout.Name = "storyBlock2Layout";
+            storyBlock2Layout.Padding = new Padding(8, 12, 8, 8);
+            storyBlock2Layout.RowCount = 3;
+            storyBlock2Layout.RowStyles.Add(new RowStyle());
+            storyBlock2Layout.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            storyBlock2Layout.RowStyles.Add(new RowStyle());
+            storyBlock2Layout.Size = new Size(311, 161);
+            storyBlock2Layout.TabIndex = 0;
+            // 
+            // storyBlock2InputPanel
+            // 
+            storyBlock2InputPanel.AutoSize = true;
+            storyBlock2InputPanel.Controls.Add(story03IdNbox);
+            storyBlock2InputPanel.Controls.Add(addStory03Btn);
+            storyBlock2InputPanel.Controls.Add(removeStory03Btn);
+            storyBlock2InputPanel.Dock = DockStyle.Fill;
+            storyBlock2InputPanel.Location = new Point(8, 12);
+            storyBlock2InputPanel.Margin = new Padding(0, 0, 0, 8);
+            storyBlock2InputPanel.Name = "storyBlock2InputPanel";
+            storyBlock2InputPanel.Size = new Size(295, 28);
+            storyBlock2InputPanel.TabIndex = 0;
+            storyBlock2InputPanel.WrapContents = false;
+            // 
+            // story03IdNbox
+            // 
+            story03IdNbox.Location = new Point(0, 0);
+            story03IdNbox.Margin = new Padding(0, 0, 8, 0);
+            story03IdNbox.Name = "story03IdNbox";
+            story03IdNbox.Size = new Size(92, 23);
+            story03IdNbox.TabIndex = 0;
+            // 
+            // addStory03Btn
+            // 
+            addStory03Btn.Location = new Point(100, 0);
+            addStory03Btn.Margin = new Padding(0, 0, 8, 0);
+            addStory03Btn.Name = "addStory03Btn";
+            addStory03Btn.Size = new Size(66, 28);
+            addStory03Btn.TabIndex = 1;
+            addStory03Btn.Text = "Add";
+            addStory03Btn.UseVisualStyleBackColor = true;
+            addStory03Btn.Click += addStory03Btn_Click;
+            // 
+            // removeStory03Btn
+            // 
+            removeStory03Btn.Location = new Point(174, 0);
+            removeStory03Btn.Margin = new Padding(0);
+            removeStory03Btn.Name = "removeStory03Btn";
+            removeStory03Btn.Size = new Size(86, 28);
+            removeStory03Btn.TabIndex = 2;
+            removeStory03Btn.Text = "Remove";
+            removeStory03Btn.UseVisualStyleBackColor = true;
+            removeStory03Btn.Click += removeStory03Btn_Click;
+            // 
+            // listViewStory03
+            // 
+            listViewStory03.Columns.AddRange(new ColumnHeader[] { story03ColumnHeader });
+            listViewStory03.Dock = DockStyle.Fill;
+            listViewStory03.FullRowSelect = true;
+            listViewStory03.GridLines = true;
+            listViewStory03.Location = new Point(8, 48);
+            listViewStory03.Margin = new Padding(0);
+            listViewStory03.Name = "listViewStory03";
+            listViewStory03.Size = new Size(295, 69);
+            listViewStory03.TabIndex = 3;
+            listViewStory03.UseCompatibleStateImageBehavior = false;
+            listViewStory03.View = View.Details;
+            // 
+            // story03ColumnHeader
+            // 
+            story03ColumnHeader.Text = "Story ID";
+            story03ColumnHeader.Width = 270;
+            // 
+            // storyBlock2ActionPanel
+            // 
+            storyBlock2ActionPanel.AutoSize = true;
+            storyBlock2ActionPanel.Controls.Add(insertKnownStory03Btn);
+            storyBlock2ActionPanel.Controls.Add(clearStory03Btn);
+            storyBlock2ActionPanel.Dock = DockStyle.Fill;
+            storyBlock2ActionPanel.Location = new Point(8, 125);
+            storyBlock2ActionPanel.Margin = new Padding(0, 8, 0, 0);
+            storyBlock2ActionPanel.Name = "storyBlock2ActionPanel";
+            storyBlock2ActionPanel.Size = new Size(295, 28);
+            storyBlock2ActionPanel.TabIndex = 4;
+            storyBlock2ActionPanel.WrapContents = false;
+            // 
+            // insertKnownStory03Btn
+            // 
+            insertKnownStory03Btn.Location = new Point(0, 0);
+            insertKnownStory03Btn.Margin = new Padding(0, 0, 8, 0);
+            insertKnownStory03Btn.Name = "insertKnownStory03Btn";
+            insertKnownStory03Btn.Size = new Size(132, 28);
+            insertKnownStory03Btn.TabIndex = 0;
+            insertKnownStory03Btn.Text = "Insert Known";
+            insertKnownStory03Btn.UseVisualStyleBackColor = true;
+            insertKnownStory03Btn.Click += insertKnownStory03Btn_Click;
+            // 
+            // clearStory03Btn
+            // 
+            clearStory03Btn.Location = new Point(140, 0);
+            clearStory03Btn.Margin = new Padding(0);
+            clearStory03Btn.Name = "clearStory03Btn";
+            clearStory03Btn.Size = new Size(80, 28);
+            clearStory03Btn.TabIndex = 1;
+            clearStory03Btn.Text = "Clear";
+            clearStory03Btn.UseVisualStyleBackColor = true;
+            clearStory03Btn.Click += clearStory03Btn_Click;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(379, 466);
-            this.Controls.Add(this.mainTabs);
-            this.Controls.Add(this.menuStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
-            this.Text = "Pripara AIPS Save Editor";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.mainTabs.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.voiceVolNbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sfxVolNbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.musicVolNbox)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iineNbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.idolRankNbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.moneyNbox)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.headNbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shootNbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bottomNbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.topNbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.makeUpNbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.glassesNbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eyeColor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hairColorNbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hairStyleNbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.skinColorNbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.eyeTypeNbox)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.itemIdNbox)).EndInit();
-            this.bodyPartsTab.ResumeLayout(false);
-            this.tabControl2.ResumeLayout(false);
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.eyeTypeIdNbox)).EndInit();
-            this.tabPage7.ResumeLayout(false);
-            this.tabPage7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.skinColorIdNbox)).EndInit();
-            this.tabPage8.ResumeLayout(false);
-            this.tabPage8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hairStyleIdNbox)).EndInit();
-            this.tabPage9.ResumeLayout(false);
-            this.tabPage9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hairColorIdNbox)).EndInit();
-            this.tabPage10.ResumeLayout(false);
-            this.tabPage10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.eyeColorIdNbox)).EndInit();
-            this.tabPage11.ResumeLayout(false);
-            this.tabPage11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.glassesIdNbox)).EndInit();
-            this.tabPage12.ResumeLayout(false);
-            this.tabPage12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.makeUpIdNbox)).EndInit();
-            this.songsTab.ResumeLayout(false);
-            this.songsTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.songsIdNbox)).EndInit();
-            this.charactersTab.ResumeLayout(false);
-            this.charactersTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.characterIdNbox)).EndInit();
-            this.tomoticketsTab.ResumeLayout(false);
-            this.tomoticketsTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tomoticketsIdNbox)).EndInit();
-            this.storiesTab.ResumeLayout(false);
-            this.storiesLayout.ResumeLayout(false);
-            this.storyBlock1Group.ResumeLayout(false);
-            this.storyBlock1Layout.ResumeLayout(false);
-            this.storyBlock1Layout.PerformLayout();
-            this.storyBlock1InputPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.story01IdNbox)).EndInit();
-            this.storyBlock1ActionPanel.ResumeLayout(false);
-            this.storyBlock2Group.ResumeLayout(false);
-            this.storyBlock2Layout.ResumeLayout(false);
-            this.storyBlock2Layout.PerformLayout();
-            this.storyBlock2InputPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.story03IdNbox)).EndInit();
-            this.storyBlock2ActionPanel.ResumeLayout(false);
-            this.songDataTab.ResumeLayout(false);
-            this.songDataTab.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.songDataTimesNbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.songDataIdNbox)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(379, 466);
+            Controls.Add(mainTabs);
+            Controls.Add(menuStrip1);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MainMenuStrip = menuStrip1;
+            Name = "Form1";
+            Text = "Pripara AIPS Save Editor";
+            Load += Form1_Load;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            mainTabs.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)voiceVolNbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)sfxVolNbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)musicVolNbox).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)iineNbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)idolRankNbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)moneyNbox).EndInit();
+            tabPage2.ResumeLayout(false);
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)headNbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)shootNbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)bottomNbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)topNbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)makeUpNbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)glassesNbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)eyeColor).EndInit();
+            ((System.ComponentModel.ISupportInitialize)hairColorNbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)hairStyleNbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)skinColorNbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)eyeTypeNbox).EndInit();
+            tabPage3.ResumeLayout(false);
+            tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)itemIdNbox).EndInit();
+            bodyPartsTab.ResumeLayout(false);
+            tabControl2.ResumeLayout(false);
+            tabPage6.ResumeLayout(false);
+            tabPage6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)eyeTypeIdNbox).EndInit();
+            tabPage7.ResumeLayout(false);
+            tabPage7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)skinColorIdNbox).EndInit();
+            tabPage8.ResumeLayout(false);
+            tabPage8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)hairStyleIdNbox).EndInit();
+            tabPage9.ResumeLayout(false);
+            tabPage9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)hairColorIdNbox).EndInit();
+            tabPage10.ResumeLayout(false);
+            tabPage10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)eyeColorIdNbox).EndInit();
+            tabPage11.ResumeLayout(false);
+            tabPage11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)glassesIdNbox).EndInit();
+            tabPage12.ResumeLayout(false);
+            tabPage12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)makeUpIdNbox).EndInit();
+            songDataTab.ResumeLayout(false);
+            songDataTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)songDataTimesNbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)songDataIdNbox).EndInit();
+            songsTab.ResumeLayout(false);
+            songsTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)songsIdNbox).EndInit();
+            charactersTab.ResumeLayout(false);
+            charactersTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)characterIdNbox).EndInit();
+            tomoticketsTab.ResumeLayout(false);
+            tomoticketsTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)tomoticketsIdNbox).EndInit();
+            storiesTab.ResumeLayout(false);
+            storiesLayout.ResumeLayout(false);
+            storyBlock1Group.ResumeLayout(false);
+            storyBlock1Layout.ResumeLayout(false);
+            storyBlock1Layout.PerformLayout();
+            storyBlock1InputPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)story01IdNbox).EndInit();
+            storyBlock1ActionPanel.ResumeLayout(false);
+            storyBlock2Group.ResumeLayout(false);
+            storyBlock2Layout.ResumeLayout(false);
+            storyBlock2Layout.PerformLayout();
+            storyBlock2InputPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)story03IdNbox).EndInit();
+            storyBlock2ActionPanel.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -2477,7 +2348,6 @@
         private Label label31;
         private ToolStripMenuItem helpToolStripMenuItem;
         private ToolStripMenuItem infoSheetToolStripMenuItem;
-        private ToolStripMenuItem donateToolStripMenuItem;
         private TabPage storiesTab;
         private TableLayoutPanel storiesLayout;
         private GroupBox storyBlock1Group;
